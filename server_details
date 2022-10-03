@@ -1,0 +1,1 @@
+ssh -l lab-user 192.168.40.200 ( c0here1! )

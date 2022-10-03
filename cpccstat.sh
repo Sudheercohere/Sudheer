@@ -1,0 +1,3 @@
+#date_d=`date +%y%m%d%H%M%S`
+#tail -f  /tmp/cpcc_stats.txt | tee /home/kakarsu/repo4g/CPCC/bin/cpccstat.log
+watch -n1 'cat /tmp/cpcc_stats.txt'
