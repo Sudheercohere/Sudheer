@@ -1,1984 +1,0 @@
-Script started on Thu 21 Jul 2022 12:57:41 AM PDT
-mkdir: cannot create directory ‘/home/kakarsu/.local’: File exists
-]0;kakarsu@ran13:~/sudheer[?1034h[kakarsu@ran13 sudheer]$ 
-]0;kakarsu@ran13:~/sudheer[kakarsu@ran13 sudheer]$ 
-]0;kakarsu@ran13:~/sudheer[kakarsu@ran13 sudheer]$ 
-]0;kakarsu@ran13:~/sudheer[kakarsu@ran13 sudheer]$ cd
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ cd repo4g/
-]0;kakarsu@ran13:~/repo4g[kakarsu@ran13 repo4g]$ cd LTE_IPR/
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/l2_grpc_config.txt[m
-	[31mmodified:   cfg/Proprietary_eNodeB_Data_Model.xml[m
-	[31mmodified:   cfg/eNodeB_Configuration.cfg[m
-	[31mmodified:   cfg/eNodeB_Data_Model_TR_196_based.xml[m
-	[31mmodified:   lib/libwls.so[m
-	[31mmodified:   lteenodeb/set_l2_log_level.sh[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash list
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash 
-Saved working directory and index state WIP on master: 5af304b Merge pull request #67 from cohere-altran/naveen/fixes-from-CG
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stasj list
-git: 'stasj' is not a git command. See 'git --help'.
-
-The most similar command is
-	stash
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stasj list[K[K[K[K[K[Kh list 
-[?1h=stash@{0}: WIP on master: 5af304b Merge pull request #67 from cohere-altran/naveen/fixes-from-CG[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git log 
-[?1h=[33mcommit 5af304b7561299de319881c842ca390c38eb4545[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Merge: dbff9ef 0e3f547[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Fri Jun 10 10:55:43 2022 -0700[m
-[m
-    Merge pull request #67 from cohere-altran/naveen/fixes-from-CG[m
-    [m
-    Naveen/fixes from cg[m
-[m
-[33mcommit 0e3f547d70077fcef33874f9d5587c35cf3279fb[m[m
-Author: Venu Vennapusa <vennave@ran303.cohere-technologies.com>[m
-Date:   Wed Jun 8 16:55:54 2022 -0700[m
-[m
-    Fix: Meas Gap Fix when CSFB enabled in rrm_rrc_meas_config.c[m
-[m
-[33mcommit a49c86302a628cf1dba1646432ba1a7258620a33[m[m
-Author: Venu Vennapusa <vennave@ran303.cohere-technologies.com>[m
-Date:   Wed Jun 8 16:38:10 2022 -0700[m
-[m
-    Fix: MCS 27 CFI2 NACK issue(low UL MCS causing DL throuput dip on 1st connectted UE), along with this commit the following parameters(commChWithMIBAllowed and dlSchWithMIBAllowed) from Proprietary_e[m NodeB_Data_Model.xml need to set to 0[m
-[m
-[33mcommit dbff9efbf93f3d8e5749e71d0d472e01e78c5c93[m[m
-Merge: ff89076 1798b87[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Fri Jun 3 14:55:36 2022 -0700[m
-[m
-    Merge pull request #66 from cohere-altran/naveen/dl-channel-fix[m
-    [m
-    naveen/dl channel fix[m
-[m
-[33mcommit 1798b870d3fc5af5598110fe01a4b96709896426[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Fri Jun 3 14:40:32 2022 -0700[m
-[m
-    bugfix: fixed a debug log[m
-[m
-[33mcommit 59f4b757268631efd14e165bad6b7979a7376f90[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Fri Jun 3 14:41:28 2022 -0700[m
-[m
-    bugfix: remove num cw hardcoding in dl channel report[m
-[m
-[33mcommit ff89076382a8063fca25fa9503106f4c13da67fc[m[m
-Merge: b73c120 db48e78[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Fri Jun 3 14:27:44 2022 -0700[m
-[m
-    Merge pull request #62 from cohere-altran/naveen/rnti-change-update[m
-    [m
-    bugfix: send updated rnti to CPCC  in case of change[m
-[m
-[33mcommit db48e7847a37fcf015e0ae806041ef20245b1741[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Thu May 26 09:48:50 2022 -0700[m
-[m
-    bugfix: send updated rnti to CPCC  in case of change[m
-[m
-[33mcommit b73c1201dea053b83103958d85d3e70619ec762f[m[m
-Merge: f0569aa d83ebc2[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-
-nothing added to commit but untracked files present (use "git add" to track)
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git fect[K[Ktch
-remote: Enumerating objects: 571, done.[K
-remote: Counting objects:   0% (1/563)[Kremote: Counting objects:   1% (6/563)[Kremote: Counting objects:   2% (12/563)[Kremote: Counting objects:   3% (17/563)[Kremote: Counting objects:   4% (23/563)[Kremote: Counting objects:   5% (29/563)[Kremote: Counting objects:   6% (34/563)[Kremote: Counting objects:   7% (40/563)[Kremote: Counting objects:   8% (46/563)[Kremote: Counting objects:   9% (51/563)[Kremote: Counting objects:  10% (57/563)[Kremote: Counting objects:  11% (62/563)[Kremote: Counting objects:  12% (68/563)[Kremote: Counting objects:  13% (74/563)[Kremote: Counting objects:  14% (79/563)[Kremote: Counting objects:  15% (85/563)[Kremote: Counting objects:  16% (91/563)[Kremote: Counting objects:  17% (96/563)[Kremote: Counting objects:  18% (102/563)[Kremote: Counting objects:  19% (107/563)[Kremote: Counting objects:  20% (113/563)[Kremote: Counting objects:  21% (119/563)[Kremote: Counting objects:  22% (124/563)[Kremote: Counting objects:  23% (130/563)[Kremote: Counting objects:  24% (136/563)[Kremote: Counting objects:  25% (141/563)[Kremote: Counting objects:  26% (147/563)[Kremote: Counting objects:  27% (153/563)[Kremote: Counting objects:  28% (158/563)[Kremote: Counting objects:  29% (164/563)[Kremote: Counting objects:  30% (169/563)[Kremote: Counting objects:  31% (175/563)[Kremote: Counting objects:  32% (181/563)[Kremote: Counting objects:  33% (186/563)[Kremote: Counting objects:  34% (192/563)[Kremote: Counting objects:  35% (198/563)[Kremote: Counting objects:  36% (203/563)[Kremote: Counting objects:  37% (209/563)[Kremote: Counting objects:  38% (214/563)[Kremote: Counting objects:  39% (220/563)[Kremote: Counting objects:  40% (226/563)[Kremote: Counting objects:  41% (231/563)[Kremote: Counting objects:  42% (237/563)[Kremote: Counting objects:  43% (243/563)[Kremote: Counting objects:  44% (248/563)[Kremote: Counting objects:  45% (254/563)[Kremote: Counting objects:  46% (259/563)[Kremote: Counting objects:  47% (265/563)[Kremote: Counting objects:  48% (271/563)[Kremote: Counting objects:  49% (276/563)[Kremote: Counting objects:  50% (282/563)[Kremote: Counting objects:  51% (288/563)[Kremote: Counting objects:  52% (293/563)[Kremote: Counting objects:  53% (299/563)[Kremote: Counting objects:  54% (305/563)[Kremote: Counting objects:  55% (310/563)[Kremote: Counting objects:  56% (316/563)[Kremote: Counting objects:  57% (321/563)[Kremote: Counting objects:  58% (327/563)[Kremote: Counting objects:  59% (333/563)[Kremote: Counting objects:  60% (338/563)[Kremote: Counting objects:  61% (344/563)[Kremote: Counting objects:  62% (350/563)[Kremote: Counting objects:  63% (355/563)[Kremote: Counting objects:  64% (361/563)[Kremote: Counting objects:  65% (366/563)[Kremote: Counting objects:  66% (372/563)[Kremote: Counting objects:  67% (378/563)[Kremote: Counting objects:  68% (383/563)[Kremote: Counting objects:  69% (389/563)[Kremote: Counting objects:  70% (395/563)[Kremote: Counting objects:  71% (400/563)[Kremote: Counting objects:  72% (406/563)[Kremote: Counting objects:  73% (411/563)[Kremote: Counting objects:  74% (417/563)[Kremote: Counting objects:  75% (423/563)[Kremote: Counting objects:  76% (428/563)[Kremote: Counting objects:  77% (434/563)[Kremote: Counting objects:  78% (440/563)[Kremote: Counting objects:  79% (445/563)[Kremote: Counting objects:  80% (451/563)[Kremote: Counting objects:  81% (457/563)[Kremote: Counting objects:  82% (462/563)[Kremote: Counting objects:  83% (468/563)[Kremote: Counting objects:  84% (473/563)[Kremote: Counting objects:  85% (479/563)[Kremote: Counting objects:  86% (485/563)[Kremote: Counting objects:  87% (490/563)[Kremote: Counting objects:  88% (496/563)[Kremote: Counting objects:  89% (502/563)[Kremote: Counting objects:  90% (507/563)[Kremote: Counting objects:  91% (513/563)[Kremote: Counting objects:  92% (518/563)[Kremote: Counting objects:  93% (524/563)[Kremote: Counting objects:  94% (530/563)[Kremote: Counting objects:  95% (535/563)[Kremote: Counting objects:  96% (541/563)[Kremote: Counting objects:  97% (547/563)[Kremote: Counting objects:  98% (552/563)[Kremote: Counting objects:  99% (558/563)[Kremote: Counting objects: 100% (563/563)[Kremote: Counting objects: 100% (563/563), done.[K
-remote: Compressing objects:   0% (1/211)[Kremote: Compressing objects:   1% (3/211)[Kremote: Compressing objects:   2% (5/211)[Kremote: Compressing objects:   3% (7/211)[Kremote: Compressing objects:   4% (9/211)[Kremote: Compressing objects:   5% (11/211)[Kremote: Compressing objects:   6% (13/211)[Kremote: Compressing objects:   7% (15/211)[Kremote: Compressing objects:   8% (17/211)[Kremote: Compressing objects:   9% (19/211)[Kremote: Compressing objects:  10% (22/211)[Kremote: Compressing objects:  11% (24/211)[Kremote: Compressing objects:  12% (26/211)[Kremote: Compressing objects:  13% (28/211)[Kremote: Compressing objects:  14% (30/211)[Kremote: Compressing objects:  15% (32/211)[Kremote: Compressing objects:  16% (34/211)[Kremote: Compressing objects:  17% (36/211)[Kremote: Compressing objects:  18% (38/211)[Kremote: Compressing objects:  19% (41/211)[Kremote: Compressing objects:  20% (43/211)[Kremote: Compressing objects:  21% (45/211)[Kremote: Compressing objects:  22% (47/211)[Kremote: Compressing objects:  23% (49/211)[Kremote: Compressing objects:  24% (51/211)[Kremote: Compressing objects:  25% (53/211)[Kremote: Compressing objects:  26% (55/211)[Kremote: Compressing objects:  27% (57/211)[Kremote: Compressing objects:  28% (60/211)[Kremote: Compressing objects:  29% (62/211)[Kremote: Compressing objects:  30% (64/211)[Kremote: Compressing objects:  31% (66/211)[Kremote: Compressing objects:  32% (68/211)[Kremote: Compressing objects:  33% (70/211)[Kremote: Compressing objects:  34% (72/211)[Kremote: Compressing objects:  35% (74/211)[Kremote: Compressing objects:  36% (76/211)[Kremote: Compressing objects:  37% (79/211)[Kremote: Compressing objects:  38% (81/211)[Kremote: Compressing objects:  39% (83/211)[Kremote: Compressing objects:  40% (85/211)[Kremote: Compressing objects:  41% (87/211)[Kremote: Compressing objects:  42% (89/211)[Kremote: Compressing objects:  43% (91/211)[Kremote: Compressing objects:  44% (93/211)[Kremote: Compressing objects:  45% (95/211)[Kremote: Compressing objects:  46% (98/211)[Kremote: Compressing objects:  47% (100/211)[Kremote: Compressing objects:  48% (102/211)[Kremote: Compressing objects:  49% (104/211)[Kremote: Compressing objects:  50% (106/211)[Kremote: Compressing objects:  51% (108/211)[Kremote: Compressing objects:  52% (110/211)[Kremote: Compressing objects:  53% (112/211)[Kremote: Compressing objects:  54% (114/211)[Kremote: Compressing objects:  55% (117/211)[Kremote: Compressing objects:  56% (119/211)[Kremote: Compressing objects:  57% (121/211)[Kremote: Compressing objects:  58% (123/211)[Kremote: Compressing objects:  59% (125/211)[Kremote: Compressing objects:  60% (127/211)[Kremote: Compressing objects:  61% (129/211)[Kremote: Compressing objects:  62% (131/211)[Kremote: Compressing objects:  63% (133/211)[Kremote: Compressing objects:  64% (136/211)[Kremote: Compressing objects:  65% (138/211)[Kremote: Compressing objects:  66% (140/211)[Kremote: Compressing objects:  67% (142/211)[Kremote: Compressing objects:  68% (144/211)[Kremote: Compressing objects:  69% (146/211)[Kremote: Compressing objects:  70% (148/211)[Kremote: Compressing objects:  71% (150/211)[Kremote: Compressing objects:  72% (152/211)[Kremote: Compressing objects:  73% (155/211)[Kremote: Compressing objects:  74% (157/211)[Kremote: Compressing objects:  75% (159/211)[Kremote: Compressing objects:  76% (161/211)[Kremote: Compressing objects:  77% (163/211)[Kremote: Compressing objects:  78% (165/211)[Kremote: Compressing objects:  79% (167/211)[Kremote: Compressing objects:  80% (169/211)[Kremote: Compressing objects:  81% (171/211)[Kremote: Compressing objects:  82% (174/211)[Kremote: Compressing objects:  83% (176/211)[Kremote: Compressing objects:  84% (178/211)[Kremote: Compressing objects:  85% (180/211)[Kremote: Compressing objects:  86% (182/211)[Kremote: Compressing objects:  87% (184/211)[Kremote: Compressing objects:  88% (186/211)[Kremote: Compressing objects:  89% (188/211)[Kremote: Compressing objects:  90% (190/211)[Kremote: Compressing objects:  91% (193/211)[Kremote: Compressing objects:  92% (195/211)[Kremote: Compressing objects:  93% (197/211)[Kremote: Compressing objects:  94% (199/211)[Kremote: Compressing objects:  95% (201/211)[Kremote: Compressing objects:  96% (203/211)[Kremote: Compressing objects:  97% (205/211)[Kremote: Compressing objects:  98% (207/211)[Kremote: Compressing objects:  99% (209/211)[Kremote: Compressing objects: 100% (211/211)[Kremote: Compressing objects: 100% (211/211), done.[K
-Receiving objects:   0% (1/571)Receiving objects:   1% (6/571)Receiving objects:   2% (12/571)Receiving objects:   3% (18/571)Receiving objects:   4% (23/571)Receiving objects:   5% (29/571)Receiving objects:   6% (35/571)Receiving objects:   7% (40/571)Receiving objects:   8% (46/571)Receiving objects:   9% (52/571)Receiving objects:  10% (58/571)Receiving objects:  11% (63/571)Receiving objects:  12% (69/571)Receiving objects:  13% (75/571)Receiving objects:  14% (80/571)Receiving objects:  15% (86/571)Receiving objects:  16% (92/571)Receiving objects:  17% (98/571)Receiving objects:  18% (103/571)Receiving objects:  19% (109/571)Receiving objects:  20% (115/571)Receiving objects:  21% (120/571)Receiving objects:  22% (126/571)Receiving objects:  23% (132/571)Receiving objects:  24% (138/571)Receiving objects:  25% (143/571)Receiving objects:  26% (149/571)Receiving objects:  27% (155/571)Receiving objects:  28% (160/571)Receiving objects:  29% (166/571)Receiving objects:  30% (172/571)Receiving objects:  31% (178/571)Receiving objects:  32% (183/571)Receiving objects:  33% (189/571)Receiving objects:  34% (195/571)Receiving objects:  35% (200/571)Receiving objects:  36% (206/571)Receiving objects:  37% (212/571)Receiving objects:  38% (217/571)Receiving objects:  39% (223/571)Receiving objects:  40% (229/571)Receiving objects:  41% (235/571)Receiving objects:  42% (240/571)Receiving objects:  43% (246/571)Receiving objects:  44% (252/571)Receiving objects:  45% (257/571)Receiving objects:  46% (263/571)Receiving objects:  47% (269/571)Receiving objects:  48% (275/571)Receiving objects:  49% (280/571)Receiving objects:  50% (286/571)Receiving objects:  51% (292/571)Receiving objects:  52% (297/571)Receiving objects:  53% (303/571)Receiving objects:  54% (309/571)Receiving objects:  55% (315/571)Receiving objects:  56% (320/571)Receiving objects:  57% (326/571)Receiving objects:  58% (332/571)Receiving objects:  59% (337/571)Receiving objects:  60% (343/571)Receiving objects:  61% (349/571)Receiving objects:  62% (355/571)Receiving objects:  63% (360/571)Receiving objects:  64% (366/571)Receiving objects:  65% (372/571)Receiving objects:  66% (377/571)Receiving objects:  67% (383/571)Receiving objects:  68% (389/571)Receiving objects:  69% (394/571)Receiving objects:  70% (400/571)Receiving objects:  71% (406/571)Receiving objects:  72% (412/571)Receiving objects:  73% (417/571)Receiving objects:  74% (423/571)Receiving objects:  75% (429/571)Receiving objects:  76% (434/571)Receiving objects:  77% (440/571)Receiving objects:  78% (446/571)Receiving objects:  79% (452/571)Receiving objects:  80% (457/571)Receiving objects:  81% (463/571)Receiving objects:  82% (469/571)Receiving objects:  83% (474/571)Receiving objects:  84% (480/571)Receiving objects:  85% (486/571)Receiving objects:  86% (492/571)Receiving objects:  87% (497/571)Receiving objects:  88% (503/571)Receiving objects:  89% (509/571)Receiving objects:  90% (514/571)Receiving objects:  91% (520/571)Receiving objects:  92% (526/571)Receiving objects:  93% (532/571)Receiving objects:  94% (537/571)Receiving objects:  95% (543/571)Receiving objects:  96% (549/571)Receiving objects:  97% (554/571)Receiving objects:  98% (560/571)Receiving objects:  99% (566/571)remote: Total 571 (delta 358), reused 529 (delta 349), pack-reused 8[K
-Receiving objects: 100% (571/571)Receiving objects: 100% (571/571), 1.79 MiB | 5.00 MiB/s, done.
-Resolving deltas:   0% (0/359)Resolving deltas:   1% (4/359)Resolving deltas:   2% (9/359)Resolving deltas:   3% (11/359)Resolving deltas:   7% (26/359)Resolving deltas:   8% (31/359)Resolving deltas:  11% (43/359)Resolving deltas:  12% (45/359)Resolving deltas:  13% (47/359)Resolving deltas:  18% (68/359)Resolving deltas:  25% (90/359)Resolving deltas:  28% (104/359)Resolving deltas:  31% (112/359)Resolving deltas:  32% (116/359)Resolving deltas:  33% (119/359)Resolving deltas:  38% (138/359)Resolving deltas:  52% (187/359)Resolving deltas:  56% (203/359)Resolving deltas:  57% (205/359)Resolving deltas:  61% (220/359)Resolving deltas:  66% (240/359)Resolving deltas:  68% (247/359)Resolving deltas:  71% (257/359)Resolving deltas:  72% (260/359)Resolving deltas:  73% (264/359)Resolving deltas:  74% (267/359)Resolving deltas:  76% (273/359)Resolving deltas:  78% (281/359)Resolving deltas:  79% (284/359)Resolving deltas:  80% (288/359)Resolving deltas:  81% (293/359)Resolving deltas:  83% (298/359)Resolving deltas:  84% (304/359)Resolving deltas:  91% (328/359)Resolving deltas:  93% (334/359)Resolving deltas:  94% (339/359)Resolving deltas:  95% (342/359)Resolving deltas:  96% (345/359)Resolving deltas:  97% (350/359)Resolving deltas:  98% (352/359)Resolving deltas:  99% (356/359)Resolving deltas: 100% (359/359)Resolving deltas: 100% (359/359), completed with 9 local objects.
-From github.com:cohere-altran/LTE_IPR
-   5af304b..65471f3  master                                          -> origin/master
- * [new branch]      autocal_integration                             -> origin/autocal_integration
- * [new branch]      naveen/debug-lte-panic-due-to-rb-limit-exceeded -> origin/naveen/debug-lte-panic-due-to-rb-limit-exceeded
- * [new branch]      naveen/ran303-autocal-branch                    -> origin/naveen/ran303-autocal-branch
- * [new branch]      naveen/specify-correct-num-beams                -> origin/naveen/specify-correct-num-beams
- * [new branch]      naveen/ta-control                               -> origin/naveen/ta-control
- * [new branch]      naveen/use-srs-ta                               -> origin/naveen/use-srs-ta
- * [new branch]      varun/L2crash_SRQueue                           -> origin/varun/L2crash_SRQueue
- + 7e4e6e9...e43d33e varun/autocal_dev                               -> origin/varun/autocal_dev  (forced update)
- * [new branch]      varun/ta_cohere                                 -> origin/varun/ta_cohere
- + 4bfad3e...5f97549 varun/tput_dip                                  -> origin/varun/tput_dip  (forced update)
- * [new tag]         22_07_20_MERGED_AUTOCAL                         -> 22_07_20_MERGED_AUTOCAL
- * [new tag]         22_07_20_PRE_AUTOCAL                            -> 22_07_20_PRE_AUTOCAL
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ ls 0-lrt [K[K[K[K[K[K[K[K[Kpwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ ls -lart
-total 40
--rw-r--r--  1 kakarsu domain users    32 May 13 10:34 .git
-drwxr-xr-x  2 kakarsu domain users   156 May 13 10:35 [0m[01;34mzppp[0m
--rw-r--r--  1 kakarsu domain users   763 May 16 11:18 .gitignore
-drwxr-xr-x  7 kakarsu domain users    98 May 16 11:18 [01;34m.[0m
-drwxrwxrwx  9 kakarsu domain users   201 May 23 21:07 [34;42m..[0m
-drwxr-xr-x  3 kakarsu domain users  8192 Jul 21 00:58 [01;34mbin[0m
-drwxr-xr-x  4 kakarsu domain users 12288 Jul 21 00:58 [01;34mcfg[0m
-drwxr-xr-x  8 kakarsu domain users   200 Jul 21 00:58 [01;34mlib[0m
-drwxr-xr-x 19 kakarsu domain users  4096 Jul 21 00:58 [01;34mlteenodeb[0m
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ c[Kcat .git
-gitdir: ../.git/modules/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cd cfg/
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ ls
-[0m[01;32mAckNackConfig.cfg[0m                                           eNodeB_Data_Model_TR_196_based_bak_2022-06-08T06:31:30.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-26T11:13:28.xml
-[01;32mclpc_config.xml[0m                                             eNodeB_Data_Model_TR_196_based_bak_2022-06-08T08:00:45.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-26T11:27:36.xml
-[01;32mcqiPmiRiConfig.txt[0m                                          eNodeB_Data_Model_TR_196_based_bak_2022-06-08T10:02:41.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-27T05:36:14.xml
-[01;32meCIDConfig.cfg[0m                                              eNodeB_Data_Model_TR_196_based_bak_2022-06-08T12:12:22.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-27T12:09:01.xml
-[01;32mENB_PHY_SIM_Configuration.cfg[0m                               eNodeB_Data_Model_TR_196_based_bak_2022-06-09T04:10:58.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-27T12:39:10.xml
-eNodeB_Configuration.cfg                                    eNodeB_Data_Model_TR_196_based_bak_2022-06-09T04:59:56.xml  eNodeB_Data_Model_TR_196_based_bak_2022-07-13T09:38:00.xml
-eNodeB_Data_Model_TR_196_based_bak_2022-05-18T02:34:57.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-09T06:00:31.xml  eNodeB_Data_Model_TR_196_based_bak_2022-07-14T01:31:05.xml
-eNodeB_Data_Model_TR_196_based_bak_2022-05-18T03:24:35.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-09T07:26:42.xml  eNodeB_Data_Model_TR_196_based_bak_2022-07-20T03:25:32.xml
-eNodeB_Data_Model_TR_196_based_bak_2022-05-18T08:26:29.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-09T09:22:11.xml  eNodeB_Data_Model_TR_196_based_bak_2022-07-20T08:05:52.xml
-eNodeB_Data_Model_TR_196_based_bak_2022-05-18T09:26:45.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-10T09:33:32.xml  eNodeB_Data_Model_TR_196_based.xml
-eNodeB_Data_Model_TR_196_based_bak_2022-05-18T12:12:11.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-12T10:17:48.xml  eNodeB_Data_Model_TR_196_based.xsd
-eNodeB_Data_Model_TR_196_based_bak_2022-05-19T07:23:34.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-13T04:18:37.xml  l1MeasurementConfig.cfg
-eNodeB_Data_Model_TR_196_based_bak_2022-05-20T07:14:27.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-13T07:33:24.xml  [01;32mL3configStats.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-20T09:10:59.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-13T09:20:56.xml  [01;32mlteLayer2TAConfig.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-22T07:53:40.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-13T10:16:17.xml  lte_oam_sdm.cfg
-eNodeB_Data_Model_TR_196_based_bak_2022-05-23T03:03:50.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-13T11:30:51.xml  [01;34mmme[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-23T06:55:18.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-14T06:59:20.xml  networkScanDataModel.xml
-eNodeB_Data_Model_TR_196_based_bak_2022-05-23T07:23:35.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-14T09:01:07.xml  [01;34moamrrc[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-24T08:33:01.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-14T11:39:06.xml  [01;32mPdcpUeInfoNonPeriodic.txt[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-25T04:17:16.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-14T12:57:31.xml  [01;32mPhyErrorConfig.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-25T08:42:46.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-15T05:04:31.xml  Proprietary_eNodeB_Data_Model.xml
-eNodeB_Data_Model_TR_196_based_bak_2022-05-25T09:55:22.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-15T09:20:40.xml  Proprietary_eNodeB_Data_Model.xml_backup
-eNodeB_Data_Model_TR_196_based_bak_2022-05-26T05:19:15.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-16T03:25:52.xml  secTGConfig.txt
-eNodeB_Data_Model_TR_196_based_bak_2022-05-26T08:15:14.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-16T04:44:41.xml  secUlTrafficGen_MultiSector.txt
-eNodeB_Data_Model_TR_196_based_bak_2022-05-26T08:45:02.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-16T08:43:55.xml  secUlTrafficGen_sps.txt
-eNodeB_Data_Model_TR_196_based_bak_2022-05-26T09:59:34.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-16T09:08:27.xml  secUlTrafficGen.txt
-eNodeB_Data_Model_TR_196_based_bak_2022-05-26T10:19:21.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-16T09:10:02.xml  [01;32mson_oam.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-29T10:41:57.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-16T12:02:25.xml  [01;32mspsConfigDl.txt[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-05-31T11:11:32.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-17T01:33:30.xml  [01;32mspsConfigUl.txt[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-01T09:48:51.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-17T06:48:50.xml  [01;32mTGConfig.txt[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-01T09:56:26.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-19T09:21:31.xml  [01;32mueAngleOfArrivalValues.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-02T09:59:11.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-19T12:37:02.xml  [01;32mueCQIConfig_ABS.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-03T01:28:19.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-20T04:09:04.xml  [01;32mueCQIConfig.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-06T04:14:03.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-20T09:09:19.xml  [01;32mueCQIProfile.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-06T09:07:46.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-21T03:07:33.xml  [01;32mUeLocation.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-06T09:26:28.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-21T10:29:32.xml  [01;32muePHRConfig.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-06T09:35:02.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-23T07:51:32.xml  [01;32mueProfileConfig.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-06T10:29:09.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-23T08:26:44.xml  [01;32mUESIM_Configuration.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-06T12:16:31.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-24T09:10:33.xml  [01;32mueSim_preambleConfig.txt[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-07T08:30:57.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-24T12:04:40.xml  [01;32mueSINRConfig.cfg[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-07T11:04:30.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-26T08:23:55.xml  [01;32mulTrafficGen_MultiSector.txt[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-08T01:34:02.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-26T09:35:47.xml  [01;32mulTrafficGen_sps.txt[0m
-eNodeB_Data_Model_TR_196_based_bak_2022-06-08T03:52:38.xml  eNodeB_Data_Model_TR_196_based_bak_2022-06-26T10:59:39.xml  [01;32mulTrafficGen.txt[0m
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ cd ..
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git [K[K[K[Kgit --help
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           <command> [<args>]
-
-These are common Git commands used in various situations:
-
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
-
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
-
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git fetch
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash list 
-[?1h=stash@{0}: WIP on master: 5af304b Merge pull request #67 from cohere-altran/naveen/fixes-from-CG[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ pwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git pull 
-Updating 5af304b..65471f3
-Fast-forward
- bin/cohere_read_logs                                                             | Bin [31m0[m -> [32m8816[m bytes
- bin/cohere_tail_logs                                                             | Bin [31m0[m -> [32m8920[m bytes
- lteenodeb/commonInterface/OAMApp/src/lteOAMIntegration.c                         |   2 [32m+[m
- lteenodeb/commonInterface/interfaces/include/lteLayer2MacRlcInterface.h          |   1 [32m+[m
- lteenodeb/lte_rrm/core/ue_manager/src/rrm_ue_fsm.c                               | 101 [32m++++++++++++[m[31m------[m
- lteenodeb/mac/maccore/include/assemblyDeassemblyUnit/dlHarq/lteMacDLHarqMgr.h    |  16 [31m---[m
- lteenodeb/mac/maccore/include/common/lteMacDLUEContext.h                         |   1 [32m+[m
- lteenodeb/mac/maccore/include/common/lteMacULUEContext.h                         |   1 [32m+[m
- lteenodeb/mac/maccore/include/scheduler/cohere/cohere_logging.h                  | 120 [32m+++++++++++++++++++++[m
- lteenodeb/mac/maccore/include/scheduler/cohere/cohere_mac_scheduler.h            |  99 [32m++++[m[31m--------------[m
- lteenodeb/mac/maccore/include/scheduler/cohere/cpcc_vendor_interface_external.h  |  13 [32m++[m[31m-[m
- lteenodeb/mac/maccore/src/assemblyDeassemblyUnit/dlHarq/lteMacDLHarqMgr.c        | 322 [32m++++++++++++++++[m[31m----------------------------------------[m
- lteenodeb/mac/maccore/src/assemblyDeassemblyUnit/encoder/lteMacEncoder.c         |  94 [32m++++++++++++[m[31m-----[m
- lteenodeb/mac/maccore/src/assemblyDeassemblyUnit/multiplexer/lteMacMultiplexer.c | 129 [32m++++++++++++++++++++[m[31m---[m
- lteenodeb/mac/maccore/src/executionScheduler/lteMacExecutionLegs.c               |   5 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/interfaces/phy/lteMacFAPIApi.c                         |   4 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/interfaces/phy/lteMacReceiver.c                        |   9 [32m++[m
- lteenodeb/mac/maccore/src/interfaces/phy/lteMacTimingAdvanceMgr.c                |   4 [32m+[m
- lteenodeb/mac/maccore/src/interfaces/phy/lteMacTransmitter.c                     |  37 [32m+++++[m[31m--[m
- lteenodeb/mac/maccore/src/interfaces/rlc/lteMacRlcInterface.c                    |   2 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/interfaces/rrc/lteMacParseUtil.c                       |  32 [32m++++[m[31m--[m
- lteenodeb/mac/maccore/src/interfaces/rrc/lteMacUEConfMgr.c                       |   3 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/scheduler/MeasGapHandler/lteMacMeasGapHandler.c        |   2 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/scheduler/cohere/Makefile                              |   2 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_logging.c                      | 393 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_mac_scheduler.c                | 647 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m------------------------------------------------------------[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_read_logs.c                    |  69 [32m++++++++++++[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_tail_logs.c                    |  73 [32m+++++++++++++[m
- lteenodeb/mac/maccore/src/scheduler/dlSchManager/lteMacCQI.c                     |  10 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/scheduler/dlSchManager/lteMacDLQueueLoadMgr.c          |   2 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/scheduler/dlSchManager/lteMacPDCCHMgr.c                |   3 [32m+[m
- lteenodeb/mac/maccore/src/scheduler/dlSchManager/lteMacPDSCHMgr.c                |   5 [32m+[m[31m-[m
- lteenodeb/mac/maccore/src/scheduler/rachManager/lteMacRandomAccess.c             |  21 [32m++++[m
- lteenodeb/mac/maccore/src/scheduler/resourceManager/lteMacDLResourceAllocator.c  |  26 [32m+++[m[31m--[m
- lteenodeb/mac/maccore/src/scheduler/strategy/lteMacDLRoundRobinScheduler.c       |   1 [32m+[m
- lteenodeb/mac/maccore/src/scheduler/strategy/lteMacDLSchedulerStrategy.c         |  29 [32m++++[m[31m--[m
- lteenodeb/make.inc                                                               |   2 [32m+[m[31m-[m
- lteenodeb/set_l2_log_level.sh                                                    |   0
- 38 files changed, 1481 insertions(+), 799 deletions(-)
- create mode 100755 bin/cohere_read_logs
- create mode 100755 bin/cohere_tail_logs
- create mode 100644 lteenodeb/mac/maccore/include/scheduler/cohere/cohere_logging.h
- create mode 100644 lteenodeb/mac/maccore/src/scheduler/cohere/cohere_logging.c
- create mode 100644 lteenodeb/mac/maccore/src/scheduler/cohere/cohere_read_logs.c
- create mode 100644 lteenodeb/mac/maccore/src/scheduler/cohere/cohere_tail_logs.c
- mode change 100644 => 100755 lteenodeb/set_l2_log_level.sh
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stah [K[Ksg [K[Kh pop 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/l2_grpc_config.txt[m
-	[31mmodified:   cfg/Proprietary_eNodeB_Data_Model.xml[m
-	[31mmodified:   cfg/eNodeB_Configuration.cfg[m
-	[31mmodified:   cfg/eNodeB_Data_Model_TR_196_based.xml[m
-	[31mmodified:   lib/libwls.so[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Dropped refs/stash@{0} (8c0dd239b95295ef0d0507b13908d065a95bd904)
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ gti[K[Kit stash list 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ pwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/l2_grpc_config.txt[m
-	[31mmodified:   cfg/Proprietary_eNodeB_Data_Model.xml[m
-	[31mmodified:   cfg/eNodeB_Configuration.cfg[m
-	[31mmodified:   cfg/eNodeB_Data_Model_TR_196_based.xml[m
-	[31mmodified:   lib/libwls.so[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git log
-[?1h=[33mcommit 65471f34b7c5c19e922192899c51efbd0666c569[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Wed Jul 20 14:25:27 2022 -0700[m
-[m
-    misc: make cohere_tail and cohere_read binaries execuatable[m
-[m
-[33mcommit a5bc42b0e8fcd6f910bceb2f1b14f75aa7f0ba8a[m[m
-Merge: 7442830 380097e[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Wed Jul 20 14:21:30 2022 -0700[m
-[m
-    Merge pull request #73 from cohere-altran/varun/L2crash_SRQueue[m
-    [m
-    Varun/l2crash sr queue[m
-[m
-[33mcommit 380097eff769208e1799f9a6093674833b982a3c[m[33m ([m[1;31morigin/varun/L2crash_SRQueue[m[33m)[m[m
-Author: varun-cohere <varun.yeturu@cohere-technologies.com>[m
-Date:   Tue Jul 19 12:24:51 2022 -0700[m
-[m
-    CCML-249 L2: Check for a valid UL context before processing the Schedule Request[m
-[m
-[33mcommit 7442830e317a5c3e808533960002a5ee63328c1c[m[m
-Merge: 6efc286 1d64f2a[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Wed Jul 20 14:17:44 2022 -0700[m
-[m
-    Merge pull request #75 from cohere-altran/naveen/circular-logs-on-autocal[m
-    [m
-    Naveen/circular logs on autocal[m
-[m
-[33mcommit 6efc28637b77651fdb5b04d3d57aa665e7d9688d[m[33m ([m[1;33mtag: 22_07_20_MERGED_AUTOCAL[m[33m)[m[m
-Merge: 943fd14 b41d6fb[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Wed Jul 20 13:38:50 2022 -0700[m
-[m
-    Merge pull request #74 from cohere-altran/autocal_integration[m
-    [m
-    Autocal integration[m
-[m
-[33mcommit 1d64f2a5af63323ad1a7d34f17117ec8c45991e8[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Jul 19 07:52:58 2022 -0700[m
-[m
-    bugfix: initialize cohere parameter in harq process to 0[m
-[m
-[33mcommit 5bc649311a6b062b8d6b866fe6b52e8e37b71536[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Jul 12 16:34:26 2022 -0700[m
-[m
-    bugfix: specify correct number of beams to L1[m
-[m
-[33mcommit 5752070514e85222c1ef30129ee49bd73b6b66fe[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Fri Jul 15 08:51:37 2022 -0700[m
-[m
-    debug: add more info in LTE panic due to RB limit[m
-[m
-[33mcommit a9c70bfeec7de3d0353ab962c14e4548fee7776b[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue May 24 11:40:26 2022 -0700[m
-[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ pwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ pwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ pwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git pull 
-Already up to date.
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash list 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ pwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cd cfg/
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ pwd
-/home/kakarsu/repo4g/LTE_IPR/cfg
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ sdiff -s en[Kn[K[KeNodeB_Data_Model_TR_196_based.xmeNodeB_Data_Model_TR_196_based.xm[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kl /hom[K[K[K[K~/r[Kran
-ran13_stackbrinup_with_venu  ran301_Pra_cfg_working/      
-[kakarsu@ran13 cfg]$ sdiff -s eNodeB_Data_Model_TR_196_based.xml ~/ran
-ran13_stackbrinup_with_venu  ran301_Pra_cfg_working/      
-[kakarsu@ran13 cfg]$ sdiff -s eNodeB_Data_Model_TR_196_based.xml ~/ran13_stackbrinup_with_venu [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbackup_files/eNodeB_Data_Model_TR_196_based.xml 
-    <X_VENDOR_Enable>1</X_VENDOR_Enable>		      |	    <X_VENDOR_Enable>0</X_VENDOR_Enable>
-    <X_VENDOR_FTPServerURL>ftp://192.168.40.172</X_VENDOR_FTP |	    <X_VENDOR_FTPServerURL>ftp://192.168.100.164</X_VENDOR_FT
-    <X_VENDOR_FTPServerUsername>ftpuser</X_VENDOR_FTPServerUs |	    <X_VENDOR_FTPServerUsername>user</X_VENDOR_FTPServerUsern
-    <X_VENDOR_FTPServerUserPassword>c0here1!</X_VENDOR_FTPSer |	    <X_VENDOR_FTPServerUserPassword>Suite95051</X_VENDOR_FTPS
-    <X_VENDOR_LocalDirectoryPath>/home/ftpuser/</X_VENDOR_Loc |	    <X_VENDOR_LocalDirectoryPath>/home/user/</X_VENDOR_LocalD
-        <IPInterfaceIPAddress>192.168.40.172</IPInterfaceIPAd |	        <IPInterfaceIPAddress>192.168.100.164</IPInterfaceIPA
-        <IPInterfaceIPAddress>192.168.40.172</IPInterfaceIPAd |	        <IPInterfaceIPAddress>192.168.40.210</IPInterfaceIPAd
-        <IPInterfaceIPAddress>10.4.10.172</IPInterfaceIPAddre |	        <IPInterfaceIPAddress>192.168.100.164</IPInterfaceIPA
-        <URL>http://1.1.1.1</URL>			      |	        <URL>ftp://192.168.100.164</URL>
-        <Username>abc</Username>			      |	        <Username>user</Username>
-        <Password>xyz</Password>			      |	        <Password>Suite95051</Password>
-        <PeriodicUploadTime>2014-12-01T09:09:00Z</PeriodicUpl |	        <PeriodicUploadTime>2022-03-22T22:35:00Z</PeriodicUpl
-        <X_VENDOR_FileWriteTimer>10</X_VENDOR_FileWriteTimer> |	        <X_VENDOR_FileWriteTimer>5</X_VENDOR_FileWriteTimer>
-        <X_VENDOR_SamplingInterval>10</X_VENDOR_SamplingInter |	        <X_VENDOR_SamplingInterval>1</X_VENDOR_SamplingInterv
-        <MaxTxPower>43</MaxTxPower>			      |	        <MaxTxPower>10</MaxTxPower>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <CellIdentity>3329</CellIdentity>		      |	              <CellIdentity>2613</CellIdentity>
-              <DLBandwidth>n25</DLBandwidth>		      |	              <DLBandwidth>n100</DLBandwidth>
-              <ULBandwidth>n25</ULBandwidth>		      |	              <ULBandwidth>n100</ULBandwidth>
-              <ReferenceSignalPower>13</ReferenceSignalPower> |	              <ReferenceSignalPower>0</ReferenceSignalPower>
-              <EARFCNDL>1720</EARFCNDL>			      |	              <EARFCNDL>1519</EARFCNDL>
-              <EARFCNUL>19720</EARFCNUL>		      |	              <EARFCNUL>19519</EARFCNUL>
-              <X_VENDOR_MAX_RS_EPRE>105</X_VENDOR_MAX_RS_EPRE |	              <X_VENDOR_MAX_RS_EPRE>68</X_VENDOR_MAX_RS_EPRE>
-                <AntennaPortsCount>2</AntennaPortsCount>      |	                <AntennaPortsCount>1</AntennaPortsCount>
-                <SRSEnabled>1</SRSEnabled>		      |	                <SRSEnabled>0</SRSEnabled>
-                <SRSMaxUpPTS>0</SRSMaxUpPTS>		      |	                <SRSMaxUpPTS>1</SRSMaxUpPTS>
-                <X_VENDOR_SRS_SUBFRAME_CONFIG>12</X_VENDOR_SR |	                <X_VENDOR_SRS_SUBFRAME_CONFIG>7</X_VENDOR_SRS
-                <!-- L3PLUS SRS INTEL FLEXRAN Integration Sta |			<!-- L3PLUS SRS INTEL FLEXRAN Integration Sta
-                <X_VENDOR_SRS_PERIODICITY>2</X_VENDOR_SRS_PER |	                <X_VENDOR_SRS_PERIODICITY>5</X_VENDOR_SRS_PER
-                <ZeroCorrelationZoneConfig>5</ZeroCorrelation |	                <ZeroCorrelationZoneConfig>1</ZeroCorrelation
-                <P0NominalPUCCH>-100</P0NominalPUCCH>	      |	                <P0NominalPUCCH>-96</P0NominalPUCCH>
-              <!-- NB-IoT : Range: 0 = n32, 1 = n64, 2 = n128 |	              <!-- NB-IoT : Range: 0 = n32, 1 = n64, 2 = n128
-                <MaxHARQTx>1</MaxHARQTx>		      |	                <MaxHARQTx>4</MaxHARQTx>
-                  <QRxLevMinSIB1>-70</QRxLevMinSIB1>	      |	                  <QRxLevMinSIB1>-45</QRxLevMinSIB1>
-                  <QRxLevMinSIB3>-70</QRxLevMinSIB3>	      |	                  <QRxLevMinSIB3>-45</QRxLevMinSIB3>
-                  <X_VENDOR_OPEN_PHY_CELLID_START>1</X_VENDOR |	                  <X_VENDOR_OPEN_PHY_CELLID_START>100</X_VEND
-                  <X_VENDOR_OPEN_PHY_CELLID_RANGE>n168</X_VEN |	                  <X_VENDOR_OPEN_PHY_CELLID_RANGE>n4</X_VENDO
-                    <EUTRACarrierARFCN>2150</EUTRACarrierARFC |	                    <EUTRACarrierARFCN>1519</EUTRACarrierARFC
-                <EUTRACarrierARFCN>101</EUTRACarrierARFCN>    |	                <EUTRACarrierARFCN>1575</EUTRACarrierARFCN>
-              <DLBandwidth>n25</DLBandwidth>		      |	              <DLBandwidth>n100</DLBandwidth>
-              <ULBandwidth>n25</ULBandwidth>		      |	              <ULBandwidth>n100</ULBandwidth>
-          <X_VENDOR_CELL_TYPE>0</X_VENDOR_CELL_TYPE>	      |	          <X_VENDOR_CELL_TYPE>1</X_VENDOR_CELL_TYPE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <CellIdentity>3330</CellIdentity>		      |	              <CellIdentity>2624</CellIdentity>
-              <DLBandwidth>n25</DLBandwidth>		      |	              <DLBandwidth>n100</DLBandwidth>
-              <ULBandwidth>n25</ULBandwidth>		      |	              <ULBandwidth>n100</ULBandwidth>
-              <ReferenceSignalPower>13</ReferenceSignalPower> |	              <ReferenceSignalPower>-10</ReferenceSignalPower
-                <AntennaPortsCount>2</AntennaPortsCount>      |	                <AntennaPortsCount>1</AntennaPortsCount>
-                <SRSEnabled>1</SRSEnabled>		      |	                <SRSEnabled>0</SRSEnabled>
-                <SRSMaxUpPTS>0</SRSMaxUpPTS>		      |	                <SRSMaxUpPTS>1</SRSMaxUpPTS>
-                <X_VENDOR_SRS_SUBFRAME_CONFIG>12</X_VENDOR_SR |	                <X_VENDOR_SRS_SUBFRAME_CONFIG>0</X_VENDOR_SRS
-                <!-- L3PLUS SRS INTEL FLEXRAN Integration End |	                <!-- L3PLUS SRS INTEL FLEXRAN Integration End
-                <X_VENDOR_SRS_PERIODICITY>1</X_VENDOR_SRS_PER |	                <X_VENDOR_SRS_PERIODICITY>5</X_VENDOR_SRS_PER
-                <ZeroCorrelationZoneConfig>5</ZeroCorrelation |	                <ZeroCorrelationZoneConfig>1</ZeroCorrelation
-                <Enable64QAM>1</Enable64QAM>		      |	                <Enable64QAM>0</Enable64QAM>
-                <P0NominalPUSCH>-75</P0NominalPUSCH>	      |	                <P0NominalPUSCH>-86</P0NominalPUSCH>
-                <MaxHARQTx>1</MaxHARQTx>		      |	                <MaxHARQTx>4</MaxHARQTx>
-                  <QRxLevMinSIB1>-70</QRxLevMinSIB1>	      |	                  <QRxLevMinSIB1>-45</QRxLevMinSIB1>
-                  <QRxLevMinSIB3>-70</QRxLevMinSIB3>	      |	                  <QRxLevMinSIB3>-45</QRxLevMinSIB3>
-                    <GERANFreqGroupNumberOfEntries>0</GERANFr |	                    <GERANFreqGroupNumberOfEntries>2</GERANFr
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ sdiff -s eNodeB_Data_Model_TR_196_based.xml ~/backup_files/eNodeB_Data_Model_TR_196_based.xml 
-    <X_VENDOR_Enable>1</X_VENDOR_Enable>		      |	    <X_VENDOR_Enable>0</X_VENDOR_Enable>
-    <X_VENDOR_FTPServerURL>ftp://192.168.40.172</X_VENDOR_FTP |	    <X_VENDOR_FTPServerURL>ftp://192.168.100.164</X_VENDOR_FT
-    <X_VENDOR_FTPServerUsername>ftpuser</X_VENDOR_FTPServerUs |	    <X_VENDOR_FTPServerUsername>user</X_VENDOR_FTPServerUsern
-    <X_VENDOR_FTPServerUserPassword>c0here1!</X_VENDOR_FTPSer |	    <X_VENDOR_FTPServerUserPassword>Suite95051</X_VENDOR_FTPS
-    <X_VENDOR_LocalDirectoryPath>/home/ftpuser/</X_VENDOR_Loc |	    <X_VENDOR_LocalDirectoryPath>/home/user/</X_VENDOR_LocalD
-        <IPInterfaceIPAddress>192.168.40.172</IPInterfaceIPAd |	        <IPInterfaceIPAddress>192.168.100.164</IPInterfaceIPA
-        <IPInterfaceIPAddress>192.168.40.172</IPInterfaceIPAd |	        <IPInterfaceIPAddress>192.168.40.210</IPInterfaceIPAd
-        <IPInterfaceIPAddress>10.4.10.172</IPInterfaceIPAddre |	        <IPInterfaceIPAddress>192.168.100.164</IPInterfaceIPA
-        <URL>http://1.1.1.1</URL>			      |	        <URL>ftp://192.168.100.164</URL>
-        <Username>abc</Username>			      |	        <Username>user</Username>
-        <Password>xyz</Password>			      |	        <Password>Suite95051</Password>
-        <PeriodicUploadTime>2014-12-01T09:09:00Z</PeriodicUpl |	        <PeriodicUploadTime>2022-03-22T22:35:00Z</PeriodicUpl
-        <X_VENDOR_FileWriteTimer>10</X_VENDOR_FileWriteTimer> |	        <X_VENDOR_FileWriteTimer>5</X_VENDOR_FileWriteTimer>
-        <X_VENDOR_SamplingInterval>10</X_VENDOR_SamplingInter |	        <X_VENDOR_SamplingInterval>1</X_VENDOR_SamplingInterv
-        <MaxTxPower>43</MaxTxPower>			      |	        <MaxTxPower>10</MaxTxPower>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <CellIdentity>3329</CellIdentity>		      |	              <CellIdentity>2613</CellIdentity>
-              <DLBandwidth>n25</DLBandwidth>		      |	              <DLBandwidth>n100</DLBandwidth>
-              <ULBandwidth>n25</ULBandwidth>		      |	              <ULBandwidth>n100</ULBandwidth>
-              <ReferenceSignalPower>13</ReferenceSignalPower> |	              <ReferenceSignalPower>0</ReferenceSignalPower>
-              <EARFCNDL>1720</EARFCNDL>			      |	              <EARFCNDL>1519</EARFCNDL>
-              <EARFCNUL>19720</EARFCNUL>		      |	              <EARFCNUL>19519</EARFCNUL>
-              <X_VENDOR_MAX_RS_EPRE>105</X_VENDOR_MAX_RS_EPRE |	              <X_VENDOR_MAX_RS_EPRE>68</X_VENDOR_MAX_RS_EPRE>
-                <AntennaPortsCount>2</AntennaPortsCount>      |	                <AntennaPortsCount>1</AntennaPortsCount>
-                <SRSEnabled>1</SRSEnabled>		      |	                <SRSEnabled>0</SRSEnabled>
-                <SRSMaxUpPTS>0</SRSMaxUpPTS>		      |	                <SRSMaxUpPTS>1</SRSMaxUpPTS>
-                <X_VENDOR_SRS_SUBFRAME_CONFIG>12</X_VENDOR_SR |	                <X_VENDOR_SRS_SUBFRAME_CONFIG>7</X_VENDOR_SRS
-                <!-- L3PLUS SRS INTEL FLEXRAN Integration Sta |			<!-- L3PLUS SRS INTEL FLEXRAN Integration Sta
-                <X_VENDOR_SRS_PERIODICITY>2</X_VENDOR_SRS_PER |	                <X_VENDOR_SRS_PERIODICITY>5</X_VENDOR_SRS_PER
-                <ZeroCorrelationZoneConfig>5</ZeroCorrelation |	                <ZeroCorrelationZoneConfig>1</ZeroCorrelation
-                <P0NominalPUCCH>-100</P0NominalPUCCH>	      |	                <P0NominalPUCCH>-96</P0NominalPUCCH>
-              <!-- NB-IoT : Range: 0 = n32, 1 = n64, 2 = n128 |	              <!-- NB-IoT : Range: 0 = n32, 1 = n64, 2 = n128
-                <MaxHARQTx>1</MaxHARQTx>		      |	                <MaxHARQTx>4</MaxHARQTx>
-                  <QRxLevMinSIB1>-70</QRxLevMinSIB1>	      |	                  <QRxLevMinSIB1>-45</QRxLevMinSIB1>
-                  <QRxLevMinSIB3>-70</QRxLevMinSIB3>	      |	                  <QRxLevMinSIB3>-45</QRxLevMinSIB3>
-                  <X_VENDOR_OPEN_PHY_CELLID_START>1</X_VENDOR |	                  <X_VENDOR_OPEN_PHY_CELLID_START>100</X_VEND
-                  <X_VENDOR_OPEN_PHY_CELLID_RANGE>n168</X_VEN |	                  <X_VENDOR_OPEN_PHY_CELLID_RANGE>n4</X_VENDO
-                    <EUTRACarrierARFCN>2150</EUTRACarrierARFC |	                    <EUTRACarrierARFCN>1519</EUTRACarrierARFC
-                <EUTRACarrierARFCN>101</EUTRACarrierARFCN>    |	                <EUTRACarrierARFCN>1575</EUTRACarrierARFCN>
-              <DLBandwidth>n25</DLBandwidth>		      |	              <DLBandwidth>n100</DLBandwidth>
-              <ULBandwidth>n25</ULBandwidth>		      |	              <ULBandwidth>n100</ULBandwidth>
-          <X_VENDOR_CELL_TYPE>0</X_VENDOR_CELL_TYPE>	      |	          <X_VENDOR_CELL_TYPE>1</X_VENDOR_CELL_TYPE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <X_VENDOR_RLC_MODE>2</X_VENDOR_RLC_MODE>	      |	              <X_VENDOR_RLC_MODE>1</X_VENDOR_RLC_MODE>
-              <CellIdentity>3330</CellIdentity>		      |	              <CellIdentity>2624</CellIdentity>
-              <DLBandwidth>n25</DLBandwidth>		      |	              <DLBandwidth>n100</DLBandwidth>
-              <ULBandwidth>n25</ULBandwidth>		      |	              <ULBandwidth>n100</ULBandwidth>
-              <ReferenceSignalPower>13</ReferenceSignalPower> |	              <ReferenceSignalPower>-10</ReferenceSignalPower
-                <AntennaPortsCount>2</AntennaPortsCount>      |	                <AntennaPortsCount>1</AntennaPortsCount>
-                <SRSEnabled>1</SRSEnabled>		      |	                <SRSEnabled>0</SRSEnabled>
-                <SRSMaxUpPTS>0</SRSMaxUpPTS>		      |	                <SRSMaxUpPTS>1</SRSMaxUpPTS>
-                <X_VENDOR_SRS_SUBFRAME_CONFIG>12</X_VENDOR_SR |	                <X_VENDOR_SRS_SUBFRAME_CONFIG>0</X_VENDOR_SRS
-                <!-- L3PLUS SRS INTEL FLEXRAN Integration End |	                <!-- L3PLUS SRS INTEL FLEXRAN Integration End
-                <X_VENDOR_SRS_PERIODICITY>1</X_VENDOR_SRS_PER |	                <X_VENDOR_SRS_PERIODICITY>5</X_VENDOR_SRS_PER
-                <ZeroCorrelationZoneConfig>5</ZeroCorrelation |	                <ZeroCorrelationZoneConfig>1</ZeroCorrelation
-                <Enable64QAM>1</Enable64QAM>		      |	                <Enable64QAM>0</Enable64QAM>
-                <P0NominalPUSCH>-75</P0NominalPUSCH>	      |	                <P0NominalPUSCH>-86</P0NominalPUSCH>
-                <MaxHARQTx>1</MaxHARQTx>		      |	                <MaxHARQTx>4</MaxHARQTx>
-                  <QRxLevMinSIB1>-70</QRxLevMinSIB1>	      |	                  <QRxLevMinSIB1>-45</QRxLevMinSIB1>
-                  <QRxLevMinSIB3>-70</QRxLevMinSIB3>	      |	                  <QRxLevMinSIB3>-45</QRxLevMinSIB3>
-                    <GERANFreqGroupNumberOfEntries>0</GERANFr |	                    <GERANFreqGroupNumberOfEntries>2</GERANFr
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ git stash[K[K[K[K[K[K status 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   ../bin/l2_grpc_config.txt[m
-	[31mmodified:   Proprietary_eNodeB_Data_Model.xml[m
-	[31mmodified:   eNodeB_Configuration.cfg[m
-	[31mmodified:   eNodeB_Data_Model_TR_196_based.xml[m
-	[31mmodified:   ../lib/libwls.so[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m../bin/set_l2_log_level.sh[m
-	[31mProprietary_eNodeB_Data_Model.xml_backup[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ git log |[K
-[?1h=[33mcommit 65471f34b7c5c19e922192899c51efbd0666c569[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Wed Jul 20 14:25:27 2022 -0700[m
-[m
-    misc: make cohere_tail and cohere_read binaries execuatable[m
-[m
-[33mcommit a5bc42b0e8fcd6f910bceb2f1b14f75aa7f0ba8a[m[m
-Merge: 7442830 380097e[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Wed Jul 20 14:21:30 2022 -0700[m
-[m
-    Merge pull request #73 from cohere-altran/varun/L2crash_SRQueue[m
-    [m
-    Varun/l2crash sr queue[m
-[m
-[33mcommit 380097eff769208e1799f9a6093674833b982a3c[m[33m ([m[1;31morigin/varun/L2crash_SRQueue[m[33m)[m[m
-Author: varun-cohere <varun.yeturu@cohere-technologies.com>[m
-Date:   Tue Jul 19 12:24:51 2022 -0700[m
-[m
-    CCML-249 L2: Check for a valid UL context before processing the Schedule Request[m
-[m
-[33mcommit 7442830e317a5c3e808533960002a5ee63328c1c[m[m
-Merge: 6efc286 1d64f2a[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Wed Jul 20 14:17:44 2022 -0700[m
-[m
-    Merge pull request #75 from cohere-altran/naveen/circular-logs-on-autocal[m
-    [m
-    Naveen/circular logs on autocal[m
-[m
-[33mcommit 6efc28637b77651fdb5b04d3d57aa665e7d9688d[m[33m ([m[1;33mtag: 22_07_20_MERGED_AUTOCAL[m[33m)[m[m
-Merge: 943fd14 b41d6fb[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Wed Jul 20 13:38:50 2022 -0700[m
-[m
-    Merge pull request #74 from cohere-altran/autocal_integration[m
-    [m
-    Autocal integration[m
-[m
-[33mcommit 1d64f2a5af63323ad1a7d34f17117ec8c45991e8[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Jul 19 07:52:58 2022 -0700[m
-[m
-    bugfix: initialize cohere parameter in harq process to 0[m
-[m
-[33mcommit 5bc649311a6b062b8d6b866fe6b52e8e37b71536[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Jul 12 16:34:26 2022 -0700[m
-[m
-    bugfix: specify correct number of beams to L1[m
-[m
-[33mcommit 5752070514e85222c1ef30129ee49bd73b6b66fe[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Fri Jul 15 08:51:37 2022 -0700[m
-[m
-    debug: add more info in LTE panic due to RB limit[m
-[m
-[33mcommit a9c70bfeec7de3d0353ab962c14e4548fee7776b[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue May 24 11:40:26 2022 -0700[m
-[m
-:[K[K    feature: direct logs to cohere_circular_log[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ pwd
-/home/kakarsu/repo4g/LTE_IPR/cfg
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/cfg[kakarsu@ran13 cfg]$ cd ..
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ ls
-[0m[01;34mbin[0m  [01;34mcfg[0m  [01;34mlib[0m  [01;34mlteenodeb[0m  [01;34mzppp[0m
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cd ..
-]0;kakarsu@ran13:~/repo4g[kakarsu@ran13 repo4g]$ pwd
-/home/kakarsu/repo4g
-]0;kakarsu@ran13:~/repo4g[kakarsu@ran13 repo4g]$ LTE_IPR/
-bash: LTE_IPR/: Is a directory
-]0;kakarsu@ran13:~/repo4g[kakarsu@ran13 repo4g]$ pwd
-/home/kakarsu/repo4g
-]0;kakarsu@ran13:~/repo4g[kakarsu@ran13 repo4g]$ cd 
-build/                   CPCC/                    .git/                    gRPC/                    init_sub_mods_cohere.sh  LTE_IPR/                 
-calCompute/              flexran/                 .gitmodules              init_sub_mods_altran.sh  libwls.so                
-[kakarsu@ran13 repo4g]$ cd l[KCPCC/
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ cp bin/Cau[Ku[KLu[K[KL[KlU[K[K[K[KcalUL.in !/ba[K[K[K[K~/backup_files/calUL.in
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ cp bin/cpcc_cfg.txt ~/backup_files/cpcc_cfg.txt 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ cp source/cpcc_main/cpcc_main_interface.cpp ~/backup_files/cpcc_main_interface.cpp
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ sync
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ c[Kgit [K[Kt log
-[?1h=[33mcommit c39cb0c2326a24d20b5016baba894c13a6a212c1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Merge: 2b80f99 e788cec[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Mon Jun 6 11:12:05 2022 -0700[m
-[m
-    Merge branch 'paulr/pss_sss_pbch_rate_match'[m
-    [m
-    * paulr/pss_sss_pbch_rate_match:[m
-      Bugfix NACKs - fix an issue with NACKs occurring during subframes with the SIB1.[m
-      Feature PSS/SSS/PBCH rate match - updating the subframe_id based on the updates from master. The sfn_sn_curr now has the sfn for the tti that is being scheduled.[m
-      Bugfix - prevent accessing static_rnit, rempa_rnti and beam2_rnti if they are NULL as can occur with test_cpcc. Correct the logging in Test1_nonWindows to output the AoA and not the pointer.[m
-      Update the standalone genSchedTest5G_LTE to do rate matching around the PSS/SSS and PBCH.[m
-      Feature PSS/SSS/PBCH rate matching - implement rate matching around the PSS/SS/PBCH signals. This is necessary so that grants scheduled the the same RBs these signals they won't exceed the capacit[m y of the channel (i.e. assume a higher coderate than what could be used).[m
-      Merge static_precoder_bringup into pss_sss_pbch_rate_match[m
-[m
-[33mcommit e788cec0bc24ad7ef4d118c15f8982992aa0abdf[m[33m ([m[1;31morigin/paulr/pss_sss_pbch_rate_match[m[33m)[m[m
-Merge: 667d760 a8f7e70[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Fri Jun 3 17:04:11 2022 -0700[m
-[m
-    Merge master into the branch.[m
-[m
-[33mcommit 2b80f997617c10401d7074249eb80925e4759e5a[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Fri Jun 3 16:49:13 2022 -0700[m
-[m
-    Fix:LA: Remove CQI Margin limiting[m
-    [m
-    Removed the change that limited the CQI margin. This change was causing[m
-    problems in some cases. Will revisit the proper way to limit the CQI.[m
-[m
-[33mcommit a8f7e709b23e78375e64d1f1d47f5ca30d0a42f2[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Fri Jun 3 16:33:54 2022 -0700[m
-[m
-    Bugfix CSI aging - found an issue with the storing of the dl_csi_timestamp which prevented the aging from working properly. SInce currently nobody is using the feature this should have no impact.[m
-[m
-[33mcommit 058b47d6eae3968627beb041ed3e18d9c2ab20d8[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Wed Jun 1 16:01:33 2022 -0700[m
-[m
-    Misc:Logs: Added log of interference rejection metric[m
-    [m
-    Added log of interference rejection metric to cpcc-glue-layer.log for[m
-    log level 7[m
-[m
-[33mcommit 2cb116f0ee76eb9412b09d68e77a89107a056201[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Wed Jun 1 11:09:03 2022 -0700[m
-[m
-    Misc:Logs: Added log of SRS SNR[m
-    [m
-    Added log of per port SRS SNR to cpcc-glue-layer.log for log level 7[m
-[m
-[33mcommit 6a689c339d15ccc872e68d460bb98485c6229b1c[m[m
-Merge: 2f661aa 30b0e2f[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Wed Jun 1 09:43:42 2022 -0700[m
-[m
-    Merge pull request #82 from Software/nicole/ota_debug[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash [K[K[K[Katus 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash 
-Saved working directory and index state WIP on master: c39cb0c Merge branch 'paulr/pss_sss_pbch_rate_match'
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash list 
-[?1h=stash@{0}: WIP on master: c39cb0c Merge branch 'paulr/pss_sss_pbch_rate_match'[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash pop 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Dropped refs/stash@{0} (f3fd431edd7870f190b1b0a57cc65c821b79468a)
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash list 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ h[Kgit stas[Ktus 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash 
-Saved working directory and index state WIP on master: c39cb0c Merge branch 'paulr/pss_sss_pbch_rate_match'
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git status 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-nothing to commit, working tree clean
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git pull or[K[Korigin 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git log 
-[?1h=[33mcommit c39cb0c2326a24d20b5016baba894c13a6a212c1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Merge: 2b80f99 e788cec[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Mon Jun 6 11:12:05 2022 -0700[m
-[m
-    Merge branch 'paulr/pss_sss_pbch_rate_match'[m
-    [m
-    * paulr/pss_sss_pbch_rate_match:[m
-      Bugfix NACKs - fix an issue with NACKs occurring during subframes with the SIB1.[m
-      Feature PSS/SSS/PBCH rate match - updating the subframe_id based on the updates from master. The sfn_sn_curr now has the sfn for the tti that is being scheduled.[m
-      Bugfix - prevent accessing static_rnit, rempa_rnti and beam2_rnti if they are NULL as can occur with test_cpcc. Correct the logging in Test1_nonWindows to output the AoA and not the pointer.[m
-      Update the standalone genSchedTest5G_LTE to do rate matching around the PSS/SSS and PBCH.[m
-      Feature PSS/SSS/PBCH rate matching - implement rate matching around the PSS/SS/PBCH signals. This is necessary so that grants scheduled the the same RBs these signals they won't exceed the capacit[m y of the channel (i.e. assume a higher coderate than what could be used).[m
-      Merge static_precoder_bringup into pss_sss_pbch_rate_match[m
-[m
-[33mcommit e788cec0bc24ad7ef4d118c15f8982992aa0abdf[m[33m ([m[1;31morigin/paulr/pss_sss_pbch_rate_match[m[33m)[m[m
-Merge: 667d760 a8f7e70[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Fri Jun 3 17:04:11 2022 -0700[m
-[m
-    Merge master into the branch.[m
-[m
-[33mcommit 2b80f997617c10401d7074249eb80925e4759e5a[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Fri Jun 3 16:49:13 2022 -0700[m
-[m
-    Fix:LA: Remove CQI Margin limiting[m
-    [m
-    Removed the change that limited the CQI margin. This change was causing[m
-    problems in some cases. Will revisit the proper way to limit the CQI.[m
-[m
-[33mcommit a8f7e709b23e78375e64d1f1d47f5ca30d0a42f2[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Fri Jun 3 16:33:54 2022 -0700[m
-[m
-    Bugfix CSI aging - found an issue with the storing of the dl_csi_timestamp which prevented the aging from working properly. SInce currently nobody is using the feature this should have no impact.[m
-[m
-[33mcommit 058b47d6eae3968627beb041ed3e18d9c2ab20d8[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Wed Jun 1 16:01:33 2022 -0700[m
-[m
-    Misc:Logs: Added log of interference rejection metric[m
-    [m
-    Added log of interference rejection metric to cpcc-glue-layer.log for[m
-    log level 7[m
-[m
-[33mcommit 2cb116f0ee76eb9412b09d68e77a89107a056201[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Wed Jun 1 11:09:03 2022 -0700[m
-[m
-    Misc:Logs: Added log of SRS SNR[m
-    [m
-    Added log of per port SRS SNR to cpcc-glue-layer.log for log level 7[m
-[m
-[33mcommit 6a689c339d15ccc872e68d460bb98485c6229b1c[m[m
-Merge: 2f661aa 30b0e2f[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Wed Jun 1 09:43:42 2022 -0700[m
-[m
-    Merge pull request #82 from Software/nicole/ota_debug[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git brnach 
-git: 'brnach' is not a git command. See 'git --help'.
-
-The most similar command is
-	branch
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git brnach [K[K[K[K[Kanch 
-[?1h=  5g_integ_relocate_grpc[m[m
-* [32mmaster[m[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git fec[K[K[Kpull 
-remote: Enumerating objects: 931, done.[K
-remote: Counting objects:   0% (1/830)[Kremote: Counting objects:   1% (9/830)[Kremote: Counting objects:   2% (17/830)[Kremote: Counting objects:   3% (25/830)[Kremote: Counting objects:   4% (34/830)[Kremote: Counting objects:   5% (42/830)[Kremote: Counting objects:   6% (50/830)[Kremote: Counting objects:   7% (59/830)[Kremote: Counting objects:   8% (67/830)[Kremote: Counting objects:   9% (75/830)[Kremote: Counting objects:  10% (83/830)[Kremote: Counting objects:  11% (92/830)[Kremote: Counting objects:  12% (100/830)[Kremote: Counting objects:  13% (108/830)[Kremote: Counting objects:  14% (117/830)[Kremote: Counting objects:  15% (125/830)[Kremote: Counting objects:  16% (133/830)[Kremote: Counting objects:  17% (142/830)[Kremote: Counting objects:  18% (150/830)[Kremote: Counting objects:  19% (158/830)[Kremote: Counting objects:  20% (166/830)[Kremote: Counting objects:  21% (175/830)[Kremote: Counting objects:  22% (183/830)[Kremote: Counting objects:  23% (191/830)[Kremote: Counting objects:  24% (200/830)[Kremote: Counting objects:  25% (208/830)[Kremote: Counting objects:  26% (216/830)[Kremote: Counting objects:  27% (225/830)[Kremote: Counting objects:  28% (233/830)[Kremote: Counting objects:  29% (241/830)[Kremote: Counting objects:  30% (249/830)[Kremote: Counting objects:  31% (258/830)[Kremote: Counting objects:  32% (266/830)[Kremote: Counting objects:  33% (274/830)[Kremote: Counting objects:  34% (283/830)[Kremote: Counting objects:  35% (291/830)[Kremote: Counting objects:  36% (299/830)[Kremote: Counting objects:  37% (308/830)[Kremote: Counting objects:  38% (316/830)[Kremote: Counting objects:  39% (324/830)[Kremote: Counting objects:  40% (332/830)[Kremote: Counting objects:  41% (341/830)[Kremote: Counting objects:  42% (349/830)[Kremote: Counting objects:  43% (357/830)[Kremote: Counting objects:  44% (366/830)[Kremote: Counting objects:  45% (374/830)[Kremote: Counting objects:  46% (382/830)[Kremote: Counting objects:  47% (391/830)[Kremote: Counting objects:  48% (399/830)[Kremote: Counting objects:  49% (407/830)[Kremote: Counting objects:  50% (415/830)[Kremote: Counting objects:  51% (424/830)[Kremote: Counting objects:  52% (432/830)[Kremote: Counting objects:  53% (440/830)[Kremote: Counting objects:  54% (449/830)[Kremote: Counting objects:  55% (457/830)[Kremote: Counting objects:  56% (465/830)[Kremote: Counting objects:  57% (474/830)[Kremote: Counting objects:  58% (482/830)[Kremote: Counting objects:  59% (490/830)[Kremote: Counting objects:  60% (498/830)[Kremote: Counting objects:  61% (507/830)[Kremote: Counting objects:  62% (515/830)[Kremote: Counting objects:  63% (523/830)[Kremote: Counting objects:  64% (532/830)[Kremote: Counting objects:  65% (540/830)[Kremote: Counting objects:  66% (548/830)[Kremote: Counting objects:  67% (557/830)[Kremote: Counting objects:  68% (565/830)[Kremote: Counting objects:  69% (573/830)[Kremote: Counting objects:  70% (581/830)[Kremote: Counting objects:  71% (590/830)[Kremote: Counting objects:  72% (598/830)[Kremote: Counting objects:  73% (606/830)[Kremote: Counting objects:  74% (615/830)[Kremote: Counting objects:  75% (623/830)[Kremote: Counting objects:  76% (631/830)[Kremote: Counting objects:  77% (640/830)[Kremote: Counting objects:  78% (648/830)[Kremote: Counting objects:  79% (656/830)[Kremote: Counting objects:  80% (664/830)[Kremote: Counting objects:  81% (673/830)[Kremote: Counting objects:  82% (681/830)[Kremote: Counting objects:  83% (689/830)[Kremote: Counting objects:  84% (698/830)[Kremote: Counting objects:  85% (706/830)[Kremote: Counting objects:  86% (714/830)[Kremote: Counting objects:  87% (723/830)[Kremote: Counting objects:  88% (731/830)[Kremote: Counting objects:  89% (739/830)[Kremote: Counting objects:  90% (747/830)[Kremote: Counting objects:  91% (756/830)[Kremote: Counting objects:  92% (764/830)[Kremote: Counting objects:  93% (772/830)[Kremote: Counting objects:  94% (781/830)[Kremote: Counting objects:  95% (789/830)[Kremote: Counting objects:  96% (797/830)[Kremote: Counting objects:  97% (806/830)[Kremote: Counting objects:  98% (814/830)[Kremote: Counting objects:  99% (822/830)[Kremote: Counting objects: 100% (830/830)[Kremote: Counting objects: 100% (830/830), done.[K
-remote: Compressing objects:   0% (1/249)[Kremote: Compressing objects:   1% (3/249)[Kremote: Compressing objects:   2% (5/249)[Kremote: Compressing objects:   3% (8/249)[Kremote: Compressing objects:   4% (10/249)[Kremote: Compressing objects:   5% (13/249)[Kremote: Compressing objects:   6% (15/249)[Kremote: Compressing objects:   7% (18/249)[Kremote: Compressing objects:   8% (20/249)[Kremote: Compressing objects:   9% (23/249)[Kremote: Compressing objects:  10% (25/249)[Kremote: Compressing objects:  11% (28/249)[Kremote: Compressing objects:  12% (30/249)[Kremote: Compressing objects:  13% (33/249)[Kremote: Compressing objects:  14% (35/249)[Kremote: Compressing objects:  15% (38/249)[Kremote: Compressing objects:  16% (40/249)[Kremote: Compressing objects:  17% (43/249)[Kremote: Compressing objects:  18% (45/249)[Kremote: Compressing objects:  19% (48/249)[Kremote: Compressing objects:  20% (50/249)[Kremote: Compressing objects:  21% (53/249)[Kremote: Compressing objects:  22% (55/249)[Kremote: Compressing objects:  23% (58/249)[Kremote: Compressing objects:  24% (60/249)[Kremote: Compressing objects:  25% (63/249)[Kremote: Compressing objects:  26% (65/249)[Kremote: Compressing objects:  27% (68/249)[Kremote: Compressing objects:  28% (70/249)[Kremote: Compressing objects:  29% (73/249)[Kremote: Compressing objects:  30% (75/249)[Kremote: Compressing objects:  31% (78/249)[Kremote: Compressing objects:  32% (80/249)[Kremote: Compressing objects:  33% (83/249)[Kremote: Compressing objects:  34% (85/249)[Kremote: Compressing objects:  35% (88/249)[Kremote: Compressing objects:  36% (90/249)[Kremote: Compressing objects:  37% (93/249)[Kremote: Compressing objects:  38% (95/249)[Kremote: Compressing objects:  39% (98/249)[Kremote: Compressing objects:  40% (100/249)[Kremote: Compressing objects:  41% (103/249)[Kremote: Compressing objects:  42% (105/249)[Kremote: Compressing objects:  43% (108/249)[Kremote: Compressing objects:  44% (110/249)[Kremote: Compressing objects:  45% (113/249)[Kremote: Compressing objects:  46% (115/249)[Kremote: Compressing objects:  47% (118/249)[Kremote: Compressing objects:  48% (120/249)[Kremote: Compressing objects:  49% (123/249)[Kremote: Compressing objects:  50% (125/249)[Kremote: Compressing objects:  51% (127/249)[Kremote: Compressing objects:  52% (130/249)[Kremote: Compressing objects:  53% (132/249)[Kremote: Compressing objects:  54% (135/249)[Kremote: Compressing objects:  55% (137/249)[Kremote: Compressing objects:  56% (140/249)[Kremote: Compressing objects:  57% (142/249)[Kremote: Compressing objects:  58% (145/249)[Kremote: Compressing objects:  59% (147/249)[Kremote: Compressing objects:  60% (150/249)[Kremote: Compressing objects:  61% (152/249)[Kremote: Compressing objects:  62% (155/249)[Kremote: Compressing objects:  63% (157/249)[Kremote: Compressing objects:  64% (160/249)[Kremote: Compressing objects:  65% (162/249)[Kremote: Compressing objects:  66% (165/249)[Kremote: Compressing objects:  67% (167/249)[Kremote: Compressing objects:  68% (170/249)[Kremote: Compressing objects:  69% (172/249)[Kremote: Compressing objects:  70% (175/249)[Kremote: Compressing objects:  71% (177/249)[Kremote: Compressing objects:  72% (180/249)[Kremote: Compressing objects:  73% (182/249)[Kremote: Compressing objects:  74% (185/249)[Kremote: Compressing objects:  75% (187/249)[Kremote: Compressing objects:  76% (190/249)[Kremote: Compressing objects:  77% (192/249)[Kremote: Compressing objects:  78% (195/249)[Kremote: Compressing objects:  79% (197/249)[Kremote: Compressing objects:  80% (200/249)[Kremote: Compressing objects:  81% (202/249)[Kremote: Compressing objects:  82% (205/249)[Kremote: Compressing objects:  83% (207/249)[Kremote: Compressing objects:  84% (210/249)[Kremote: Compressing objects:  85% (212/249)[Kremote: Compressing objects:  86% (215/249)[Kremote: Compressing objects:  87% (217/249)[Kremote: Compressing objects:  88% (220/249)[Kremote: Compressing objects:  89% (222/249)[Kremote: Compressing objects:  90% (225/249)[Kremote: Compressing objects:  91% (227/249)[Kremote: Compressing objects:  92% (230/249)[Kremote: Compressing objects:  93% (232/249)[Kremote: Compressing objects:  94% (235/249)[Kremote: Compressing objects:  95% (237/249)[Kremote: Compressing objects:  96% (240/249)[Kremote: Compressing objects:  97% (242/249)[Kremote: Compressing objects:  98% (245/249)[Kremote: Compressing objects:  99% (247/249)[Kremote: Compressing objects: 100% (249/249)[Kremote: Compressing objects: 100% (249/249), done.[K
-Receiving objects:   0% (1/931)Receiving objects:   1% (10/931)Receiving objects:   2% (19/931)Receiving objects:   3% (28/931)Receiving objects:   4% (38/931)Receiving objects:   5% (47/931)Receiving objects:   6% (56/931)Receiving objects:   7% (66/931)Receiving objects:   8% (75/931)Receiving objects:   9% (84/931)Receiving objects:  10% (94/931)Receiving objects:  11% (103/931)Receiving objects:  12% (112/931)Receiving objects:  13% (122/931)Receiving objects:  14% (131/931)Receiving objects:  15% (140/931)Receiving objects:  16% (149/931)Receiving objects:  17% (159/931)Receiving objects:  18% (168/931)Receiving objects:  19% (177/931)Receiving objects:  20% (187/931)Receiving objects:  21% (196/931)Receiving objects:  22% (205/931)Receiving objects:  23% (215/931)Receiving objects:  24% (224/931)Receiving objects:  25% (233/931)Receiving objects:  26% (243/931)Receiving objects:  27% (252/931)Receiving objects:  28% (261/931)Receiving objects:  29% (270/931)Receiving objects:  30% (280/931)Receiving objects:  31% (289/931)Receiving objects:  32% (298/931)Receiving objects:  33% (308/931)Receiving objects:  34% (317/931)Receiving objects:  35% (326/931)Receiving objects:  36% (336/931)Receiving objects:  37% (345/931)Receiving objects:  38% (354/931)Receiving objects:  39% (364/931)Receiving objects:  40% (373/931)Receiving objects:  41% (382/931)Receiving objects:  42% (392/931)Receiving objects:  43% (401/931)Receiving objects:  44% (410/931)Receiving objects:  45% (419/931)Receiving objects:  46% (429/931)Receiving objects:  47% (438/931)Receiving objects:  48% (447/931)Receiving objects:  49% (457/931)Receiving objects:  50% (466/931)Receiving objects:  51% (475/931)Receiving objects:  52% (485/931)Receiving objects:  53% (494/931)Receiving objects:  54% (503/931)Receiving objects:  55% (513/931)Receiving objects:  56% (522/931)Receiving objects:  57% (531/931)Receiving objects:  58% (540/931)Receiving objects:  59% (550/931)Receiving objects:  60% (559/931)Receiving objects:  61% (568/931)Receiving objects:  62% (578/931)Receiving objects:  63% (587/931)Receiving objects:  64% (596/931)Receiving objects:  65% (606/931)Receiving objects:  66% (615/931)Receiving objects:  67% (624/931)Receiving objects:  68% (634/931)Receiving objects:  69% (643/931)Receiving objects:  70% (652/931)Receiving objects:  71% (662/931)Receiving objects:  72% (671/931)Receiving objects:  73% (680/931)Receiving objects:  74% (689/931)Receiving objects:  75% (699/931)Receiving objects:  76% (708/931)Receiving objects:  77% (717/931)Receiving objects:  78% (727/931)Receiving objects:  79% (736/931)Receiving objects:  80% (745/931)Receiving objects:  81% (755/931)Receiving objects:  82% (764/931)Receiving objects:  83% (773/931)Receiving objects:  84% (783/931)Receiving objects:  85% (792/931)Receiving objects:  86% (801/931)Receiving objects:  87% (810/931)Receiving objects:  88% (820/931)Receiving objects:  89% (829/931)Receiving objects:  90% (838/931)Receiving objects:  91% (848/931)remote: Total 931 (delta 617), reused 765 (delta 566), pack-reused 101[K
-Receiving objects:  92% (857/931)Receiving objects:  93% (866/931)Receiving objects:  94% (876/931)Receiving objects:  95% (885/931)Receiving objects:  96% (894/931)Receiving objects:  97% (904/931)Receiving objects:  98% (913/931)Receiving objects:  99% (922/931)Receiving objects: 100% (931/931)Receiving objects: 100% (931/931), 385.37 KiB | 19.27 MiB/s, done.
-Resolving deltas:   0% (0/682)Resolving deltas:   1% (8/682)Resolving deltas:   2% (15/682)Resolving deltas:   3% (26/682)Resolving deltas:   5% (39/682)Resolving deltas:   6% (41/682)Resolving deltas:   7% (48/682)Resolving deltas:   8% (55/682)Resolving deltas:  10% (71/682)Resolving deltas:  12% (83/682)Resolving deltas:  14% (97/682)Resolving deltas:  16% (113/682)Resolving deltas:  29% (201/682)Resolving deltas:  31% (213/682)Resolving deltas:  35% (244/682)Resolving deltas:  40% (276/682)Resolving deltas:  41% (281/682)Resolving deltas:  47% (323/682)Resolving deltas:  48% (333/682)Resolving deltas:  52% (356/682)Resolving deltas:  53% (362/682)Resolving deltas:  54% (369/682)Resolving deltas:  56% (382/682)Resolving deltas:  57% (389/682)Resolving deltas:  58% (398/682)Resolving deltas:  59% (403/682)Resolving deltas:  61% (417/682)Resolving deltas:  62% (427/682)Resolving deltas:  63% (430/682)Resolving deltas:  64% (443/682)Resolving deltas:  69% (473/682)Resolving deltas:  71% (486/682)Resolving deltas:  72% (493/682)Resolving deltas:  73% (503/682)Resolving deltas:  76% (525/682)Resolving deltas:  77% (528/682)Resolving deltas:  82% (562/682)Resolving deltas:  83% (567/682)Resolving deltas:  84% (573/682)Resolving deltas:  86% (588/682)Resolving deltas:  87% (600/682)Resolving deltas:  88% (602/682)Resolving deltas:  89% (607/682)Resolving deltas:  90% (614/682)Resolving deltas:  91% (622/682)Resolving deltas:  92% (630/682)Resolving deltas:  93% (635/682)Resolving deltas:  94% (643/682)Resolving deltas:  95% (648/682)Resolving deltas:  96% (660/682)Resolving deltas:  97% (662/682)Resolving deltas:  98% (669/682)Resolving deltas:  99% (676/682)Resolving deltas: 100% (682/682)Resolving deltas: 100% (682/682), completed with 37 local objects.
-From ghe.cohere-technologies.com:Software/CPCC
-   c39cb0c..2be248a  master                                  -> origin/master
-   9984c16..aa100ff  autocal_dev                             -> origin/autocal_dev
- * [new branch]      cpcc-xapp-convergenece-integration      -> origin/cpcc-xapp-convergenece-integration
-   8bd67c1..0365c29  kim/autocal_dev                         -> origin/kim/autocal_dev
- + d1c022f...0c3e6b2 naveen/autocal_dev                      -> origin/naveen/autocal_dev  (forced update)
- * [new branch]      naveen/autocal_dev_on_ran_303           -> origin/naveen/autocal_dev_on_ran_303
- + 47f4644...e4b0b70 naveen/harq_management                  -> origin/naveen/harq_management  (forced update)
- * [new branch]      naveen/xapp-cpcc-convergence            -> origin/naveen/xapp-cpcc-convergence
-   25f5cf9..6968563  nick/master                             -> origin/nick/master
- + f331895...2d84bb8 nicole/autocal_dev                      -> origin/nicole/autocal_dev  (forced update)
- + 8821f20...aebb3a9 nicole/bler_convergence                 -> origin/nicole/bler_convergence  (forced update)
- * [new branch]      nicole/cqi_margin_limiting_fix          -> origin/nicole/cqi_margin_limiting_fix
- * [new branch]      nicole/cqi_print                        -> origin/nicole/cqi_print
- * [new branch]      nicole/ul_ac_debug                      -> origin/nicole/ul_ac_debug
- * [new branch]      paulr/autocal_debug                     -> origin/paulr/autocal_debug
- * [new branch]      varun/cpcc-xapp-convergence-integration -> origin/varun/cpcc-xapp-convergence-integration
- * [new tag]         22_07_20_MERGED_AUTOCAL                 -> 22_07_20_MERGED_AUTOCAL
- * [new tag]         22_07_20_PRE_AUTOCAL                    -> 22_07_20_PRE_AUTOCAL
-Updating c39cb0c..2be248a
-Fast-forward
- .gitignore                                                                |   21 [32m+[m[31m-[m
- bin/calDL.in                                                              |  Bin [31m32[m -> [32m0[m bytes
- lib/cpcc_interface.h                                                      |    3 [32m+[m
- scripts/auto_cal/ac_start_cqi_adjust.sh                                   |    4 [32m+[m
- scripts/auto_cal/bc_abs_diff_threshold.sh                                 |    4 [32m+[m
- scripts/auto_cal/bc_convergence_chk_period.sh                             |    5 [32m+[m
- scripts/auto_cal/bc_garbage_cnt.sh                                        |    5 [32m+[m
- scripts/auto_cal/bc_garbage_threshold.sh                                  |    4 [32m+[m
- scripts/auto_cal/bc_min_blocks.sh                                         |    5 [32m+[m
- scripts/auto_cal/bc_rel_diff_threshold.sh                                 |    4 [32m+[m
- scripts/auto_cal/coarse_gain_center.sh                                    |    4 [32m+[m
- scripts/auto_cal/coarse_gain_res.sh                                       |    4 [32m+[m
- scripts/auto_cal/coarse_gain_span.sh                                      |    4 [32m+[m
- scripts/auto_cal/coarse_phase_center.sh                                   |    4 [32m+[m
- scripts/auto_cal/coarse_phase_res.sh                                      |    4 [32m+[m
- scripts/auto_cal/coarse_phase_span.sh                                     |    4 [32m+[m
- scripts/auto_cal/disable_dl_ac_update.sh                                  |    4 [32m+[m
- scripts/auto_cal/disable_ul_ac_coeff_load.sh                              |    4 [32m+[m
- scripts/auto_cal/fine_gain_center.sh                                      |    4 [32m+[m
- scripts/auto_cal/fine_gain_res.sh                                         |    4 [32m+[m
- scripts/auto_cal/fine_gain_span.sh                                        |    4 [32m+[m
- scripts/auto_cal/fine_phase_center.sh                                     |    4 [32m+[m
- scripts/auto_cal/fine_phase_res.sh                                        |    4 [32m+[m
- scripts/auto_cal/fine_phase_span.sh                                       |    4 [32m+[m
- scripts/auto_cal/ir_threshold.sh                                          |    4 [32m+[m
- scripts/auto_cal/max_phase_stddev.sh                                      |    4 [32m+[m
- scripts/auto_cal/num_chan.sh                                              |    5 [32m+[m
- scripts/auto_cal/num_pol_match_threshold.sh                               |    5 [32m+[m
- scripts/auto_cal/ref_data_cal_gain.sh                                     |    4 [32m+[m
- scripts/auto_cal/ref_data_cal_phase_static_degrees.sh                     |    4 [32m+[m
- scripts/auto_cal/ref_data_cal_pol.sh                                      |    4 [32m+[m
- scripts/auto_cal/ref_data_cqi_adj.sh                                      |    4 [32m+[m
- scripts/auto_cal/ref_data_num_rb.sh                                       |    4 [32m+[m
- scripts/auto_cal/ref_data_rnti.sh                                         |    5 [32m+[m
- scripts/auto_cal/ref_data_rnti2.sh                                        |    5 [32m+[m
- scripts/auto_cal/ref_data_start_rb.sh                                     |    4 [32m+[m
- scripts/auto_cal/ref_data_tti_period.sh                                   |    5 [32m+[m
- scripts/auto_cal/reset_autocal_ctrl.sh                                    |    4 [32m+[m
- scripts/auto_cal/reset_bler.sh                                            |    4 [32m+[m
- scripts/auto_cal/save_bler_debug.sh                                       |    4 [32m+[m
- scripts/auto_cal/save_dl_bler_data.sh                                     |    4 [32m+[m
- scripts/auto_cal/save_dl_cc_debug.sh                                      |    4 [32m+[m
- scripts/auto_cal/save_ul_ac_debug.sh                                      |    4 [32m+[m
- scripts/auto_cal/save_ul_ac_debug_calc.sh                                 |    4 [32m+[m
- scripts/auto_cal/set_ac_state.sh                                          |    4 [32m+[m
- scripts/auto_cal/snr_threshold_dB.sh                                      |    4 [32m+[m
- scripts/auto_cal/start_ac.sh                                              |   76 [32m+++++++[m
- scripts/auto_cal/static_gain_phase_param.sh                               |    4 [32m+[m
- scripts/auto_cal/sweep_gain_phase_param.sh                                |    4 [32m+[m
- scripts/auto_cal/sweep_param_num_grants.sh                                |    4 [32m+[m
- scripts/auto_cal/trigger_ac.sh                                            |    4 [32m+[m
- scripts/auto_cal/zero_interference.sh                                     |    4 [32m+[m
- source/Makefile                                                           |   15 [32m+[m[31m-[m
- source/autocal/README                                                     |    1 [32m+[m
- source/autocal/auto_cal_ul.cpp                                            |  879 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
- source/autocal/auto_cal_ul.h                                              |  102 [32m+++++++++[m
- source/autocal/autocal.h                                                  |   46 [32m++++[m
- source/autocal/autocal_bler.cpp                                           |  315 [32m+++++++++++++++++++++++++++[m
- source/autocal/autocal_bler.h                                             |  123 [32m+++++++++++[m
- source/autocal/autocal_ctrl.cpp                                           | 1390 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
- source/autocal/autocal_dl.cpp                                             | 1186 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
- source/autocal/autocal_dl.h                                               |   82 [32m+++++++[m
- source/channel_attributes/channel_attribute.cpp                           |  244 [32m+++[m[31m------------------[m
- source/channel_attributes/channel_attribute.h                             |   10 [32m+[m[31m-[m
- source/channel_attributes/connected_rntis.cpp                             |    2 [32m+[m[31m-[m
- source/coeff_compute/coeff_computation.cpp                                |   34 [32m+[m[31m--[m
- source/coeff_compute/coeff_computation.h                                  |    3 [31m-[m
- source/coeff_compute/scripts/conjugate_precoder.sh                        |    5 [32m+[m[31m-[m
- source/coeff_compute/scripts/flip_streams.sh                              |    5 [32m+[m[31m-[m
- source/coeff_compute/scripts/transpose_precoder.sh                        |    5 [32m+[m[31m-[m
- source/cpcc_main/cpcc.cpp                                                 |  212 [32m++++++++++[m[31m--------[m
- source/cpcc_main/cpcc.hpp                                                 |    2 [32m+[m[31m-[m
- source/cpcc_main/cpcc_main_interface.cpp                                  |  343 [32m+++++++++++++++++++++++[m[31m-------[m
- source/cpcc_main/cpcc_main_interface.h                                    |    2 [32m+[m
- source/cpcc_main/cpcc_main_task_pool.cpp                                  |  497 [32m++++++++++++++++++++++++++++++++++++[m[31m-------[m
- source/cpcc_main/cpcc_main_task_pool.h                                    |   15 [32m++[m
- source/cpcc_main/cpcc_main_tasks.cpp                                      |   52 [32m+++[m[31m--[m
- source/include/cpcc_common.h                                              |  164 [32m+++++++++++++[m[31m-[m
- source/include/cpcc_vendor_interface_external.h                           |   14 [32m+[m[31m-[m
- source/scheduler/SchedulerPhase1.cpp                                      |  309 [32m++++++++++++++[m[31m-------------[m
- source/scheduler/SchedulerPhase1.h                                        |    2 [32m+[m[31m-[m
- source/scheduler/SchedulerPhase2.cpp                                      |   78 [32m++++[m[31m---[m
- source/scheduler/SchedulerPhase2.h                                        |    2 [32m+[m[31m-[m
- source/scheduler/SchedulerPhase3.cpp                                      |  231 [32m++++++++++[m[31m----------[m
- source/scheduler/SchedulerPhase3.h                                        |    2 [32m+[m[31m-[m
- source/scheduler/SubbandAllocation.cpp                                    |  139 [32m+++++++[m[31m-----[m
- source/scheduler/SubbandAllocation.h                                      |    6 [32m+[m[31m-[m
- source/utils/cohere_utils.cpp                                             |  308 [32m+++++++++++++++++++++++++++[m
- source/utils/cohere_utils.h                                               |   11 [32m+[m[31m-[m
- source/utils/file_log.cpp                                                 |   30 [32m+++[m
- test_code/ac_dl_controller_test/Makefile                                  |  121 [32m+++++++++++[m
- test_code/ac_dl_controller_test/autocal_controller.h                      |  153 [32m+++++++++++++[m
- test_code/ac_dl_controller_test/test_auto_cal_controller.c                |  329 [32m++++++++++++++++++++++++++++[m
- test_code/ac_dl_test/Makefile                                             |  121 [32m+++++++++++[m
- test_code/ac_dl_test/analyze_bler_files.m                                 |   50 [32m+++++[m
- test_code/ac_dl_test/bin_search.m                                         |   31 [32m+++[m
- test_code/ac_dl_test/compute_coeffs.m                                     |   45 [32m++++[m
- test_code/ac_dl_test/test_ac_dl_bler.m                                    |   72 [32m+++++++[m
- test_code/ac_dl_test/test_ac_dl_coeff.m                                   |   50 [32m+++++[m
- test_code/ac_dl_test/test_auto_cal_dl_bler.c                              |  332 [32m+++++++++++++++++++++++++++++[m
- test_code/ac_dl_test/test_auto_cal_dl_coeff.c                             |   98 [32m+++++++++[m
- test_code/ac_ul_test/EstInterferenceRejectionNoCal.m                      |  199 [32m+++++++++++++++++[m
- test_code/ac_ul_test/Makefile                                             |  120 [32m+++++++++++[m
- test_code/ac_ul_test/ac_ul_test_cpcc.m                                    |  103 [32m+++++++++[m
- test_code/ac_ul_test/autoCal_UL_Input.mat                                 |  Bin [31m0[m -> [32m36887889[m bytes
- test_code/ac_ul_test/auto_cal_ul_attr.m                                   |  176 [32m+++++++++++++++[m
- test_code/ac_ul_test/auto_cal_ul_compute_coeffs.m                         |  305 [32m++++++++++++++++++++++++++[m
- test_code/ac_ul_test/auto_cal_ul_test.m                                   |  104 [32m+++++++++[m
- test_code/ac_ul_test/copyCpcc.m                                           |   24 [32m+++[m
- test_code/ac_ul_test/eigenVecs.mat                                        |  Bin [31m0[m -> [32m8337[m bytes
- test_code/ac_ul_test/estimateMeanPhaseFromPmf.m                           |   80 [32m+++++++[m
- test_code/ac_ul_test/findOverlappingEntries.m                             |   28 [32m+++[m
- test_code/ac_ul_test/gen_auto_cal_test.m                                  |   78 [32m+++++++[m
- test_code/ac_ul_test/generate_ul_cal_table.m                              |   52 [32m+++++[m
- test_code/ac_ul_test/map_pol_idx.m                                        |   10 [32m+[m
- test_code/ac_ul_test/scalarFitVectors.m                                   |   31 [32m+++[m
- test_code/ac_ul_test/test_auto_cal_ul.c                                   |  213 [32m+++++++++++++++++++[m
- test_code/ca_cc_test/EstInterferenceRejection.m                           |    9 [32m+[m[31m-[m
- test_code/ca_cc_test/copyCpcc.m                                           |   11 [32m+[m[31m-[m
- test_code/cpcc_test/Makefile                                              |    2 [32m+[m[31m-[m
- test_code/cpcc_test/Test1_nonWindows.c                                    |   29 [32m++[m[31m-[m
- test_code/cpcc_test/test_cpcc.c                                           |  144 [32m+++++++++[m[31m----[m
- test_code/matlab_test_utils/getMaxRBs5gnr.m                               |   11 [32m+[m[31m-[m
- test_code/matlab_test_utils/getMaxRBsLTE.m                                |    6 [32m+[m[31m-[m
- test_code/scheduler5G/SchedulerMatlab5G/BestCQIallocation.m               |   17 [32m+[m[31m-[m
- test_code/scheduler5G/SchedulerMatlab5G/CheckAllocation.m                 |   77 [32m+++[m[31m----[m
- test_code/scheduler5G/SchedulerMatlab5G/CheckSubbandAllocation.m          |    3 [32m+[m
- test_code/scheduler5G/SchedulerMatlab5G/Scheduler1.m                      |  184 [32m++++++++[m[31m--------[m
- test_code/scheduler5G/SchedulerMatlab5G/Scheduler2.m                      |   17 [32m+[m[31m-[m
- test_code/scheduler5G/SchedulerMatlab5G/TestSchedulerMain5G_AOA.m         |   72 [32m++++++[m[31m-[m
- test_code/scheduler5G/SchedulerMatlab5G/TestSchedulerMain5G_LTE.m         |  117 [32m++++++[m[31m----[m
- test_code/scheduler5G/SchedulerMatlab5G/computeAoA.m                      |    4 [32m+[m[31m-[m
- test_code/scheduler5G/SchedulerMatlab5G/genCoeffTest.m                    |   15 [32m+[m[31m-[m
- test_code/scheduler5G/SchedulerMatlab5G/genUEs.m                          |    9 [32m+[m[31m-[m
- test_code/scheduler5G/SchedulerProject5G/SchedulerProject_non_windows.cpp |    4 [32m+[m
- test_code/scheduler5G/SchedulerProject5G/Test1_non_windows.cpp            |  116 [32m+++++[m[31m-----[m
- test_code/scripts/set_cqi_cw0.sh                                          |    3 [32m+[m[31m-[m
- test_code/scripts/set_cqi_cw1.sh                                          |    2 [32m+[m[31m-[m
- test_code/scripts/set_genCoeffTest_params.sh                              |    9 [32m+[m[31m-[m
- test_cpcc_k2_nicole.patch                                                 |   70 [32m+++[m[31m---[m
- test_cpcc_patch.diff                                                      |   10 [32m+[m[31m-[m
- third_party/bbupool/inc/bbupool_cfg.h                                     |    2 [32m+[m[31m-[m
- 142 files changed, 9818 insertions(+), 1216 deletions(-)
- delete mode 100644 bin/calDL.in
- create mode 100755 scripts/auto_cal/ac_start_cqi_adjust.sh
- create mode 100755 scripts/auto_cal/bc_abs_diff_threshold.sh
- create mode 100755 scripts/auto_cal/bc_convergence_chk_period.sh
- create mode 100755 scripts/auto_cal/bc_garbage_cnt.sh
- create mode 100755 scripts/auto_cal/bc_garbage_threshold.sh
- create mode 100755 scripts/auto_cal/bc_min_blocks.sh
- create mode 100755 scripts/auto_cal/bc_rel_diff_threshold.sh
- create mode 100755 scripts/auto_cal/coarse_gain_center.sh
- create mode 100755 scripts/auto_cal/coarse_gain_res.sh
- create mode 100755 scripts/auto_cal/coarse_gain_span.sh
- create mode 100755 scripts/auto_cal/coarse_phase_center.sh
- create mode 100755 scripts/auto_cal/coarse_phase_res.sh
- create mode 100755 scripts/auto_cal/coarse_phase_span.sh
- create mode 100755 scripts/auto_cal/disable_dl_ac_update.sh
- create mode 100755 scripts/auto_cal/disable_ul_ac_coeff_load.sh
- create mode 100755 scripts/auto_cal/fine_gain_center.sh
- create mode 100755 scripts/auto_cal/fine_gain_res.sh
- create mode 100755 scripts/auto_cal/fine_gain_span.sh
- create mode 100755 scripts/auto_cal/fine_phase_center.sh
- create mode 100755 scripts/auto_cal/fine_phase_res.sh
- create mode 100755 scripts/auto_cal/fine_phase_span.sh
- create mode 100755 scripts/auto_cal/ir_threshold.sh
- create mode 100755 scripts/auto_cal/max_phase_stddev.sh
- create mode 100755 scripts/auto_cal/num_chan.sh
- create mode 100755 scripts/auto_cal/num_pol_match_threshold.sh
- create mode 100755 scripts/auto_cal/ref_data_cal_gain.sh
- create mode 100755 scripts/auto_cal/ref_data_cal_phase_static_degrees.sh
- create mode 100755 scripts/auto_cal/ref_data_cal_pol.sh
- create mode 100755 scripts/auto_cal/ref_data_cqi_adj.sh
- create mode 100755 scripts/auto_cal/ref_data_num_rb.sh
- create mode 100755 scripts/auto_cal/ref_data_rnti.sh
- create mode 100755 scripts/auto_cal/ref_data_rnti2.sh
- create mode 100755 scripts/auto_cal/ref_data_start_rb.sh
- create mode 100755 scripts/auto_cal/ref_data_tti_period.sh
- create mode 100755 scripts/auto_cal/reset_autocal_ctrl.sh
- create mode 100755 scripts/auto_cal/reset_bler.sh
- create mode 100755 scripts/auto_cal/save_bler_debug.sh
- create mode 100755 scripts/auto_cal/save_dl_bler_data.sh
- create mode 100755 scripts/auto_cal/save_dl_cc_debug.sh
- create mode 100755 scripts/auto_cal/save_ul_ac_debug.sh
- create mode 100755 scripts/auto_cal/save_ul_ac_debug_calc.sh
- create mode 100755 scripts/auto_cal/set_ac_state.sh
- create mode 100755 scripts/auto_cal/snr_threshold_dB.sh
- create mode 100755 scripts/auto_cal/start_ac.sh
- create mode 100755 scripts/auto_cal/static_gain_phase_param.sh
- create mode 100755 scripts/auto_cal/sweep_gain_phase_param.sh
- create mode 100755 scripts/auto_cal/sweep_param_num_grants.sh
- create mode 100755 scripts/auto_cal/trigger_ac.sh
- create mode 100755 scripts/auto_cal/zero_interference.sh
- create mode 100644 source/autocal/README
- create mode 100644 source/autocal/auto_cal_ul.cpp
- create mode 100644 source/autocal/auto_cal_ul.h
- create mode 100644 source/autocal/autocal.h
- create mode 100644 source/autocal/autocal_bler.cpp
- create mode 100644 source/autocal/autocal_bler.h
- create mode 100644 source/autocal/autocal_ctrl.cpp
- create mode 100644 source/autocal/autocal_dl.cpp
- create mode 100644 source/autocal/autocal_dl.h
- create mode 100644 test_code/ac_dl_controller_test/Makefile
- create mode 100644 test_code/ac_dl_controller_test/autocal_controller.h
- create mode 100644 test_code/ac_dl_controller_test/test_auto_cal_controller.c
- create mode 100644 test_code/ac_dl_test/Makefile
- create mode 100644 test_code/ac_dl_test/analyze_bler_files.m
- create mode 100644 test_code/ac_dl_test/bin_search.m
- create mode 100644 test_code/ac_dl_test/compute_coeffs.m
- create mode 100644 test_code/ac_dl_test/test_ac_dl_bler.m
- create mode 100644 test_code/ac_dl_test/test_ac_dl_coeff.m
- create mode 100644 test_code/ac_dl_test/test_auto_cal_dl_bler.c
- create mode 100644 test_code/ac_dl_test/test_auto_cal_dl_coeff.c
- create mode 100644 test_code/ac_ul_test/EstInterferenceRejectionNoCal.m
- create mode 100644 test_code/ac_ul_test/Makefile
- create mode 100644 test_code/ac_ul_test/ac_ul_test_cpcc.m
- create mode 100644 test_code/ac_ul_test/autoCal_UL_Input.mat
- create mode 100644 test_code/ac_ul_test/auto_cal_ul_attr.m
- create mode 100644 test_code/ac_ul_test/auto_cal_ul_compute_coeffs.m
- create mode 100644 test_code/ac_ul_test/auto_cal_ul_test.m
- create mode 100644 test_code/ac_ul_test/copyCpcc.m
- create mode 100644 test_code/ac_ul_test/eigenVecs.mat
- create mode 100644 test_code/ac_ul_test/estimateMeanPhaseFromPmf.m
- create mode 100644 test_code/ac_ul_test/findOverlappingEntries.m
- create mode 100644 test_code/ac_ul_test/gen_auto_cal_test.m
- create mode 100644 test_code/ac_ul_test/generate_ul_cal_table.m
- create mode 100644 test_code/ac_ul_test/map_pol_idx.m
- create mode 100644 test_code/ac_ul_test/scalarFitVectors.m
- create mode 100644 test_code/ac_ul_test/test_auto_cal_ul.c
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash list 
-[?1h=stash@{0}: WIP on master: c39cb0c Merge branch 'paulr/pss_sss_pbch_rate_match'[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git statius [K[K[K[Kus
-On branch master
-Your branch is up to date with 'origin/master'.
-
-nothing to commit, working tree clean
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ sdiff bin/cpcc_cfg.txt ~![K/backup_files/cpcc_cfg.txt 
-DLF: 3.500000e+09					      |	DLF: 1.857000e+09
-ULF: 3.500000e+09					      |	ULF: 1.762000e+09
-SPC: 4.250000e-02					      |	SPC: 8.100000e-02
-BS_ANT: 4							BS_ANT: 4
-BS_NUM_POL: 2							BS_NUM_POL: 2
-CQI_PERIOD_MS: 20						CQI_PERIOD_MS: 20
-MAX_AOA: 70						      |	MAX_AOA: 20
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ sdiff bin/cpcc_cfg.txt ~/backup_files/cpcc_cfg.txt [1@-[1@s[1@ 
-DLF: 3.500000e+09					      |	DLF: 1.857000e+09
-ULF: 3.500000e+09					      |	ULF: 1.762000e+09
-SPC: 4.250000e-02					      |	SPC: 8.100000e-02
-MAX_AOA: 70						      |	MAX_AOA: 20
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git sta
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ cat bin/cpcc_cfg.txt
-DLF: 3.500000e+09
-ULF: 3.500000e+09
-SPC: 4.250000e-02
-BS_ANT: 4
-BS_NUM_POL: 2
-CQI_PERIOD_MS: 20
-MAX_AOA: 70
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ cat ![K~/backup_files/cpcc_cfg.txt 
-DLF: 1.857000e+09
-ULF: 1.762000e+09
-SPC: 8.100000e-02
-BS_ANT: 4
-BS_NUM_POL: 2
-CQI_PERIOD_MS: 20
-MAX_AOA: 20
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash pop
-Auto-merging source/cpcc_main/cpcc_main_interface.cpp
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Dropped refs/stash@{0} (7b1f1ee045ba6c4316aa2bcdb706648f5d093a12)
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash popcat ~/backup_files/cpcc_cfg.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pbin/cpcc_cfg.txtsdiff -s bin/cpcc_cfg.txt ~/backup_files/cpcc_cfg.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pcat bin/cpcc_cfg.txtsdiff -s bin/cpcc_cfg.txt ~/backup_files/cpcc_cfg.txt 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ sdiff -s bin/cpcc_cfg.txt ~/backup_files/cpcc_cfg.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit stash pop[Kcat ~/backup_files/cpcc_cfg.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pbin/cpcc_cfg.txt
-DLF: 1.857000e+09
-ULF: 1.762000e+09
-SPC: 8.100000e-02
-BS_ANT: 4
-BS_NUM_POL: 2
-CQI_PERIOD_MS: 20
-MAX_AOA: 20
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ sync
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stat[K[K[K[Klog
-[?1h=[33mcommit 2be248ae4f9b567c3ca10d53643499455b443c62[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Merge: 3bf7bb8 aa100ff[m
-Author: naveen <naveen.rawat@cohere-technologies.com>[m
-Date:   Wed Jul 20 14:53:38 2022 -0700[m
-[m
-    Merge pull request #90 from Software/autocal_dev[m
-    [m
-    autocal dev[m
-[m
-[33mcommit 3bf7bb849f619048c4567ddeb91a580ef440095b[m[33m ([m[1;33mtag: 22_07_20_MERGED_AUTOCAL[m[33m)[m[m
-Merge: f566efd 982d502[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Wed Jul 20 13:45:58 2022 -0700[m
-[m
-    Merge branch 'autocal_dev'[m
-[m
-[33mcommit aa100ff50857f0061abc5a1205c8f7c7ab3ed418[m[33m ([m[1;31morigin/autocal_dev[m[33m)[m[m
-Merge: 8dd966f 2d84bb8[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Jul 19 14:35:43 2022 -0700[m
-[m
-    Merge pull request #89 from Software/nicole/autocal_dev[m
-    [m
-    Nicole/autocal dev[m
-[m
-[33mcommit 2d84bb85d8175c9d48ab2da128eb31f3fff91c8a[m[33m ([m[1;31morigin/nicole/autocal_dev[m[33m)[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Jul 19 13:54:52 2022 -0700[m
-[m
-    Fix:ULAC: replaced file logs with fwrites in UL AC compute[m
-    [m
-    Replaced file_log with fwrites in UL AC compute. This is ok since UL AC[m
-    compute can take a long time. file_log was failing when run in UL AC[m
-    compute[m
-[m
-[33mcommit b026a927989227a3edd0c636a3d289425483bab2[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Mon Jul 11 18:01:01 2022 -0700[m
-[m
-    Feat:ULAC: Added more checks for valid UL auto-cal[m
-    [m
-    Added more checks for valid UL auto-cal attribute collection and coeff[m
-    compute. Before we were able to hit a case where we collected no valid[m
-    channel estimates for one polarization. This led to an unhandled MKL[m
-    error. Now if we encounter this, we log it and restart auto-cal. I also[m
-    improved the readability and searchability of the UL auto-cal logs.[m
-[m
-[33mcommit 8dd966f589fcc9b4551d401ace706621007b965a[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Wed Jul 13 11:51:10 2022 -0700[m
-[m
-    Feature autocal -Various additions[m
-    1. Adding the ability to run multiple times by specifying a number > 1 to the trigger_ac.sh script. Due to the run to run variability with the UL, multiple runs should be done only when SU is enable[m d to prevent UEs from dropping due to poor beamforming after the UL cal is updated and before the DL cal is completed.[m
-    2. Adding ability to save of the bler curves used to compute the final estimate at each stage of autocal. This is controlled by the script save_dl_bler_data.sh which takes a 1 to enable saving to th[m e file debugFiles/calDlData.dat. The data can be read with the loadCalData.m function in the LTE/autocalibration directory of the LTE matlab repo.[m
-    3. Adding the ability to not update the flexran cal coefficients. This was used when testing repeated DL only autocal to check the consistency of the results.[m
-    4. Adding code to limit the final gain estimates to +/-3. Not necessarily ideal, but if repeated autocals result in an accumulation of a gain bias the autocal should likely be reset instead of conti[m nuing to accumulate.[m
-    5. Adding code to wrap the accumulated phase to the +/-180 range. This will prevent the accumulation of errors/loss of precision if the phase was allowed to accumulate without bound.[m
-[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git pull
-Already up to date.
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ [K[kakarsu@ran13 CPCC]$ [K[kakarsu@ran13 CPCC]$ c [K[Kcd ..
-]0;kakarsu@ran13:~/repo4g[kakarsu@ran13 repo4g]$ cd gRPC 
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ 
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ 
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ gti [K[K[Kit log
-[?1h=[33mcommit 2de06868c0e6e2fb1d87409f73467c47fb01085d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Mon May 2 11:50:22 2022 -0700[m
-[m
-    misc: take c string address as const char *[m
-[m
-[33mcommit e47f0ee112ba4213a5fc261f0988417e9405c8b2[m[m
-Merge: 1985221 fe1b8e4[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Thu Apr 28 17:51:51 2022 -0700[m
-[m
-    Merge pull request #2 from cohere-altran/naveen/dev-branch[m
-    [m
-    bugfix: change grpc msg and e2sm header msg_len/msg_type to u32[m
-[m
-[33mcommit fe1b8e4bf537c99df0675ade8f2d4717264c4a00[m[33m ([m[1;31morigin/naveen/dev-branch[m[33m)[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Mon Apr 25 20:18:38 2022 -0700[m
-[m
-    bugfix: change grpc msg and e2sm header msg_len/msg_type to u32[m
-[m
-[33mcommit 198522124fd616d3d819bf5d85f446b02d48797b[m[m
-Merge: 1f9d758 2c1316d[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Wed Apr 20 13:33:03 2022 -0700[m
-[m
-    Merge pull request #1 from cohere-altran/naveen/ENHANCE_YOUR_CALM-fix[m
-    [m
-    bugfix: fixed ENHANCE_YOUR_CALM error[m
-[m
-[33mcommit 2c1316d689cf0a3ea59f03c5096626fe769fe7b9[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Apr 5 17:02:23 2022 -0700[m
-[m
-    bugfix: fixed ENHANCE_YOUR_CALM error[m
-[m
-[33mcommit 1f9d75870c5e0a1a4c21ca9e5523daa36a3c4e2a[m[m
-Author: Naveen Rawat <Naveen Rawat naveen.rawat@cohere-technologies.com>[m
-Date:   Fri Oct 22 09:48:43 2021 -0700[m
-[m
-    fix usage of asyn send[m
-[m
-[33mcommit 5a87ac71b8c258f3e68a565b46aba3ad2dfb32ac[m[m
-Author: Naveen Rawat <Naveen Rawat naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Apr 20 14:35:07 2021 -0700[m
-[m
-    add peek api for aperiodic message[m
-[m
-[33mcommit 1b6f376a1bc35c48e29b5dac68fa16be750151ae[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Wed Feb 10 17:01:48 2021 -0800[m
-[m
-    change qdepth warning size to 500[m
-[m
-[33mcommit fbf0a15b8607993f8d369c7ee9f987f1e27b38f6[m[m
-Author: Naveen Rawat <Naveen Rawat naveen.rawat@cohere-technologies.com>[m
-Date:   Fri Jan 8 08:41:46 2021 -0800[m
-[m
-    first commit[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-nothing to commit, working tree clean
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ git fetch
-remote: Enumerating objects: 1, done.[K
-remote: Counting objects: 100% (1/1)[Kremote: Counting objects: 100% (1/1), done.[K
-remote: Total 1 (delta 0), reused 1 (delta 0), pack-reused 0[K
-Unpacking objects: 100% (1/1)Unpacking objects: 100% (1/1), done.
-From github.com:cohere-altran/gRPC
- * [new tag]         22_07_20   -> 22_07_20
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ git pull
-Already up to date.
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ pwd
-/home/kakarsu/repo4g/gRPC
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ pwd
-/home/kakarsu/repo4g/gRPC
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ cd [K[K[Kcd flexran ;
-bash: cd: flexran: No such file or directory
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ pwd
-/home/kakarsu/repo4g/gRPC
-]0;kakarsu@ran13:~/repo4g/gRPC[kakarsu@ran13 gRPC]$ cd ..
-]0;kakarsu@ran13:~/repo4g[kakarsu@ran13 repo4g]$ cd flexran ;
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ ls -lrt
-total 360
-drwxr-xr-x 2 kakarsu domain users     69 May 16 10:49 [0m[01;34mnfapi[0m
--rw-r--r-- 1 kakarsu domain users   2074 May 16 10:49 FlexRAN-21.07.ea_lte_oran.sh
--rw-r--r-- 1 kakarsu domain users   2111 May 16 10:49 FlexRAN-21.07.ea_lte_oran_1.1.sh
--rw-r--r-- 1 kakarsu domain users     51 May 16 10:49 README.md
--rwxr-xr-x 1 kakarsu domain users   2081 May 16 10:49 [01;32mFlexRAN-21.07.ea_lte_oran_MacOS.sh[0m
--rwxr-xr-x 1 kakarsu domain users   2118 May 16 10:49 [01;32mFlexRAN-21.07.ea_lte_oran_1.1_MacOS.sh[0m
-drwxr-xr-x 4 kakarsu domain users     82 May 16 10:49 [01;34mbin[0m
-drwxr-xr-x 4 kakarsu domain users     82 May 16 10:49 [01;34mbuild[0m
--rwxr-xr-x 1 kakarsu domain users  19525 May 16 10:49 [01;32mflexran_build.sh[0m
-drwxr-xr-x 5 kakarsu domain users    116 May 16 10:49 [01;34mframework[0m
-drwxr-xr-x 5 kakarsu domain users    101 May 16 10:49 [01;34mlibs[0m
-drwxr-xr-x 2 kakarsu domain users   4096 May 16 10:49 [01;34mlicense_21.07.ea_lte_oran_1.1[0m
-drwxr-xr-x 7 kakarsu domain users    154 May 16 10:49 [01;34mmisc[0m
--rw-r--r-- 1 kakarsu domain users 233894 May 16 10:49 refphy-ea_21.07_lte_oranfh_1.0_update.patch
--rw-r--r-- 1 kakarsu domain users  24179 May 16 10:49 refphy-ea_21.07_lte_oranfh_1.1_update.patch
--rw-r--r-- 1 kakarsu domain users  23436 May 16 10:49 sdk-ea_21.07_lte_oranfh_1.0_update.patch
-drwxr-xr-x 8 kakarsu domain users    134 May 16 10:49 [01;34msource[0m
-drwxr-xr-x 4 kakarsu domain users     82 May 16 10:49 [01;34mtests[0m
--rw-r--r-- 1 kakarsu domain users  18109 May 16 10:49 xran-ea_21.07_lte_oranfh_1.1_update.patch
--rwxr-xr-x 1 kakarsu domain users    221 May 16 10:49 [01;32mwrite_1_float.py[0m
-drwxr-xr-x 6 kakarsu domain users    158 May 16 10:49 [01;34mxran[0m
-drwxr-xr-x 6 kakarsu domain users    235 Jun 13 09:56 [01;34msdk[0m
-drwxr-xr-x 4 kakarsu domain users    268 Jun 13 10:00 [01;34mwls_mod[0m
--rw-r--r-- 1 kakarsu domain users   1767 Jun 13 10:03 build.log
--rwxr-xr-x 1 kakarsu domain users   7898 Jun 13 10:07 [01;32mset_env_var.sh[0m
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git status
-On branch integration-21.07
-Your branch is up to date with 'origin/integration-21.07'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/lte/l1/phycfg_xran.xml[m
-	[31mmodified:   bin/lte/l1/xrancfg_lte.xml[m
-	[31mmodified:   misc/openstack_scripts/baremetal/bbdevscript.sh[m
-	[31mmodified:   set_env_var.sh[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m.flexran_dpdk.path[m
-	[31m.flexran_icc.path[m
-	[31mbin/lte/l1/calDL.in[m
-	[31mbin/lte/l1/calUL.in[m
-	[31mbin/lte/l1/core.112670[m
-	[31mbin/lte/l1/core.119835[m
-	[31mbin/lte/l1/core.144514[m
-	[31mbin/lte/l1/core.163880[m
-	[31mbin/lte/l1/core.170284[m
-	[31mbin/lte/l1/core.185227[m
-	[31mbin/lte/l1/core.50921[m
-	[31mbin/lte/l1/dl_capt_ctx0.dat[m
-	[31mbin/lte/l1/dl_capt_ctx1.dat[m
-	[31mbin/lte/l1/ipo_out.optrpt[m
-	[31mbin/lte/l1/l1app[m
-	[31mbin/lte/l1/l1app.asm[m
-	[31mbin/lte/l1/l1mlog-c0.bin[m
-	[31mbin/lte/l1/l1mlog-hist.csv[m
-	[31mbin/lte/l1/mem_log_shutdown.txt[m
-	[31mbin/lte/l1/mem_log_start.txt[m
-	[31mbin/lte/l1/phycfg_xran.xml_ori[m
-	[31mbin/lte/l1/ul_capt_ctx0.dat[m
-	[31mbin/lte/l1/ul_capt_ctx1.dat[m
-	[31mbin/lte/testmac/testmac[m
-	[31mbuild.log[m
-	[31mbuild/lte/l1app/make/[m
-	[31mbuild/lte/testapp/linux/ipo_out.optrpt[m
-	[31mbuild/lte/testapp/linux/lte_testapp[m
-	[31mbuild/lte/testapp/linux/lte_testapp.asm[m
-	[31mbuild/lte/testapp/linux/make/[m
-	[31mbuild/lte/testmac/make/[m
-	[31mframework/enhanced_bbupool/build/.obj/[m
-	[31mframework/enhanced_bbupool/build/libebbupool.a[m
-	[31mlibs/ferrybridge/app/make/[m
-	[31mlibs/ferrybridge/app/rpeSampleApp[m
-	[31mlibs/ferrybridge/lib/librpe.a[m
-	[31mlibs/ferrybridge/lib/make/[m
-	[31mlibs/mlog/bin/[m
-	[31mlibs/mlog/tmp/[m
-	[31msdk/build-avx512-icc/[m
-	[31msource/test/common_typedef_sdk.h[m
-	[31msource/test/testmac/common_typedef_sdk.h[m
-	[31mtests/lte/lte_testapp[m
-	[31mwls_mod/libwls.so[m
-	[31mwls_mod/make/[m
-	[31mwls_mod/testapp/make/[m
-	[31mwls_mod/testapp/wls_test[m
-	[31mxran/app/build/[m
-	[31mxran/lib/build/[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git brnacj[K[K[K[K[K[K[K[K[K[Kgit log
-[?1h=[33mcommit 6f4d0f4c3640235a3fc8b2d8b33cfe791e2e48f0[m[33m ([m[1;36mHEAD -> [m[1;32mintegration-21.07[m[33m, [m[1;31morigin/sfishel/srs_report[m[33m, [m[1;31morigin/integration-21.07[m[33m)[m[m
-Author: Suzan Fishel <fishesu@MDML86.local>[m
-Date:   Wed May 18 16:20:56 2022 -0700[m
-[m
-    srs report are send to mac , regardless to SNR[m
-[m
-[33mcommit 4853a43e0ca144b40a9195fc5f22560db8e5c22d[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Thu May 12 13:07:35 2022 -0700[m
-[m
-    Fix for automation - modifying the implementation so that the console can be disabled at run time by adding the -nc (no console) parameter to the l1.sh script making the command l1.sh -xran -nc. If [m -nc is not specified then the console will work as it previously did.[m
-[m
-[33mcommit fe11817a0f2065b770706f43e65295ede2f15757[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Wed May 11 17:02:36 2022 -0700[m
-[m
-    Bugfix symbol delay - modifying the code that introduces a delay in the UL processing of roughly 1 OFDM symbol to use nanosleep instead of the cycle counter in an effort to make the delay independen[m t of the CPU clock rate. Unfortunately the nanosleep won't be as accurate, though it should be accurate enough.[m
-    [m
-    Additionally I am adding #ifdef COHERE_SPATIAL around the various changes we have made in an effort to allow us to more easily port to future versions of the flexran.[m
-[m
-[33mcommit 8bb8b1c40d3085bb4819013d58f161d5ce20eda2[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Wed May 11 15:20:35 2022 -0700[m
-[m
-    Bugfix NACKs - extending the fix to 1, 2 and 8 antenna configurations as well.[m
-[m
-[33mcommit 4fd5b8b4521801c83c883a43c321034773473605[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Wed May 11 14:46:39 2022 -0700[m
-[m
-    Bugfix NACKs - fixing issue where NACKs are reported for the 2nd UE when using SRS with X_VENDOR_SRS_SUBFRAME_CONFIG==10. The fundamental issue is that when SRS is enabled with shortened PUCCH (i.e.[m  AckNackSRSSimultaneousTransmission enabled) the processing in the flexran was not properly dealing with scheduling requests. Instead of using the separate scheduling requiest buffers, the normal format[m 1 buffers were being used resulting in a corruption of the format1 buffer if no scheduling request was made which then resulting in erroneous ACK/NACK reports.[m
-[m
-[33mcommit 0bebaf5b90e657e40aa488905b37dd9ff0bde0dc[m[m
-Author: Pradeep Reddy <reddypr@ran301.cohere-technologies.com>[m
-Date:   Fri Apr 29 12:16:23 2022 -0700[m
-[m
-    Fix: for automation of L1 stack bring up[m
-[m
-[33mcommit 44b3ada5803e1dc2cad545cbf64443834c453a3d[m[33m ([m[1;31morigin/paulr/static_precoder_bringup[m[33m)[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Wed Apr 20 14:17:03 2022 -0700[m
-[m
-    Feature spatial precoder - use a #define to set the fixed-point unity scaling. The value of 14 aligns the flexran LTE with the scaling in the CPCC that has been used with 5G.[m
-[m
-[33mcommit 3e3997715a4817b7f7efb6a8b9572f05f15eded8[m[m
-Author: Paul Richardson <paul.richardson@cohere-technologies.com>[m
-Date:   Wed Apr 20 13:42:47 2022 -0700[m
-[m
-    Feature spatial precoder - get the matlab tests to pass again. Needed to adjust the precoder initialization in the flexran to add an extra parameter so that testmac can be distinguished from running[m  with xran. This variable is then used to adjust the initialization.[m
-    [m
-    Also changing the way that the codeBookIdx is being set by Matlab to align with what is being done in the MAC. Previously the layer was being counted, but the MAC currently counts as beams instead s[m o the Matlab has been modified to do the same. This should be fine unless we mix in TM1 with other TM since the TM1 would use only a single layer.[m
-    [m
-    Found that there was an issue with the runDLFakeMuMimo test and how the smgs were being created. Needed to modify it to generate the same way as the flexran code.[m
-[m
-[33mcommit a2efe6339fa0d147f7feb0ba30beb592cb4f3785[m[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ cd 
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ cd backup_files/
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ pwd
-/home/kakarsu/backup_files
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ cd -
-/home/kakarsu
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ cd [K[K[Kpwd
-/home/kakarsu
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ bin/lte/l1/phycfg_xran.xml
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ cd /home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ cp bin/lte/l1/phycfg_xran.xml
-phycfg_xran.xml      phycfg_xran.xml_ori  
-[kakarsu@ran13 flexran]$ cp bin/lte/l1/phycfg_xran.xml ~/h[Kbackup_files/phycfg_xran.xml
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ bin/lte/l1/xrancfg_lte.xml
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ cp bin/lte/l1/xrancfg_lte.xml ~/backup_files/xrancfg_lte.xml
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ cp misc/openstack_scripts/baremetal/bbdevscript.sh ~/backup_files/bbdevscript.sh
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ cp set_env_var.sh ~/backup_files/set_l2_log_level.sh [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kset_env_var.sh
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ sync
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git status
-On branch integration-21.07
-Your branch is up to date with 'origin/integration-21.07'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/lte/l1/phycfg_xran.xml[m
-	[31mmodified:   bin/lte/l1/xrancfg_lte.xml[m
-	[31mmodified:   misc/openstack_scripts/baremetal/bbdevscript.sh[m
-	[31mmodified:   set_env_var.sh[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m.flexran_dpdk.path[m
-	[31m.flexran_icc.path[m
-	[31mbin/lte/l1/calDL.in[m
-	[31mbin/lte/l1/calUL.in[m
-	[31mbin/lte/l1/core.112670[m
-	[31mbin/lte/l1/core.119835[m
-	[31mbin/lte/l1/core.144514[m
-	[31mbin/lte/l1/core.163880[m
-	[31mbin/lte/l1/core.170284[m
-	[31mbin/lte/l1/core.185227[m
-	[31mbin/lte/l1/core.50921[m
-	[31mbin/lte/l1/dl_capt_ctx0.dat[m
-	[31mbin/lte/l1/dl_capt_ctx1.dat[m
-	[31mbin/lte/l1/ipo_out.optrpt[m
-	[31mbin/lte/l1/l1app[m
-	[31mbin/lte/l1/l1app.asm[m
-	[31mbin/lte/l1/l1mlog-c0.bin[m
-	[31mbin/lte/l1/l1mlog-hist.csv[m
-	[31mbin/lte/l1/mem_log_shutdown.txt[m
-	[31mbin/lte/l1/mem_log_start.txt[m
-	[31mbin/lte/l1/phycfg_xran.xml_ori[m
-	[31mbin/lte/l1/ul_capt_ctx0.dat[m
-	[31mbin/lte/l1/ul_capt_ctx1.dat[m
-	[31mbin/lte/testmac/testmac[m
-	[31mbuild.log[m
-	[31mbuild/lte/l1app/make/[m
-	[31mbuild/lte/testapp/linux/ipo_out.optrpt[m
-	[31mbuild/lte/testapp/linux/lte_testapp[m
-	[31mbuild/lte/testapp/linux/lte_testapp.asm[m
-	[31mbuild/lte/testapp/linux/make/[m
-	[31mbuild/lte/testmac/make/[m
-	[31mframework/enhanced_bbupool/build/.obj/[m
-	[31mframework/enhanced_bbupool/build/libebbupool.a[m
-	[31mlibs/ferrybridge/app/make/[m
-	[31mlibs/ferrybridge/app/rpeSampleApp[m
-	[31mlibs/ferrybridge/lib/librpe.a[m
-	[31mlibs/ferrybridge/lib/make/[m
-	[31mlibs/mlog/bin/[m
-	[31mlibs/mlog/tmp/[m
-	[31msdk/build-avx512-icc/[m
-	[31msource/test/common_typedef_sdk.h[m
-	[31msource/test/testmac/common_typedef_sdk.h[m
-	[31mtests/lte/lte_testapp[m
-	[31mwls_mod/libwls.so[m
-	[31mwls_mod/make/[m
-	[31mwls_mod/testapp/make/[m
-	[31mwls_mod/testapp/wls_test[m
-	[31mxran/app/build/[m
-	[31mxran/lib/build/[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git stash
-Saved working directory and index state WIP on integration-21.07: 6f4d0f4c srs report are send to mac , regardless to SNR
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git stash list
-[?1h=stash@{0}: WIP on integration-21.07: 6f4d0f4c srs report are send to mac , regardless to SNR[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git pull
-remote: Enumerating objects: 73, done.[K
-remote: Counting objects:   1% (1/73)[Kremote: Counting objects:   2% (2/73)[Kremote: Counting objects:   4% (3/73)[Kremote: Counting objects:   5% (4/73)[Kremote: Counting objects:   6% (5/73)[Kremote: Counting objects:   8% (6/73)[Kremote: Counting objects:   9% (7/73)[Kremote: Counting objects:  10% (8/73)[Kremote: Counting objects:  12% (9/73)[Kremote: Counting objects:  13% (10/73)[Kremote: Counting objects:  15% (11/73)[Kremote: Counting objects:  16% (12/73)[Kremote: Counting objects:  17% (13/73)[Kremote: Counting objects:  19% (14/73)[Kremote: Counting objects:  20% (15/73)[Kremote: Counting objects:  21% (16/73)[Kremote: Counting objects:  23% (17/73)[Kremote: Counting objects:  24% (18/73)[Kremote: Counting objects:  26% (19/73)[Kremote: Counting objects:  27% (20/73)[Kremote: Counting objects:  28% (21/73)[Kremote: Counting objects:  30% (22/73)[Kremote: Counting objects:  31% (23/73)[Kremote: Counting objects:  32% (24/73)[Kremote: Counting objects:  34% (25/73)[Kremote: Counting objects:  35% (26/73)[Kremote: Counting objects:  36% (27/73)[Kremote: Counting objects:  38% (28/73)[Kremote: Counting objects:  39% (29/73)[Kremote: Counting objects:  41% (30/73)[Kremote: Counting objects:  42% (31/73)[Kremote: Counting objects:  43% (32/73)[Kremote: Counting objects:  45% (33/73)[Kremote: Counting objects:  46% (34/73)[Kremote: Counting objects:  47% (35/73)[Kremote: Counting objects:  49% (36/73)[Kremote: Counting objects:  50% (37/73)[Kremote: Counting objects:  52% (38/73)[Kremote: Counting objects:  53% (39/73)[Kremote: Counting objects:  54% (40/73)[Kremote: Counting objects:  56% (41/73)[Kremote: Counting objects:  57% (42/73)[Kremote: Counting objects:  58% (43/73)[Kremote: Counting objects:  60% (44/73)[Kremote: Counting objects:  61% (45/73)[Kremote: Counting objects:  63% (46/73)[Kremote: Counting objects:  64% (47/73)[Kremote: Counting objects:  65% (48/73)[Kremote: Counting objects:  67% (49/73)[Kremote: Counting objects:  68% (50/73)[Kremote: Counting objects:  69% (51/73)[Kremote: Counting objects:  71% (52/73)[Kremote: Counting objects:  72% (53/73)[Kremote: Counting objects:  73% (54/73)remote: Counting objects:  75% (55/73)[Kremote: Counting objects:  76% (56/73)[Kremote: Counting objects:  78% (57/73)[Kremote: Counting objects:  79% (58/73)[Kremote: Counting objects:  80% (59/73)[Kremote: Counting objects:  82% (60/73)[Kremote: Counting objects:  83% (61/73)[Kremote: Counting objects:  84% (62/73)[Kremote: Counting objects:  86% (63/73)[Kremote: Counting objects:  87% (64/73)[Kremote: Counting objects:  89% (65/73)[Kremote: Counting objects:  90% (66/73)[Kremote: Counting objects:  91% (67/73)[Kremote: Counting objects:  93% (68/73)[Kremote: Counting objects:  94% (69/73)[Kremote: Counting objects:  95% (70/73)[Kremote: Counting objects:  97% (71/73)[Kremote: Counting objects:  98% (72/73)[Kremote: Counting objects: 100% (73/73)[Kremote: Counting objects: 100% (73/73), done.[K
-remote: Compressing objects:   2% (1/36)[Kremote: Compressing objects:   5% (2/36)[Kremote: Compressing objects:   8% (3/36)[Kremote: Compressing objects:  11% (4/36)[Kremote: Compressing objects:  13% (5/36)[Kremote: Compressing objects:  16% (6/36)[Kremote: Compressing objects:  19% (7/36)[Kremote: Compressing objects:  22% (8/36)[Kremote: Compressing objects:  25% (9/36)[Kremote: Compressing objects:  27% (10/36)[Kremote: Compressing objects:  30% (11/36)[Kremote: Compressing objects:  33% (12/36)[Kremote: Compressing objects:  36% (13/36)[Kremote: Compressing objects:  38% (14/36)[Kremote: Compressing objects:  41% (15/36)[Kremote: Compressing objects:  44% (16/36)[Kremote: Compressing objects:  47% (17/36)[Kremote: Compressing objects:  50% (18/36)[Kremote: Compressing objects:  52% (19/36)[Kremote: Compressing objects:  55% (20/36)[Kremote: Compressing objects:  58% (21/36)[Kremote: Compressing objects:  61% (22/36)[Kremote: Compressing objects:  63% (23/36)[Kremote: Compressing objects:  66% (24/36)[Kremote: Compressing objects:  69% (25/36)[Kremote: Compressing objects:  72% (26/36)[Kremote: Compressing objects:  75% (27/36)[Kremote: Compressing objects:  77% (28/36)[Kremote: Compressing objects:  80% (29/36)[Kremote: Compressing objects:  83% (30/36)[Kremote: Compressing objects:  86% (31/36)[Kremote: Compressing objects:  88% (32/36)[Kremote: Compressing objects:  91% (33/36)[Kremote: Compressing objects:  94% (34/36)[Kremote: Compressing objects:  97% (35/36)[Kremote: Compressing objects: 100% (36/36)[Kremote: Compressing objects: 100% (36/36), done.[K
-Unpacking objects:   1% (1/73)Unpacking objects:   2% (2/73)Unpacking objects:   4% (3/73)Unpacking objects:   5% (4/73)Unpacking objects:   6% (5/73)Unpacking objects:   8% (6/73)Unpacking objects:   9% (7/73)Unpacking objects:  10% (8/73)Unpacking objects:  12% (9/73)Unpacking objects:  13% (10/73)Unpacking objects:  15% (11/73)Unpacking objects:  16% (12/73)Unpacking objects:  17% (13/73)Unpacking objects:  19% (14/73)Unpacking objects:  20% (15/73)Unpacking objects:  21% (16/73)Unpacking objects:  23% (17/73)Unpacking objects:  24% (18/73)Unpacking objects:  26% (19/73)Unpacking objects:  27% (20/73)Unpacking objects:  28% (21/73)Unpacking objects:  30% (22/73)Unpacking objects:  31% (23/73)Unpacking objects:  32% (24/73)Unpacking objects:  34% (25/73)Unpacking objects:  35% (26/73)Unpacking objects:  36% (27/73)Unpacking objects:  38% (28/73)Unpacking objects:  39% (29/73)Unpacking objects:  41% (30/73)Unpacking objects:  42% (31/73)Unpacking objects:  43% (32/73)Unpacking objects:  45% (33/73)Unpacking objects:  46% (34/73)Unpacking objects:  47% (35/73)Unpacking objects:  49% (36/73)Unpacking objects:  50% (37/73)Unpacking objects:  52% (38/73)Unpacking objects:  53% (39/73)Unpacking objects:  54% (40/73)Unpacking objects:  56% (41/73)Unpacking objects:  57% (42/73)Unpacking objects:  58% (43/73)Unpacking objects:  60% (44/73)Unpacking objects:  61% (45/73)Unpacking objects:  63% (46/73)Unpacking objects:  64% (47/73)Unpacking objects:  65% (48/73)Unpacking objects:  67% (49/73)Unpacking objects:  68% (50/73)Unpacking objects:  69% (51/73)Unpacking objects:  71% (52/73)Unpacking objects:  72% (53/73)Unpacking objects:  73% (54/73)Unpacking objects:  75% (55/73)Unpacking objects:  76% (56/73)Unpacking objects:  78% (57/73)Unpacking objects:  79% (58/73)Unpacking objects:  80% (59/73)Unpacking objects:  82% (60/73)Unpacking objects:  83% (61/73)remote: Total 73 (delta 37), reused 72 (delta 37), pack-reused 0[K
-Unpacking objects:  84% (62/73)Unpacking objects:  86% (63/73)Unpacking objects:  87% (64/73)Unpacking objects:  89% (65/73)Unpacking objects:  90% (66/73)Unpacking objects:  91% (67/73)Unpacking objects:  93% (68/73)Unpacking objects:  94% (69/73)Unpacking objects:  95% (70/73)Unpacking objects:  97% (71/73)Unpacking objects:  98% (72/73)Unpacking objects: 100% (73/73)Unpacking objects: 100% (73/73), done.
-From ghe.cohere-technologies.com:Software/flexran
-   6f4d0f4c..405af688  integration-21.07        -> origin/integration-21.07
- * [new branch]        naveen/integration-21.07 -> origin/naveen/integration-21.07
- * [new branch]        sfishel/srs_usr_td       -> origin/sfishel/srs_usr_td
- * [new branch]        sfishel/ta               -> origin/sfishel/ta
- * [new tag]           22_07_20                 -> 22_07_20
-Updating 6f4d0f4c..405af688
-Fast-forward
- source/lte/Cohere/SRS/cohere_lte_srs.c | 186 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m--------------------------[m
- source/lte/Cohere/SRS/cohere_lte_srs.h |   9 [32m+++++++[m[31m-[m
- source/lte/ul_demod/lte_bs_rx_srs.c    |   7 [32m++++++[m
- 3 files changed, 170 insertions(+), 32 deletions(-)
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git stash [K[K[Ktus
-On branch integration-21.07
-Your branch is up to date with 'origin/integration-21.07'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m.flexran_dpdk.path[m
-	[31m.flexran_icc.path[m
-	[31mbin/lte/l1/calDL.in[m
-	[31mbin/lte/l1/calUL.in[m
-	[31mbin/lte/l1/core.112670[m
-	[31mbin/lte/l1/core.119835[m
-	[31mbin/lte/l1/core.144514[m
-	[31mbin/lte/l1/core.163880[m
-	[31mbin/lte/l1/core.170284[m
-	[31mbin/lte/l1/core.185227[m
-	[31mbin/lte/l1/core.50921[m
-	[31mbin/lte/l1/dl_capt_ctx0.dat[m
-	[31mbin/lte/l1/dl_capt_ctx1.dat[m
-	[31mbin/lte/l1/ipo_out.optrpt[m
-	[31mbin/lte/l1/l1app[m
-	[31mbin/lte/l1/l1app.asm[m
-	[31mbin/lte/l1/l1mlog-c0.bin[m
-	[31mbin/lte/l1/l1mlog-hist.csv[m
-	[31mbin/lte/l1/mem_log_shutdown.txt[m
-	[31mbin/lte/l1/mem_log_start.txt[m
-	[31mbin/lte/l1/phycfg_xran.xml_ori[m
-	[31mbin/lte/l1/ul_capt_ctx0.dat[m
-	[31mbin/lte/l1/ul_capt_ctx1.dat[m
-	[31mbin/lte/testmac/testmac[m
-	[31mbuild.log[m
-	[31mbuild/lte/l1app/make/[m
-	[31mbuild/lte/testapp/linux/ipo_out.optrpt[m
-	[31mbuild/lte/testapp/linux/lte_testapp[m
-	[31mbuild/lte/testapp/linux/lte_testapp.asm[m
-	[31mbuild/lte/testapp/linux/make/[m
-	[31mbuild/lte/testmac/make/[m
-	[31mframework/enhanced_bbupool/build/.obj/[m
-	[31mframework/enhanced_bbupool/build/libebbupool.a[m
-	[31mlibs/ferrybridge/app/make/[m
-	[31mlibs/ferrybridge/app/rpeSampleApp[m
-	[31mlibs/ferrybridge/lib/librpe.a[m
-	[31mlibs/ferrybridge/lib/make/[m
-	[31mlibs/mlog/bin/[m
-	[31mlibs/mlog/tmp/[m
-	[31msdk/build-avx512-icc/[m
-	[31msource/test/common_typedef_sdk.h[m
-	[31msource/test/testmac/common_typedef_sdk.h[m
-	[31mtests/lte/lte_testapp[m
-	[31mwls_mod/libwls.so[m
-	[31mwls_mod/make/[m
-	[31mwls_mod/testapp/make/[m
-	[31mwls_mod/testapp/wls_test[m
-	[31mxran/app/build/[m
-	[31mxran/lib/build/[m
-
-nothing added to commit but untracked files present (use "git add" to track)
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git stath pop[K[K[Kapply
-git: 'stath' is not a git command. See 'git --help'.
-
-The most similar command is
-	stash
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git stath apply[K[K[K[K[K[K[K[Ksh apply
-On branch integration-21.07
-Your branch is up to date with 'origin/integration-21.07'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/lte/l1/phycfg_xran.xml[m
-	[31mmodified:   bin/lte/l1/xrancfg_lte.xml[m
-	[31mmodified:   misc/openstack_scripts/baremetal/bbdevscript.sh[m
-	[31mmodified:   set_env_var.sh[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m.flexran_dpdk.path[m
-	[31m.flexran_icc.path[m
-	[31mbin/lte/l1/calDL.in[m
-	[31mbin/lte/l1/calUL.in[m
-	[31mbin/lte/l1/core.112670[m
-	[31mbin/lte/l1/core.119835[m
-	[31mbin/lte/l1/core.144514[m
-	[31mbin/lte/l1/core.163880[m
-	[31mbin/lte/l1/core.170284[m
-	[31mbin/lte/l1/core.185227[m
-	[31mbin/lte/l1/core.50921[m
-	[31mbin/lte/l1/dl_capt_ctx0.dat[m
-	[31mbin/lte/l1/dl_capt_ctx1.dat[m
-	[31mbin/lte/l1/ipo_out.optrpt[m
-	[31mbin/lte/l1/l1app[m
-	[31mbin/lte/l1/l1app.asm[m
-	[31mbin/lte/l1/l1mlog-c0.bin[m
-	[31mbin/lte/l1/l1mlog-hist.csv[m
-	[31mbin/lte/l1/mem_log_shutdown.txt[m
-	[31mbin/lte/l1/mem_log_start.txt[m
-	[31mbin/lte/l1/phycfg_xran.xml_ori[m
-	[31mbin/lte/l1/ul_capt_ctx0.dat[m
-	[31mbin/lte/l1/ul_capt_ctx1.dat[m
-	[31mbin/lte/testmac/testmac[m
-	[31mbuild.log[m
-	[31mbuild/lte/l1app/make/[m
-	[31mbuild/lte/testapp/linux/ipo_out.optrpt[m
-	[31mbuild/lte/testapp/linux/lte_testapp[m
-	[31mbuild/lte/testapp/linux/lte_testapp.asm[m
-	[31mbuild/lte/testapp/linux/make/[m
-	[31mbuild/lte/testmac/make/[m
-	[31mframework/enhanced_bbupool/build/.obj/[m
-	[31mframework/enhanced_bbupool/build/libebbupool.a[m
-	[31mlibs/ferrybridge/app/make/[m
-	[31mlibs/ferrybridge/app/rpeSampleApp[m
-	[31mlibs/ferrybridge/lib/librpe.a[m
-	[31mlibs/ferrybridge/lib/make/[m
-	[31mlibs/mlog/bin/[m
-	[31mlibs/mlog/tmp/[m
-	[31msdk/build-avx512-icc/[m
-	[31msource/test/common_typedef_sdk.h[m
-	[31msource/test/testmac/common_typedef_sdk.h[m
-	[31mtests/lte/lte_testapp[m
-	[31mwls_mod/libwls.so[m
-	[31mwls_mod/make/[m
-	[31mwls_mod/testapp/make/[m
-	[31mwls_mod/testapp/wls_test[m
-	[31mxran/app/build/[m
-	[31mxran/lib/build/[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git status
-On branch integration-21.07
-Your branch is up to date with 'origin/integration-21.07'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/lte/l1/phycfg_xran.xml[m
-	[31mmodified:   bin/lte/l1/xrancfg_lte.xml[m
-	[31mmodified:   misc/openstack_scripts/baremetal/bbdevscript.sh[m
-	[31mmodified:   set_env_var.sh[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m.flexran_dpdk.path[m
-	[31m.flexran_icc.path[m
-	[31mbin/lte/l1/calDL.in[m
-	[31mbin/lte/l1/calUL.in[m
-	[31mbin/lte/l1/core.112670[m
-	[31mbin/lte/l1/core.119835[m
-	[31mbin/lte/l1/core.144514[m
-	[31mbin/lte/l1/core.163880[m
-	[31mbin/lte/l1/core.170284[m
-	[31mbin/lte/l1/core.185227[m
-	[31mbin/lte/l1/core.50921[m
-	[31mbin/lte/l1/dl_capt_ctx0.dat[m
-	[31mbin/lte/l1/dl_capt_ctx1.dat[m
-	[31mbin/lte/l1/ipo_out.optrpt[m
-	[31mbin/lte/l1/l1app[m
-	[31mbin/lte/l1/l1app.asm[m
-	[31mbin/lte/l1/l1mlog-c0.bin[m
-	[31mbin/lte/l1/l1mlog-hist.csv[m
-	[31mbin/lte/l1/mem_log_shutdown.txt[m
-	[31mbin/lte/l1/mem_log_start.txt[m
-	[31mbin/lte/l1/phycfg_xran.xml_ori[m
-	[31mbin/lte/l1/ul_capt_ctx0.dat[m
-	[31mbin/lte/l1/ul_capt_ctx1.dat[m
-	[31mbin/lte/testmac/testmac[m
-	[31mbuild.log[m
-	[31mbuild/lte/l1app/make/[m
-	[31mbuild/lte/testapp/linux/ipo_out.optrpt[m
-	[31mbuild/lte/testapp/linux/lte_testapp[m
-	[31mbuild/lte/testapp/linux/lte_testapp.asm[m
-	[31mbuild/lte/testapp/linux/make/[m
-	[31mbuild/lte/testmac/make/[m
-	[31mframework/enhanced_bbupool/build/.obj/[m
-	[31mframework/enhanced_bbupool/build/libebbupool.a[m
-	[31mlibs/ferrybridge/app/make/[m
-	[31mlibs/ferrybridge/app/rpeSampleApp[m
-	[31mlibs/ferrybridge/lib/librpe.a[m
-	[31mlibs/ferrybridge/lib/make/[m
-	[31mlibs/mlog/bin/[m
-	[31mlibs/mlog/tmp/[m
-	[31msdk/build-avx512-icc/[m
-	[31msource/test/common_typedef_sdk.h[m
-	[31msource/test/testmac/common_typedef_sdk.h[m
-	[31mtests/lte/lte_testapp[m
-	[31mwls_mod/libwls.so[m
-	[31mwls_mod/make/[m
-	[31mwls_mod/testapp/make/[m
-	[31mwls_mod/testapp/wls_test[m
-	[31mxran/app/build/[m
-	[31mxran/lib/build/[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git pull [K[K[K[K[Kstash
-Saved working directory and index state WIP on integration-21.07: 405af688 enhanced capture
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git stash list
-[?1h=stash@{0}: WIP on integration-21.07: 405af688 enhanced capture[m
-stash@{1}: WIP on integration-21.07: 6f4d0f4c srs report are send to mac , regardless to SNR[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git pull
-Already up to date.
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git fetch
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ 
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ sync
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git status
-On branch integration-21.07
-Your branch is up to date with 'origin/integration-21.07'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m.flexran_dpdk.path[m
-	[31m.flexran_icc.path[m
-	[31mbin/lte/l1/calDL.in[m
-	[31mbin/lte/l1/calUL.in[m
-	[31mbin/lte/l1/core.112670[m
-	[31mbin/lte/l1/core.119835[m
-	[31mbin/lte/l1/core.144514[m
-	[31mbin/lte/l1/core.163880[m
-	[31mbin/lte/l1/core.170284[m
-	[31mbin/lte/l1/core.185227[m
-	[31mbin/lte/l1/core.50921[m
-	[31mbin/lte/l1/dl_capt_ctx0.dat[m
-	[31mbin/lte/l1/dl_capt_ctx1.dat[m
-	[31mbin/lte/l1/ipo_out.optrpt[m
-	[31mbin/lte/l1/l1app[m
-	[31mbin/lte/l1/l1app.asm[m
-	[31mbin/lte/l1/l1mlog-c0.bin[m
-	[31mbin/lte/l1/l1mlog-hist.csv[m
-	[31mbin/lte/l1/mem_log_shutdown.txt[m
-	[31mbin/lte/l1/mem_log_start.txt[m
-	[31mbin/lte/l1/phycfg_xran.xml_ori[m
-	[31mbin/lte/l1/ul_capt_ctx0.dat[m
-	[31mbin/lte/l1/ul_capt_ctx1.dat[m
-	[31mbin/lte/testmac/testmac[m
-	[31mbuild.log[m
-	[31mbuild/lte/l1app/make/[m
-	[31mbuild/lte/testapp/linux/ipo_out.optrpt[m
-	[31mbuild/lte/testapp/linux/lte_testapp[m
-	[31mbuild/lte/testapp/linux/lte_testapp.asm[m
-	[31mbuild/lte/testapp/linux/make/[m
-	[31mbuild/lte/testmac/make/[m
-	[31mframework/enhanced_bbupool/build/.obj/[m
-	[31mframework/enhanced_bbupool/build/libebbupool.a[m
-	[31mlibs/ferrybridge/app/make/[m
-	[31mlibs/ferrybridge/app/rpeSampleApp[m
-	[31mlibs/ferrybridge/lib/librpe.a[m
-	[31mlibs/ferrybridge/lib/make/[m
-	[31mlibs/mlog/bin/[m
-	[31mlibs/mlog/tmp/[m
-	[31msdk/build-avx512-icc/[m
-	[31msource/test/common_typedef_sdk.h[m
-	[31msource/test/testmac/common_typedef_sdk.h[m
-	[31mtests/lte/lte_testapp[m
-	[31mwls_mod/libwls.so[m
-	[31mwls_mod/make/[m
-	[31mwls_mod/testapp/make/[m
-	[31mwls_mod/testapp/wls_test[m
-	[31mxran/app/build/[m
-	[31mxran/lib/build/[m
-
-nothing added to commit but untracked files present (use "git add" to track)
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ git stash apply
-On branch integration-21.07
-Your branch is up to date with 'origin/integration-21.07'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/lte/l1/phycfg_xran.xml[m
-	[31mmodified:   bin/lte/l1/xrancfg_lte.xml[m
-	[31mmodified:   misc/openstack_scripts/baremetal/bbdevscript.sh[m
-	[31mmodified:   set_env_var.sh[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31m.flexran_dpdk.path[m
-	[31m.flexran_icc.path[m
-	[31mbin/lte/l1/calDL.in[m
-	[31mbin/lte/l1/calUL.in[m
-	[31mbin/lte/l1/core.112670[m
-	[31mbin/lte/l1/core.119835[m
-	[31mbin/lte/l1/core.144514[m
-	[31mbin/lte/l1/core.163880[m
-	[31mbin/lte/l1/core.170284[m
-	[31mbin/lte/l1/core.185227[m
-	[31mbin/lte/l1/core.50921[m
-	[31mbin/lte/l1/dl_capt_ctx0.dat[m
-	[31mbin/lte/l1/dl_capt_ctx1.dat[m
-	[31mbin/lte/l1/ipo_out.optrpt[m
-	[31mbin/lte/l1/l1app[m
-	[31mbin/lte/l1/l1app.asm[m
-	[31mbin/lte/l1/l1mlog-c0.bin[m
-	[31mbin/lte/l1/l1mlog-hist.csv[m
-	[31mbin/lte/l1/mem_log_shutdown.txt[m
-	[31mbin/lte/l1/mem_log_start.txt[m
-	[31mbin/lte/l1/phycfg_xran.xml_ori[m
-	[31mbin/lte/l1/ul_capt_ctx0.dat[m
-	[31mbin/lte/l1/ul_capt_ctx1.dat[m
-	[31mbin/lte/testmac/testmac[m
-	[31mbuild.log[m
-	[31mbuild/lte/l1app/make/[m
-	[31mbuild/lte/testapp/linux/ipo_out.optrpt[m
-	[31mbuild/lte/testapp/linux/lte_testapp[m
-	[31mbuild/lte/testapp/linux/lte_testapp.asm[m
-	[31mbuild/lte/testapp/linux/make/[m
-	[31mbuild/lte/testmac/make/[m
-	[31mframework/enhanced_bbupool/build/.obj/[m
-	[31mframework/enhanced_bbupool/build/libebbupool.a[m
-	[31mlibs/ferrybridge/app/make/[m
-	[31mlibs/ferrybridge/app/rpeSampleApp[m
-	[31mlibs/ferrybridge/lib/librpe.a[m
-	[31mlibs/ferrybridge/lib/make/[m
-	[31mlibs/mlog/bin/[m
-	[31mlibs/mlog/tmp/[m
-	[31msdk/build-avx512-icc/[m
-	[31msource/test/common_typedef_sdk.h[m
-	[31msource/test/testmac/common_typedef_sdk.h[m
-	[31mtests/lte/lte_testapp[m
-	[31mwls_mod/libwls.so[m
-	[31mwls_mod/make/[m
-	[31mwls_mod/testapp/make/[m
-	[31mwls_mod/testapp/wls_test[m
-	[31mxran/app/build/[m
-	[31mxran/lib/build/[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ 
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ 
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ pwd
-/home/kakarsu/repo4g/flexran
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ sync
-]0;kakarsu@ran13:~/repo4g/flexran[kakarsu@ran13 flexran]$ cd
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ psw[K[Kwd
-/home/kakarsu
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ sync
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ pwd
-/home/kakarsu
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ git backup_files/
-]0;kakarsu@ran13:~[kakarsu@ran13 ~]$ cd backup_files/
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ ls -lrt
-total 1120
--rw-r--r-- 1 kakarsu domain users     44 Jul 21 01:16 l2_grpc_config.txt
--rw-r--r-- 1 kakarsu domain users 452232 Jul 21 01:17 Proprietary_eNodeB_Data_Model.xml
--rw-r--r-- 1 kakarsu domain users   6706 Jul 21 01:18 eNodeB_Configuration.cfg
--rw-r--r-- 1 kakarsu domain users 423735 Jul 21 01:19 eNodeB_Data_Model_TR_196_based.xml
--rw-r--r-- 1 kakarsu domain users 118536 Jul 21 01:19 libwls.so
--rw-r--r-- 1 kakarsu domain users    164 Jul 21 01:20 set_l2_log_level.sh
--rwxr-xr-x 1 kakarsu domain users   9600 Jul 21 01:52 [0m[01;32mcalUL.in[0m
--rwxr-xr-x 1 kakarsu domain users    108 Jul 21 01:53 [01;32mcpcc_cfg.txt[0m
--rw-r--r-- 1 kakarsu domain users  57525 Jul 21 01:53 cpcc_main_interface.cpp
--rw-r--r-- 1 kakarsu domain users  23766 Jul 21 03:12 phycfg_xran.xml
--rw-r--r-- 1 kakarsu domain users  11487 Jul 21 03:12 xrancfg_lte.xml
--rw-r--r-- 1 kakarsu domain users   4201 Jul 21 03:13 bbdevscript.sh
--rwxr-xr-x 1 kakarsu domain users   7898 Jul 21 03:13 [01;32mset_env_var.sh[0m
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ pwd
-/home/kakarsu/backup_files
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ date
-Thu Jul 21 03:16:52 PDT 2022
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ exit
-exit
-
-Script done on Thu 21 Jul 2022 03:57:40 AM PDT

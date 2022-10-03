@@ -1,602 +1,0 @@
-Script started on Tue 16 Aug 2022 11:01:47 PM PDT
-mkdir: cannot create directory ‘/home/kakarsu/.local’: File exists
-]0;kakarsu@ran13:~/sudheer[?1034h[kakarsu@ran13 sudheer]$ 
-]0;kakarsu@ran13:~/sudheer[kakarsu@ran13 sudheer]$ cpcc
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ git status 
-On branch master
-Your branch and 'origin/master' have diverged,
-and have 1 and 5 different commits each, respectively.
-  (use "git pull" to merge the remote branch into yours)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   calUL.in[m
-	[31mmodified:   cpcc_cfg.txt[m
-	[31mmodified:   ../source/cpcc_main/cpcc_main_interface.cpp[m
-	[31mmodified:   ../third_party/bbupool/makefile[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ cp calUL.in ~/backup_files/
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ cp cpcc_cfg.txt ~/backup_files/
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ cp ../source/cpcc_main/cpcc_main_interface.cpp ~/backup_files/
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ cp ../third_party/bbupool/makefile ~/backup_files/
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ git brna[K[Kanch
-[?1h=  5g_integ_relocate_grpc[m[m
-* [32mmaster[m[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ git olog [K[K[K[K[Klog > ![K~/backup_files/cpcc_gitlog.log
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ git be[Krnach 
-git: 'brnach' is not a git command. See 'git --help'.
-
-The most similar command is
-	branch
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ git brnach [K[K[K[K[K[Kranch 
-[?1h=  5g_integ_relocate_grpc[m[m
-* [32mmaster[m[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ goi[K[K[Kgit brnach 
-git: 'brnach' is not a git command. See 'git --help'.
-
-The most similar command is
-	branch
-]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ git brnach [K[K[K[K[Kanch
-[?1h=  5g_integ_relocate_grpc[m[m
-* [32mmaster[m[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC/bin[kakarsu@ran13 bin]$ cd ..
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git status
-On branch master
-Your branch and 'origin/master' have diverged,
-and have 1 and 5 different commits each, respectively.
-  (use "git pull" to merge the remote branch into yours)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-	[31mmodified:   third_party/bbupool/makefile[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash list
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash 
-Saved working directory and index state WIP on master: 8ca435e bugfix: avoid un-necessary threads on cpcc_main_th CPU
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git fetch 
-remote: Enumerating objects: 168, done.[K
-remote: Counting objects:   0% (1/168)[Kremote: Counting objects:   1% (2/168)[Kremote: Counting objects:   2% (4/168)[Kremote: Counting objects:   3% (6/168)[Kremote: Counting objects:   4% (7/168)[Kremote: Counting objects:   5% (9/168)[Kremote: Counting objects:   6% (11/168)[Kremote: Counting objects:   7% (12/168)[Kremote: Counting objects:   8% (14/168)[Kremote: Counting objects:   9% (16/168)[Kremote: Counting objects:  10% (17/168)[Kremote: Counting objects:  11% (19/168)[Kremote: Counting objects:  12% (21/168)[Kremote: Counting objects:  13% (22/168)[Kremote: Counting objects:  14% (24/168)[Kremote: Counting objects:  15% (26/168)[Kremote: Counting objects:  16% (27/168)[Kremote: Counting objects:  17% (29/168)[Kremote: Counting objects:  18% (31/168)[Kremote: Counting objects:  19% (32/168)[Kremote: Counting objects:  20% (34/168)[Kremote: Counting objects:  21% (36/168)[Kremote: Counting objects:  22% (37/168)[Kremote: Counting objects:  23% (39/168)[Kremote: Counting objects:  24% (41/168)[Kremote: Counting objects:  25% (42/168)[Kremote: Counting objects:  26% (44/168)[Kremote: Counting objects:  27% (46/168)[Kremote: Counting objects:  28% (48/168)[Kremote: Counting objects:  29% (49/168)[Kremote: Counting objects:  30% (51/168)[Kremote: Counting objects:  31% (53/168)[Kremote: Counting objects:  32% (54/168)[Kremote: Counting objects:  33% (56/168)[Kremote: Counting objects:  34% (58/168)[Kremote: Counting objects:  35% (59/168)[Kremote: Counting objects:  36% (61/168)[Kremote: Counting objects:  37% (63/168)[Kremote: Counting objects:  38% (64/168)[Kremote: Counting objects:  39% (66/168)[Kremote: Counting objects:  40% (68/168)[Kremote: Counting objects:  41% (69/168)[Kremote: Counting objects:  42% (71/168)[Kremote: Counting objects:  43% (73/168)[Kremote: Counting objects:  44% (74/168)[Kremote: Counting objects:  45% (76/168)[Kremote: Counting objects:  46% (78/168)[Kremote: Counting objects:  47% (79/168)[Kremote: Counting objects:  48% (81/168)[Kremote: Counting objects:  49% (83/168)[Kremote: Counting objects:  50% (84/168)[Kremote: Counting objects:  51% (86/168)[Kremote: Counting objects:  52% (88/168)[Kremote: Counting objects:  53% (90/168)[Kremote: Counting objects:  54% (91/168)[Kremote: Counting objects:  55% (93/168)[Kremote: Counting objects:  56% (95/168)[Kremote: Counting objects:  57% (96/168)[Kremote: Counting objects:  58% (98/168)[Kremote: Counting objects:  59% (100/168)[Kremote: Counting objects:  60% (101/168)[Kremote: Counting objects:  61% (103/168)[Kremote: Counting objects:  62% (105/168)[Kremote: Counting objects:  63% (106/168)[Kremote: Counting objects:  64% (108/168)[Kremote: Counting objects:  65% (110/168)[Kremote: Counting objects:  66% (111/168)[Kremote: Counting objects:  67% (113/168)[Kremote: Counting objects:  68% (115/168)[Kremote: Counting objects:  69% (116/168)[Kremote: Counting objects:  70% (118/168)[Kremote: Counting objects:  71% (120/168)[Kremote: Counting objects:  72% (121/168)[Kremote: Counting objects:  73% (123/168)[Kremote: Counting objects:  74% (125/168)[Kremote: Counting objects:  75% (126/168)[Kremote: Counting objects:  76% (128/168)[Kremote: Counting objects:  77% (130/168)[Kremote: Counting objects:  78% (132/168)[Kremote: Counting objects:  79% (133/168)[Kremote: Counting objects:  80% (135/168)[Kremote: Counting objects:  81% (137/168)[Kremote: Counting objects:  82% (138/168)[Kremote: Counting objects:  83% (140/168)[Kremote: Counting objects:  84% (142/168)[Kremote: Counting objects:  85% (143/168)[Kremote: Counting objects:  86% (145/168)[Kremote: Counting objects:  87% (147/168)[Kremote: Counting objects:  88% (148/168)[Kremote: Counting objects:  89% (150/168)[Kremote: Counting objects:  90% (152/168)[Kremote: Counting objects:  91% (153/168)[Kremote: Counting objects:  92% (155/168)[Kremote: Counting objects:  93% (157/168)[Kremote: Counting objects:  94% (158/168)[Kremote: Counting objects:  95% (160/168)[Kremote: Counting objects:  96% (162/168)[Kremote: Counting objects:  97% (163/168)[Kremote: Counting objects:  98% (165/168)[Kremote: Counting objects:  99% (167/168)[Kremote: Counting objects: 100% (168/168)[Kremote: Counting objects: 100% (168/168), done.[K
-remote: Compressing objects:   1% (1/60)[Kremote: Compressing objects:   3% (2/60)[Kremote: Compressing objects:   5% (3/60)[Kremote: Compressing objects:   6% (4/60)[Kremote: Compressing objects:   8% (5/60)[Kremote: Compressing objects:  10% (6/60)[Kremote: Compressing objects:  11% (7/60)[Kremote: Compressing objects:  13% (8/60)[Kremote: Compressing objects:  15% (9/60)[Kremote: Compressing objects:  16% (10/60)[Kremote: Compressing objects:  18% (11/60)[Kremote: Compressing objects:  20% (12/60)[Kremote: Compressing objects:  21% (13/60)[Kremote: Compressing objects:  23% (14/60)[Kremote: Compressing objects:  25% (15/60)[Kremote: Compressing objects:  26% (16/60)[Kremote: Compressing objects:  28% (17/60)[Kremote: Compressing objects:  30% (18/60)[Kremote: Compressing objects:  31% (19/60)[Kremote: Compressing objects:  33% (20/60)[Kremote: Compressing objects:  35% (21/60)[Kremote: Compressing objects:  36% (22/60)[Kremote: Compressing objects:  38% (23/60)[Kremote: Compressing objects:  40% (24/60)[Kremote: Compressing objects:  41% (25/60)[Kremote: Compressing objects:  43% (26/60)[Kremote: Compressing objects:  45% (27/60)[Kremote: Compressing objects:  46% (28/60)[Kremote: Compressing objects:  48% (29/60)[Kremote: Compressing objects:  50% (30/60)[Kremote: Compressing objects:  51% (31/60)[Kremote: Compressing objects:  53% (32/60)[Kremote: Compressing objects:  55% (33/60)[Kremote: Compressing objects:  56% (34/60)[Kremote: Compressing objects:  58% (35/60)[Kremote: Compressing objects:  60% (36/60)[Kremote: Compressing objects:  61% (37/60)[Kremote: Compressing objects:  63% (38/60)[Kremote: Compressing objects:  65% (39/60)[Kremote: Compressing objects:  66% (40/60)[Kremote: Compressing objects:  68% (41/60)[Kremote: Compressing objects:  70% (42/60)[Kremote: Compressing objects:  71% (43/60)[Kremote: Compressing objects:  73% (44/60)[Kremote: Compressing objects:  75% (45/60)[Kremote: Compressing objects:  76% (46/60)[Kremote: Compressing objects:  78% (47/60)[Kremote: Compressing objects:  80% (48/60)[Kremote: Compressing objects:  81% (49/60)[Kremote: Compressing objects:  83% (50/60)[Kremote: Compressing objects:  85% (51/60)[Kremote: Compressing objects:  86% (52/60)[Kremote: Compressing objects:  88% (53/60)[Kremote: Compressing objects:  90% (54/60)[Kremote: Compressing objects:  91% (55/60)[Kremote: Compressing objects:  93% (56/60)[Kremote: Compressing objects:  95% (57/60)[Kremote: Compressing objects:  96% (58/60)[Kremote: Compressing objects:  98% (59/60)[Kremote: Compressing objects: 100% (60/60)[Kremote: Compressing objects: 100% (60/60), done.[K
-Receiving objects:   0% (1/168)Receiving objects:   1% (2/168)Receiving objects:   2% (4/168)Receiving objects:   3% (6/168)Receiving objects:   4% (7/168)Receiving objects:   5% (9/168)Receiving objects:   6% (11/168)Receiving objects:   7% (12/168)Receiving objects:   8% (14/168)Receiving objects:   9% (16/168)Receiving objects:  10% (17/168)Receiving objects:  11% (19/168)Receiving objects:  12% (21/168)Receiving objects:  13% (22/168)Receiving objects:  14% (24/168)Receiving objects:  15% (26/168)Receiving objects:  16% (27/168)Receiving objects:  17% (29/168)Receiving objects:  18% (31/168)Receiving objects:  19% (32/168)Receiving objects:  20% (34/168)Receiving objects:  21% (36/168)Receiving objects:  22% (37/168)Receiving objects:  23% (39/168)Receiving objects:  24% (41/168)Receiving objects:  25% (42/168)Receiving objects:  26% (44/168)Receiving objects:  27% (46/168)Receiving objects:  28% (48/168)Receiving objects:  29% (49/168)Receiving objects:  30% (51/168)Receiving objects:  31% (53/168)Receiving objects:  32% (54/168)Receiving objects:  33% (56/168)Receiving objects:  34% (58/168)Receiving objects:  35% (59/168)Receiving objects:  36% (61/168)Receiving objects:  37% (63/168)Receiving objects:  38% (64/168)Receiving objects:  39% (66/168)Receiving objects:  40% (68/168)Receiving objects:  41% (69/168)Receiving objects:  42% (71/168)Receiving objects:  43% (73/168)Receiving objects:  44% (74/168)Receiving objects:  45% (76/168)Receiving objects:  46% (78/168)Receiving objects:  47% (79/168)Receiving objects:  48% (81/168)Receiving objects:  49% (83/168)Receiving objects:  50% (84/168)Receiving objects:  51% (86/168)Receiving objects:  52% (88/168)Receiving objects:  53% (90/168)Receiving objects:  54% (91/168)Receiving objects:  55% (93/168)Receiving objects:  56% (95/168)Receiving objects:  57% (96/168)Receiving objects:  58% (98/168)Receiving objects:  59% (100/168)Receiving objects:  60% (101/168)Receiving objects:  61% (103/168)Receiving objects:  62% (105/168)remote: Total 168 (delta 121), reused 144 (delta 105), pack-reused 0[K
-Receiving objects:  63% (106/168)Receiving objects:  64% (108/168)Receiving objects:  65% (110/168)Receiving objects:  66% (111/168)Receiving objects:  67% (113/168)Receiving objects:  68% (115/168)Receiving objects:  69% (116/168)Receiving objects:  70% (118/168)Receiving objects:  71% (120/168)Receiving objects:  72% (121/168)Receiving objects:  73% (123/168)Receiving objects:  74% (125/168)Receiving objects:  75% (126/168)Receiving objects:  76% (128/168)Receiving objects:  77% (130/168)Receiving objects:  78% (132/168)Receiving objects:  79% (133/168)Receiving objects:  80% (135/168)Receiving objects:  81% (137/168)Receiving objects:  82% (138/168)Receiving objects:  83% (140/168)Receiving objects:  84% (142/168)Receiving objects:  85% (143/168)Receiving objects:  86% (145/168)Receiving objects:  87% (147/168)Receiving objects:  88% (148/168)Receiving objects:  89% (150/168)Receiving objects:  90% (152/168)Receiving objects:  91% (153/168)Receiving objects:  92% (155/168)Receiving objects:  93% (157/168)Receiving objects:  94% (158/168)Receiving objects:  95% (160/168)Receiving objects:  96% (162/168)Receiving objects:  97% (163/168)Receiving objects:  98% (165/168)Receiving objects:  99% (167/168)Receiving objects: 100% (168/168)Receiving objects: 100% (168/168), 91.86 KiB | 11.48 MiB/s, done.
-Resolving deltas:   0% (0/121)Resolving deltas:   5% (7/121)Resolving deltas:  10% (13/121)Resolving deltas:  14% (18/121)Resolving deltas:  19% (23/121)Resolving deltas:  21% (26/121)Resolving deltas:  23% (28/121)Resolving deltas:  24% (30/121)Resolving deltas:  25% (31/121)Resolving deltas:  27% (33/121)Resolving deltas:  28% (35/121)Resolving deltas:  29% (36/121)Resolving deltas:  30% (37/121)Resolving deltas:  33% (41/121)Resolving deltas:  35% (43/121)Resolving deltas:  38% (47/121)Resolving deltas:  40% (49/121)Resolving deltas:  42% (51/121)Resolving deltas:  45% (55/121)Resolving deltas:  46% (56/121)Resolving deltas:  47% (57/121)Resolving deltas:  49% (60/121)Resolving deltas:  50% (61/121)Resolving deltas:  52% (64/121)Resolving deltas:  55% (67/121)Resolving deltas:  58% (71/121)Resolving deltas:  61% (74/121)Resolving deltas:  64% (78/121)Resolving deltas:  67% (82/121)Resolving deltas:  68% (83/121)Resolving deltas:  69% (84/121)Resolving deltas:  70% (85/121)Resolving deltas:  71% (87/121)Resolving deltas:  72% (88/121)Resolving deltas:  73% (89/121)Resolving deltas:  75% (91/121)Resolving deltas:  76% (92/121)Resolving deltas:  78% (95/121)Resolving deltas:  80% (98/121)Resolving deltas:  83% (101/121)Resolving deltas:  85% (103/121)Resolving deltas:  88% (107/121)Resolving deltas:  89% (108/121)Resolving deltas:  90% (110/121)Resolving deltas:  93% (113/121)Resolving deltas:  94% (114/121)Resolving deltas:  95% (116/121)Resolving deltas:  96% (117/121)Resolving deltas:  97% (118/121)Resolving deltas:  98% (119/121)Resolving deltas:  99% (120/121)Resolving deltas: 100% (121/121)Resolving deltas: 100% (121/121), completed with 41 local objects.
-From ghe.cohere-technologies.com:Software/CPCC
-   b3d0e5c..bb6897a  master                                   -> origin/master
- + 6571e38...b46cfaf naveen/user-directed-scheduler-interface -> origin/naveen/user-directed-scheduler-interface  (forced update)
- * [new branch]      nicole/alias_detection                   -> origin/nicole/alias_detection
- * [new branch]      nicole/alias_detection_merged            -> origin/nicole/alias_detection_merged
- * [new branch]      nicole/aoa_override                      -> origin/nicole/aoa_override
- * [new branch]      nicole/reg_update_lte                    -> origin/nicole/reg_update_lte
- * [new branch]      nicole/rrc_release_fix                   -> origin/nicole/rrc_release_fix
- + bd5f475...59c631f varun/cpcc_circ_log                      -> origin/varun/cpcc_circ_log  (forced update)
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git pull 
-Auto-merging source/cpcc_main/cpcc.cpp
-hint: Waiting for your editor to close the file... [?1049h[?1h=[1;70r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[70;1H"~/repo4g/.git/modules/CPCC/MERGE_MSG" 6L, 293C[1;1HMerge branch 'master' of ghe.cohere-technologies.com:Software/CPCC
-# Please enter a commit message to explain why this merge is necessary,
-# especially if it merges an updated upstream into a topic branch.
-#
-# Lines starting with '#' will be ignored, and an empty message aborts
-# the commit.
-[1m[34m~                                                                                                                                                                                                                                                                                   [8;1H~                                                                                                                                                                                                                                                                                   [9;1H~                                                                                                                                                                                                                                                                                   [10;1H~                                                                                                                                                                                                                                                                                   [11;1H~                                                                                                                                                                                                                                                                                   [12;1H~                                                                                                                                                                                                                                                                                   [13;1H~                                                                                                                                                                                                                                                                                   [14;1H~                                                                                                                                                                                                                                                                                   [15;1H~                                                                                                                                                                                                                                                                                   [16;1H~                                                                                                                                                                                                                                                                                   [17;1H~                                                                                                                                                                                                                                                                                   [18;1H~                                                                                                                                                                                                                                                                                   [19;1H~                                                                                                                                                                                                                                                                                   [20;1H~                                                                                                                                                                                                                                                                                   [21;1H~                                                                                                                                                                                                                                                                                   [22;1H~                                                                                                                                                                                                                                                                                   [23;1H~                                                                                                                                                                                                                                                                                   [24;1H~                                                                                                                                                                                                                                                                                   [25;1H~                                                                                                                                                                                                                                                                                   [26;1H~                                                                                                                                                                                                                                                                                   [27;1H~                                                                                                                                                                                                                                                                                   [28;1H~                                                                                                                                                                                                                                                                                   [29;1H~                                                                                                                                                                                                                                                                                   [30;1H~                                                                                                                                                                                                                                                                                   [31;1H~                                                                                                                                                                                                                                                                                   [32;1H~                                                                                                                                                                                                                                                                                   [33;1H~                                                                                                                                                                                                                                                                                   [34;1H~                                                                                                                                                                                                                                                                                   [35;1H~                                                                                                                                                                                                                                                                                   [36;1H~                                                                                                                                                                                                                                                                                   [37;1H~                                                                                                                                                                                                                                                                                   [38;1H~                                                                                                                                                                                                                                                                                   [39;1H~                                                                                                                                                                                                                                                                                   [40;1H~                                                                                                                                                                                                                                                                                   [41;1H~                                                                                                                                                                                                                                                                                   [42;1H~                                                                                                                                                                                                                                                                                   [43;1H~                                                                                                                                                                                                                                                                                   [44;1H~                                                                                                                                                                                                                                                                                   [45;1H~                                                                                                                                                                                                                                                                                   [46;1H~                                                                                                                                                                                                                                                                                   [47;1H~                                                                                                                                                                                                                                                                                   [48;1H~                                                                                                                                                                                                                                                                                   [49;1H~                                                                                                                                                                                                                                                                                   [50;1H~                                                                                                                                                                                                                                                                                   [51;1H~                                                                                                                                                                                                                                                                                   [52;1H~                                                                                                                                                                                                                                                                                   [53;1H~                                                                                                                                                                                                                                                                                   [54;1H~                                                                                                                                                                                                                                                                                   [55;1H~                                                                                                                                                                                                                                                                                   [56;1H~                                                                                                                                                                                                                                                                                   [57;1H~                                                                                                                                                                                                                                                                                   [58;1H~                                                                                                                                                                                                                                                                                   [59;1H~                                                                                                                                                                                                                                                                                   [60;1H~                                                                                                                                                                                                                                                                                   [61;1H~                                                                                                                                                                                                                                                                                   [62;1H~                                                                                                                                                                                                                                                                                   [63;1H~                                                                                                                                                                                                                                                                                   [64;1H~                                                                                                                                                                                                                                                                                   [65;1H~                                                                                                                                                                                                                                                                                   [66;1H~                                                                                                                                                                                                                                                                                   [67;1H~                                                                                                                                                                                                                                                                                   [68;1H~                                                                                                                                                                                                                                                                                   [69;1H~                                                                                                                                                                                                                                                                                   [1;1H[?12l[?25h[?25l[m[70;1H[K[70;1H:[?12l[?25hq1[?25l[70;3H[K[70;3H[?12l[?25h![?25l[70;1H[K[70;1H[?1l>[?12l[?25h[?1049l[KMerge made by the 'recursive' strategy.
- scripts/aoa_override.sh                         |   7 [32m+++++++[m
- scripts/auto_cal/ac_gain_adj0.sh                |   4 [32m++++[m
- scripts/auto_cal/ac_gain_adj1.sh                |   4 [32m++++[m
- scripts/disable_aoa_override.sh                 |   4 [32m++++[m
- source/autocal/auto_cal_ul.cpp                  |   6 [32m+++[m[31m---[m
- source/autocal/autocal_ctrl.cpp                 |   5 [32m+++[m[31m--[m
- source/autocal/autocal_dl.cpp                   |  20 [32m++++++++++++[m[31m------[m
- source/channel_attributes/channel_attribute.cpp |  39 [32m+++++++++++++++++++++++++++++++++++[m
- source/channel_attributes/channel_attribute.h   |   8 [32m+++++++[m[31m-[m
- source/coeff_compute/coeff_computation.cpp      |   4 [32m++++[m
- source/cpcc_main/cpcc.cpp                       | 250 [32m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m----[m
- source/cpcc_main/cpcc.hpp                       |  22 [32m++++++++++++++++++++[m
- source/cpcc_main/cpcc_main_interface.cpp        |   5 [32m+++++[m
- source/cpcc_main/cpcc_main_task_pool.cpp        |  23 [32m++++++++++++++[m[31m-------[m
- source/include/cpcc_common.h                    |   2 [32m++[m
- test_code/scripts/set_interference.sh           |  13 [32m++++++++++++[m
- 16 files changed, 393 insertions(+), 23 deletions(-)
- create mode 100755 scripts/aoa_override.sh
- create mode 100755 scripts/auto_cal/ac_gain_adj0.sh
- create mode 100755 scripts/auto_cal/ac_gain_adj1.sh
- create mode 100755 scripts/disable_aoa_override.sh
- create mode 100755 test_code/scripts/set_interference.sh
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ GIT [K[K[K[Kgit status 
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
-  (use "git push" to publish your local commits)
-
-nothing to commit, working tree clean
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git brnach
-git: 'brnach' is not a git command. See 'git --help'.
-
-The most similar command is
-	branch
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git brnach
-git: 'brnach' is not a git command. See 'git --help'.
-
-The most similar command is
-	branch
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git brnach
-git: 'brnach' is not a git command. See 'git --help'.
-
-The most similar command is
-	branch
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git branch
-[?1h=  5g_integ_relocate_grpc[m[m
-* [32mmaster[m[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git log
-[?1h=[33mcommit 02c90d5d63d8ac5c45ec9c6aef5d718814ce1e1d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
-Merge: 8ca435e bb6897a[m
-Author: Sudheer Kakaraparthi <kakarsu@ran13.cohere-technologies.com>[m
-Date:   Tue Aug 16 23:04:27 2022 -0700[m
-[m
-    Merge branch 'master' of ghe.cohere-technologies.com:Software/CPCC[m
-[m
-[33mcommit bb6897aa53bd59d69a13383326c588dc9794af98[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Merge: d622309 bdfe46e[m
-Author: naveen <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Aug 16 17:46:33 2022 -0700[m
-[m
-    Merge pull request #105 from Software/naveen/debug[m
-    [m
-    naveen/debug[m
-[m
-[33mcommit d62230941870ef4e53f0cce9bab1631f981b5f8c[m[m
-Merge: b66d2de ed8238c[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Aug 16 10:30:31 2022 -0700[m
-[m
-    Merge pull request #104 from Software/nicole/rrc_release_fix[m
-    [m
-    Fix:RRC release: UEs still listed as connected after RRC release[m
-[m
-[33mcommit b66d2de470463a994311f44710274cec26c7e114[m[m
-Merge: bcec124 948d791[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Aug 16 10:29:59 2022 -0700[m
-[m
-    Merge pull request #103 from Software/nicole/aoa_override[m
-    [m
-    Debug:AOA: Added option to change a rnti's AOA using scripts[m
-[m
-[33mcommit bcec1241c257125afe2b278ffb2e8e4d5e856a88[m[m
-Merge: 7efb30e c987788[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Aug 16 10:29:31 2022 -0700[m
-[m
-    Merge pull request #102 from Software/nicole/reg_update_lte[m
-    [m
-    Fix:CC: Regularizer for LTE now hard coded to -50 dB[m
-[m
-[33mcommit ed8238c3e3fbf7488cf0c908b268ad3b3e418996[m[33m ([m[1;31morigin/nicole/rrc_release_fix[m[33m)[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Fri Aug 12 16:15:42 2022 -0700[m
-[m
-    Fix:RRC release: UEs still listed as connected after RRC release[m
-    [m
-    It's possible for a UE to be added back to attributes if a report[m
-    arrives or if it is scheduled after it is RRC released. This prevents[m
-    that from happening[m
-[m
-[33mcommit 948d79127f52ed980b391576bf8f228d1e6430b0[m[33m ([m[1;31morigin/nicole/aoa_override[m[33m)[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Thu Aug 11 14:17:02 2022 -0700[m
-[m
-    Debug:AOA: Added option to change a rnti's AOA using scripts[m
-    [m
-    Added scripts aoa_override.sh and disable_aoa_override.sh to override[m
-    the measured AOA for a designated rnti. Usage:[m
-    To enable aoa override: ./aoa_override.sh <rnti> <aoa>[m
-    To disable aoa override: ./disable_aoa_override.sh <rnti>[m
-[m
-[33mcommit c98778820998df81718f7b09c7a30a979ccfdb48[m[33m ([m[1;31morigin/nicole/reg_update_lte[m[33m)[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Thu Aug 11 10:16:58 2022 -0700[m
-[m
-    Fix:CC: Regularizer for LTE now hard coded to -50 dB[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ pwd
-/home/kakarsu/repo4g/CPCC
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
-  (use "git push" to publish your local commits)
-
-nothing to commit, working tree clean
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git stash pop 
-Auto-merging source/cpcc_main/cpcc_main_interface.cpp
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
-  (use "git push" to publish your local commits)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-	[31mmodified:   third_party/bbupool/makefile[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Dropped refs/stash@{0} (0bf8260f7938bded7fb54acc9ba12993ed670d63)
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 2 commits.
-  (use "git push" to publish your local commits)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   bin/calUL.in[m
-	[31mmodified:   bin/cpcc_cfg.txt[m
-	[31mmodified:   source/cpcc_main/cpcc_main_interface.cpp[m
-	[31mmodified:   third_party/bbupool/makefile[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ git log
-[?1h=[33mcommit 02c90d5d63d8ac5c45ec9c6aef5d718814ce1e1d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
-Merge: 8ca435e bb6897a[m
-Author: Sudheer Kakaraparthi <kakarsu@ran13.cohere-technologies.com>[m
-Date:   Tue Aug 16 23:04:27 2022 -0700[m
-[m
-    Merge branch 'master' of ghe.cohere-technologies.com:Software/CPCC[m
-[m
-[33mcommit bb6897aa53bd59d69a13383326c588dc9794af98[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Merge: d622309 bdfe46e[m
-Author: naveen <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Aug 16 17:46:33 2022 -0700[m
-[m
-    Merge pull request #105 from Software/naveen/debug[m
-    [m
-    naveen/debug[m
-[m
-[33mcommit d62230941870ef4e53f0cce9bab1631f981b5f8c[m[m
-Merge: b66d2de ed8238c[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Aug 16 10:30:31 2022 -0700[m
-[m
-    Merge pull request #104 from Software/nicole/rrc_release_fix[m
-    [m
-    Fix:RRC release: UEs still listed as connected after RRC release[m
-[m
-[33mcommit b66d2de470463a994311f44710274cec26c7e114[m[m
-Merge: bcec124 948d791[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Aug 16 10:29:59 2022 -0700[m
-[m
-    Merge pull request #103 from Software/nicole/aoa_override[m
-    [m
-    Debug:AOA: Added option to change a rnti's AOA using scripts[m
-[m
-[33mcommit bcec1241c257125afe2b278ffb2e8e4d5e856a88[m[m
-Merge: 7efb30e c987788[m
-Author: nicole <nicole.grimwood@cohere-technologies.com>[m
-Date:   Tue Aug 16 10:29:31 2022 -0700[m
-[m
-    Merge pull request #102 from Software/nicole/reg_update_lte[m
-    [m
-    Fix:CC: Regularizer for LTE now hard coded to -50 dB[m
-[m
-[33mcommit ed8238c3e3fbf7488cf0c908b268ad3b3e418996[m[33m ([m[1;31morigin/nicole/rrc_release_fix[m[33m)[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Fri Aug 12 16:15:42 2022 -0700[m
-[m
-    Fix:RRC release: UEs still listed as connected after RRC release[m
-    [m
-    It's possible for a UE to be added back to attributes if a report[m
-    arrives or if it is scheduled after it is RRC released. This prevents[m
-    that from happening[m
-[m
-[33mcommit 948d79127f52ed980b391576bf8f228d1e6430b0[m[33m ([m[1;31morigin/nicole/aoa_override[m[33m)[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Thu Aug 11 14:17:02 2022 -0700[m
-[m
-    Debug:AOA: Added option to change a rnti's AOA using scripts[m
-    [m
-    Added scripts aoa_override.sh and disable_aoa_override.sh to override[m
-    the measured AOA for a designated rnti. Usage:[m
-    To enable aoa override: ./aoa_override.sh <rnti> <aoa>[m
-    To disable aoa override: ./disable_aoa_override.sh <rnti>[m
-[m
-[33mcommit c98778820998df81718f7b09c7a30a979ccfdb48[m[33m ([m[1;31morigin/nicole/reg_update_lte[m[33m)[m[m
-Author: Nicole Grimwood <nicole.grimwood@cohere-technologies.com>[m
-Date:   Thu Aug 11 10:16:58 2022 -0700[m
-[m
-    Fix:CC: Regularizer for LTE now hard coded to -50 dB[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ 
-]0;kakarsu@ran13:~/repo4g/CPCC[kakarsu@ran13 CPCC]$ l2
-]0;kakarsu@ran13:~/repo4g/LTE_IPR/bin[kakarsu@ran13 bin]$ cd ..
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ pwd
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git statuis [K[K[K[K[K[K[K[K[K[K[K[K##### l2 upgrade
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ ##### l2 upgrade
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ ##### l2 upgrade
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   cfg/Proprietary_eNodeB_Data_Model.xml[m
-	[31mmodified:   cfg/eNodeB_Configuration.cfg[m
-	[31mmodified:   cfg/eNodeB_Data_Model_TR_196_based.xml[m
-	[31mmodified:   lib/libwls.so[m
-	[31mmodified:   lteenodeb/make.inc[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/.l2_rach-issue.sk.swp[m
-	[31mbin/cohere_circular_log[m
-	[31mbin/l2_grpc_config.txt_ori[m
-	[31mbin/log_idx[m
-	[31mbin/rach_attach-fail.sk_set1[m
-	[31mbin/rach_attach-fail.sk_set2[m
-	[31mbin/rach_attch_issue.sk_79_forward[m
-	[31mbin/rach_attch_issue.sk_79_forward_83_84_86[m
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup_ori[m
-	[31mcfg/eNodeB_Configuration.cfg_ori[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_backup[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_bkup_match_with_norm[m
-	[31mlib/libwls.so_backup[m
-	[31mlteenodeb/set_l2_log_level.sh_ori[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cp cfg/Proprietary_eNodeB_Data_Model.xml ~.[K/backup_files/
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cp cfg/eNodeB_Configuration.cfg ~/backup_files/
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cp cfg/eNodeB_Data_Model_TR_196_based.x
-eNodeB_Data_Model_TR_196_based.xml                       eNodeB_Data_Model_TR_196_based.xml_backup                eNodeB_Data_Model_TR_196_based.xml_bkup_match_with_norm  eNodeB_Data_Model_TR_196_based.xsd
-[kakarsu@ran13 LTE_IPR]$ cp cfg/eNodeB_Data_Model_TR_196_based.x
-eNodeB_Data_Model_TR_196_based.xml                       eNodeB_Data_Model_TR_196_based.xml_backup                eNodeB_Data_Model_TR_196_based.xml_bkup_match_with_norm  eNodeB_Data_Model_TR_196_based.xsd
-[kakarsu@ran13 LTE_IPR]$ cp cfg/eNodeB_Data_Model_TR_196_based.xml ~/backup_files/
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cp lib/libwls.so
-libwls.so         libwls.so_backup  
-[kakarsu@ran13 LTE_IPR]$ cp lib/libwls.so ~/backup_files/
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cp lteenodeb/make.inc ~/backup_files/makefile [K[K[K[K[K[K[K[K[K
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ cd ~~[K/backup_files/
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ ls -lrt 
-total 5476
--rw-r--r-- 1 kakarsu domain users      44 Jul 21 01:16 l2_grpc_config.txt
--rw-r--r-- 1 kakarsu domain users     164 Jul 21 01:20 set_l2_log_level.sh
--rw-r--r-- 1 kakarsu domain users   23766 Jul 21 03:12 phycfg_xran.xml
--rw-r--r-- 1 kakarsu domain users   11487 Jul 21 03:12 xrancfg_lte.xml
--rw-r--r-- 1 kakarsu domain users    4201 Jul 21 03:13 bbdevscript.sh
--rwxr-xr-x 1 kakarsu domain users    7898 Jul 21 03:13 [0m[01;32mset_env_var.sh[0m
--rwxr-xr-x 1 root    root             443 Aug  5 07:31 [01;32mrun_l2.sh[0m
--rwxr-xr-x 1 root    root             507 Aug  5 08:02 [01;32mrun_cpcc.sh[0m
--rw-r--r-- 1 root    root         1097815 Aug  9 11:11 cpcc.log
--rw-r--r-- 1 root    root         3037884 Aug  9 22:55 srs.log_naveenrun
--rwxr-xr-x 1 kakarsu domain users    9600 Aug 16 23:02 [01;32mcalUL.in[0m
--rwxr-xr-x 1 kakarsu domain users     108 Aug 16 23:02 [01;32mcpcc_cfg.txt[0m
--rw-r--r-- 1 kakarsu domain users   66200 Aug 16 23:02 cpcc_main_interface.cpp
--rwxr-xr-x 1 kakarsu domain users    3275 Aug 16 23:02 [01;32mmakefile[0m
--rw-r--r-- 1 kakarsu domain users  279577 Aug 16 23:03 cpcc_gitlog.log
--rw-r--r-- 1 kakarsu domain users  452240 Aug 16 23:07 Proprietary_eNodeB_Data_Model.xml
--rw-r--r-- 1 kakarsu domain users    6706 Aug 16 23:07 eNodeB_Configuration.cfg
--rw-r--r-- 1 kakarsu domain users  423758 Aug 16 23:07 eNodeB_Data_Model_TR_196_based.xml
--rw-r--r-- 1 kakarsu domain users  118536 Aug 16 23:08 libwls.so
--rwxr-xr-x 1 kakarsu domain users   12418 Aug 16 23:08 [01;32mmake.inc[0m
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ git log > ^C
-]0;kakarsu@ran13:~/backup_files[kakarsu@ran13 backup_files]$ cd -
-/home/kakarsu/repo4g/LTE_IPR
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git log > ~/backup_files/gitlog_L2.LOG
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash list
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash 
-Saved working directory and index state WIP on master: 65471f3 misc: make cohere_tail and cohere_read binaries execuatable
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git pu[K[Kfect[K[Ktch
-remote: Enumerating objects: 154, done.[K
-remote: Counting objects:   0% (1/154)[Kremote: Counting objects:   1% (2/154)[Kremote: Counting objects:   2% (4/154)[Kremote: Counting objects:   3% (5/154)[Kremote: Counting objects:   4% (7/154)[Kremote: Counting objects:   5% (8/154)[Kremote: Counting objects:   6% (10/154)[Kremote: Counting objects:   7% (11/154)[Kremote: Counting objects:   8% (13/154)[Kremote: Counting objects:   9% (14/154)[Kremote: Counting objects:  10% (16/154)[Kremote: Counting objects:  11% (17/154)[Kremote: Counting objects:  12% (19/154)[Kremote: Counting objects:  13% (21/154)[Kremote: Counting objects:  14% (22/154)[Kremote: Counting objects:  15% (24/154)[Kremote: Counting objects:  16% (25/154)[Kremote: Counting objects:  17% (27/154)[Kremote: Counting objects:  18% (28/154)[Kremote: Counting objects:  19% (30/154)[Kremote: Counting objects:  20% (31/154)[Kremote: Counting objects:  21% (33/154)[Kremote: Counting objects:  22% (34/154)[Kremote: Counting objects:  23% (36/154)[Kremote: Counting objects:  24% (37/154)[Kremote: Counting objects:  25% (39/154)[Kremote: Counting objects:  26% (41/154)[Kremote: Counting objects:  27% (42/154)[Kremote: Counting objects:  28% (44/154)[Kremote: Counting objects:  29% (45/154)[Kremote: Counting objects:  30% (47/154)[Kremote: Counting objects:  31% (48/154)[Kremote: Counting objects:  32% (50/154)[Kremote: Counting objects:  33% (51/154)[Kremote: Counting objects:  34% (53/154)[Kremote: Counting objects:  35% (54/154)[Kremote: Counting objects:  36% (56/154)[Kremote: Counting objects:  37% (57/154)[Kremote: Counting objects:  38% (59/154)[Kremote: Counting objects:  39% (61/154)[Kremote: Counting objects:  40% (62/154)[Kremote: Counting objects:  41% (64/154)[Kremote: Counting objects:  42% (65/154)[Kremote: Counting objects:  43% (67/154)[Kremote: Counting objects:  44% (68/154)[Kremote: Counting objects:  45% (70/154)[Kremote: Counting objects:  46% (71/154)[Kremote: Counting objects:  47% (73/154)[Kremote: Counting objects:  48% (74/154)[Kremote: Counting objects:  49% (76/154)[Kremote: Counting objects:  50% (77/154)[Kremote: Counting objects:  51% (79/154)[Kremote: Counting objects:  52% (81/154)[Kremote: Counting objects:  53% (82/154)[Kremote: Counting objects:  54% (84/154)[Kremote: Counting objects:  55% (85/154)[Kremote: Counting objects:  56% (87/154)[Kremote: Counting objects:  57% (88/154)[Kremote: Counting objects:  58% (90/154)[Kremote: Counting objects:  59% (91/154)[Kremote: Counting objects:  60% (93/154)[Kremote: Counting objects:  61% (94/154)[Kremote: Counting objects:  62% (96/154)[Kremote: Counting objects:  63% (98/154)[Kremote: Counting objects:  64% (99/154)[Kremote: Counting objects:  65% (101/154)[Kremote: Counting objects:  66% (102/154)[Kremote: Counting objects:  67% (104/154)[Kremote: Counting objects:  68% (105/154)[Kremote: Counting objects:  69% (107/154)[Kremote: Counting objects:  70% (108/154)[Kremote: Counting objects:  71% (110/154)[Kremote: Counting objects:  72% (111/154)[Kremote: Counting objects:  73% (113/154)[Kremote: Counting objects:  74% (114/154)[Kremote: Counting objects:  75% (116/154)[Kremote: Counting objects:  76% (118/154)[Kremote: Counting objects:  77% (119/154)[Kremote: Counting objects:  78% (121/154)[Kremote: Counting objects:  79% (122/154)[Kremote: Counting objects:  80% (124/154)[Kremote: Counting objects:  81% (125/154)[Kremote: Counting objects:  82% (127/154)[Kremote: Counting objects:  83% (128/154)[Kremote: Counting objects:  84% (130/154)[Kremote: Counting objects:  85% (131/154)[Kremote: Counting objects:  86% (133/154)[Kremote: Counting objects:  87% (134/154)[Kremote: Counting objects:  88% (136/154)[Kremote: Counting objects:  89% (138/154)[Kremote: Counting objects:  90% (139/154)[Kremote: Counting objects:  91% (141/154)[Kremote: Counting objects:  92% (142/154)[Kremote: Counting objects:  93% (144/154)[Kremote: Counting objects:  94% (145/154)[Kremote: Counting objects:  95% (147/154)[Kremote: Counting objects:  96% (148/154)[Kremote: Counting objects:  97% (150/154)[Kremote: Counting objects:  98% (151/154)[Kremote: Counting objects:  99% (153/154)[Kremote: Counting objects: 100% (154/154)[Kremote: Counting objects: 100% (154/154), done.[K
-remote: Compressing objects:   1% (1/65)[Kremote: Compressing objects:   3% (2/65)[Kremote: Compressing objects:   4% (3/65)[Kremote: Compressing objects:   6% (4/65)[Kremote: Compressing objects:   7% (5/65)[Kremote: Compressing objects:   9% (6/65)[Kremote: Compressing objects:  10% (7/65)[Kremote: Compressing objects:  12% (8/65)[Kremote: Compressing objects:  13% (9/65)[Kremote: Compressing objects:  15% (10/65)[Kremote: Compressing objects:  16% (11/65)[Kremote: Compressing objects:  18% (12/65)[Kremote: Compressing objects:  20% (13/65)[Kremote: Compressing objects:  21% (14/65)[Kremote: Compressing objects:  23% (15/65)[Kremote: Compressing objects:  24% (16/65)[Kremote: Compressing objects:  26% (17/65)[Kremote: Compressing objects:  27% (18/65)[Kremote: Compressing objects:  29% (19/65)[Kremote: Compressing objects:  30% (20/65)[Kremote: Compressing objects:  32% (21/65)[Kremote: Compressing objects:  33% (22/65)[Kremote: Compressing objects:  35% (23/65)[Kremote: Compressing objects:  36% (24/65)[Kremote: Compressing objects:  38% (25/65)[Kremote: Compressing objects:  40% (26/65)[Kremote: Compressing objects:  41% (27/65)[Kremote: Compressing objects:  43% (28/65)[Kremote: Compressing objects:  44% (29/65)[Kremote: Compressing objects:  46% (30/65)[Kremote: Compressing objects:  47% (31/65)[Kremote: Compressing objects:  49% (32/65)[Kremote: Compressing objects:  50% (33/65)[Kremote: Compressing objects:  52% (34/65)[Kremote: Compressing objects:  53% (35/65)[Kremote: Compressing objects:  55% (36/65)[Kremote: Compressing objects:  56% (37/65)[Kremote: Compressing objects:  58% (38/65)[Kremote: Compressing objects:  60% (39/65)[Kremote: Compressing objects:  61% (40/65)[Kremote: Compressing objects:  63% (41/65)[Kremote: Compressing objects:  64% (42/65)[Kremote: Compressing objects:  66% (43/65)[Kremote: Compressing objects:  67% (44/65)[Kremote: Compressing objects:  69% (45/65)[Kremote: Compressing objects:  70% (46/65)[Kremote: Compressing objects:  72% (47/65)[Kremote: Compressing objects:  73% (48/65)[Kremote: Compressing objects:  75% (49/65)[Kremote: Compressing objects:  76% (50/65)[Kremote: Compressing objects:  78% (51/65)[Kremote: Compressing objects:  80% (52/65)[Kremote: Compressing objects:  81% (53/65)[Kremote: Compressing objects:  83% (54/65)[Kremote: Compressing objects:  84% (55/65)[Kremote: Compressing objects:  86% (56/65)[Kremote: Compressing objects:  87% (57/65)[Kremote: Compressing objects:  89% (58/65)[Kremote: Compressing objects:  90% (59/65)[Kremote: Compressing objects:  92% (60/65)[Kremote: Compressing objects:  93% (61/65)[Kremote: Compressing objects:  95% (62/65)[Kremote: Compressing objects:  96% (63/65)[Kremote: Compressing objects:  98% (64/65)[Kremote: Compressing objects: 100% (65/65)[Kremote: Compressing objects: 100% (65/65), done.[K
-Receiving objects:   0% (1/154)Receiving objects:   1% (2/154)Receiving objects:   2% (4/154)Receiving objects:   3% (5/154)Receiving objects:   4% (7/154)Receiving objects:   5% (8/154)Receiving objects:   6% (10/154)Receiving objects:   7% (11/154)Receiving objects:   8% (13/154)Receiving objects:   9% (14/154)Receiving objects:  10% (16/154)Receiving objects:  11% (17/154)Receiving objects:  12% (19/154)Receiving objects:  13% (21/154)Receiving objects:  14% (22/154)Receiving objects:  15% (24/154)Receiving objects:  16% (25/154)remote: Total 154 (delta 100), reused 136 (delta 89), pack-reused 0[K
-Receiving objects:  17% (27/154)Receiving objects:  18% (28/154)Receiving objects:  19% (30/154)Receiving objects:  20% (31/154)Receiving objects:  21% (33/154)Receiving objects:  22% (34/154)Receiving objects:  23% (36/154)Receiving objects:  24% (37/154)Receiving objects:  25% (39/154)Receiving objects:  26% (41/154)Receiving objects:  27% (42/154)Receiving objects:  28% (44/154)Receiving objects:  29% (45/154)Receiving objects:  30% (47/154)Receiving objects:  31% (48/154)Receiving objects:  32% (50/154)Receiving objects:  33% (51/154)Receiving objects:  34% (53/154)Receiving objects:  35% (54/154)Receiving objects:  36% (56/154)Receiving objects:  37% (57/154)Receiving objects:  38% (59/154)Receiving objects:  39% (61/154)Receiving objects:  40% (62/154)Receiving objects:  41% (64/154)Receiving objects:  42% (65/154)Receiving objects:  43% (67/154)Receiving objects:  44% (68/154)Receiving objects:  45% (70/154)Receiving objects:  46% (71/154)Receiving objects:  47% (73/154)Receiving objects:  48% (74/154)Receiving objects:  49% (76/154)Receiving objects:  50% (77/154)Receiving objects:  51% (79/154)Receiving objects:  52% (81/154)Receiving objects:  53% (82/154)Receiving objects:  54% (84/154)Receiving objects:  55% (85/154)Receiving objects:  56% (87/154)Receiving objects:  57% (88/154)Receiving objects:  58% (90/154)Receiving objects:  59% (91/154)Receiving objects:  60% (93/154)Receiving objects:  61% (94/154)Receiving objects:  62% (96/154)Receiving objects:  63% (98/154)Receiving objects:  64% (99/154)Receiving objects:  65% (101/154)Receiving objects:  66% (102/154)Receiving objects:  67% (104/154)Receiving objects:  68% (105/154)Receiving objects:  69% (107/154)Receiving objects:  70% (108/154)Receiving objects:  71% (110/154)Receiving objects:  72% (111/154)Receiving objects:  73% (113/154)Receiving objects:  74% (114/154)Receiving objects:  75% (116/154)Receiving objects:  76% (118/154)Receiving objects:  77% (119/154)Receiving objects:  78% (121/154)Receiving objects:  79% (122/154)Receiving objects:  80% (124/154)Receiving objects:  81% (125/154)Receiving objects:  82% (127/154)Receiving objects:  83% (128/154)Receiving objects:  84% (130/154)Receiving objects:  85% (131/154)Receiving objects:  86% (133/154)Receiving objects:  87% (134/154)Receiving objects:  88% (136/154)Receiving objects:  89% (138/154)Receiving objects:  90% (139/154)Receiving objects:  91% (141/154)Receiving objects:  92% (142/154)Receiving objects:  93% (144/154)Receiving objects:  94% (145/154)Receiving objects:  95% (147/154)Receiving objects:  96% (148/154)Receiving objects:  97% (150/154)Receiving objects:  98% (151/154)Receiving objects:  99% (153/154)Receiving objects: 100% (154/154)Receiving objects: 100% (154/154), 73.41 KiB | 1.03 MiB/s, done.
-Resolving deltas:   0% (0/100)Resolving deltas:   1% (1/100)Resolving deltas:   2% (2/100)Resolving deltas:   3% (3/100)Resolving deltas:   4% (4/100)Resolving deltas:   5% (5/100)Resolving deltas:  12% (12/100)Resolving deltas:  13% (13/100)Resolving deltas:  16% (16/100)Resolving deltas:  19% (19/100)Resolving deltas:  23% (23/100)Resolving deltas:  25% (25/100)Resolving deltas:  27% (27/100)Resolving deltas:  28% (28/100)Resolving deltas:  31% (31/100)Resolving deltas:  32% (32/100)Resolving deltas:  33% (33/100)Resolving deltas:  34% (34/100)Resolving deltas:  36% (36/100)Resolving deltas:  39% (39/100)Resolving deltas:  40% (40/100)Resolving deltas:  41% (41/100)Resolving deltas:  42% (42/100)Resolving deltas:  43% (43/100)Resolving deltas:  44% (44/100)Resolving deltas:  45% (45/100)Resolving deltas:  46% (46/100)Resolving deltas:  47% (47/100)Resolving deltas:  48% (48/100)Resolving deltas:  49% (49/100)Resolving deltas:  51% (51/100)Resolving deltas:  53% (53/100)Resolving deltas:  54% (54/100)Resolving deltas:  55% (55/100)Resolving deltas:  56% (56/100)Resolving deltas:  58% (58/100)Resolving deltas:  59% (59/100)Resolving deltas:  60% (60/100)Resolving deltas:  63% (63/100)Resolving deltas:  66% (66/100)Resolving deltas:  67% (67/100)Resolving deltas:  68% (68/100)Resolving deltas:  69% (69/100)Resolving deltas:  70% (70/100)Resolving deltas:  71% (71/100)Resolving deltas:  72% (72/100)Resolving deltas:  73% (73/100)Resolving deltas:  74% (74/100)Resolving deltas:  75% (75/100)Resolving deltas:  80% (80/100)Resolving deltas:  84% (84/100)Resolving deltas:  85% (85/100)Resolving deltas:  87% (87/100)Resolving deltas:  89% (89/100)Resolving deltas:  91% (91/100)Resolving deltas:  93% (93/100)Resolving deltas:  94% (94/100)Resolving deltas:  95% (95/100)Resolving deltas:  96% (96/100)Resolving deltas:  97% (97/100)Resolving deltas:  98% (98/100)Resolving deltas:  99% (99/100)Resolving deltas: 100% (100/100)Resolving deltas: 100% (100/100), completed with 41 local objects.
-From github.com:cohere-altran/LTE_IPR
-   65471f3..159c27a  master                                   -> origin/master
- * [new branch]      naveen/meas-gap-info-in-rrc-connect      -> origin/naveen/meas-gap-info-in-rrc-connect
- * [new branch]      naveen/sync-header-xapp-cpcc-convergence -> origin/naveen/sync-header-xapp-cpcc-convergence
- * [new branch]      naveen/user-directed-scheduler-interface -> origin/naveen/user-directed-scheduler-interface
- * [new branch]      naveen/workspace                         -> origin/naveen/workspace
- * [new branch]      norm/autocal-telstra-baseline            -> origin/norm/autocal-telstra-baseline
- * [new branch]      norm/mumimo-master                       -> origin/norm/mumimo-master
- * [new branch]      sfishel/srsta                            -> origin/sfishel/srsta
- * [new branch]      telstra/HO_Fix                           -> origin/telstra/HO_Fix
- * [new branch]      varun/L2StatsBytesEncoded                -> origin/varun/L2StatsBytesEncoded
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git puil[K[Kll
-Updating 65471f3..159c27a
-Fast-forward
- bin/cohere_read_logs                                                     | Bin [31m8816[m -> [32m8816[m bytes
- bin/cohere_tail_logs                                                     | Bin [31m8920[m -> [32m8920[m bytes
- cfg/eNodeB_Data_Model_TR_196_based.xsd                                   |   4 [32m++[m[31m--[m
- lteenodeb/lte_oam/core/startup_n_intf_mgmt/include/oam_xml_header.h      |   4 [32m++[m[31m--[m
- lteenodeb/lte_oam/core/startup_n_intf_mgmt/src/oam_populate_func.c       |  12 [32m++++++[m[31m------[m
- lteenodeb/lte_rrm/llif/src/rrm_rrc_meas_config.c                         |   6 [32m++++[m[31m--[m
- lteenodeb/mac/maccore/include/scheduler/cohere/cohere_logging.h          |  37 [32m++++++++++++++++++++++++++++++[m[31m-------[m
- lteenodeb/mac/maccore/src/assemblyDeassemblyUnit/encoder/lteMacEncoder.c |  17 [32m+++++++++++++[m[31m----[m
- lteenodeb/mac/maccore/src/interfaces/phy/lteMacReceiver.c                |  12 [32m++++++++++[m[31m--[m
- lteenodeb/mac/maccore/src/interfaces/phy/lteMacTransmitter.c             |  65 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m----[m
- lteenodeb/mac/maccore/src/scheduler/cohere/Makefile                      |   6 [32m+++++[m[31m-[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_logging.c              | 103 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m[31m------------[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_mac_scheduler.c        |  11 [32m++++++[m[31m-----[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_read_logs.c            |  14 [32m++[m[31m------------[m
- lteenodeb/mac/maccore/src/scheduler/cohere/cohere_tail_logs.c            |  14 [32m++[m[31m------------[m
- 15 files changed, 234 insertions(+), 71 deletions(-)
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash list 
-[?1h=stash@{0}: WIP on master: 65471f3 misc: make cohere_tail and cohere_read binaries execuatable[m
-[K[?1l>]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash [K[K[Ktus 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/.l2_rach-issue.sk.swp[m
-	[31mbin/cohere_circular_log[m
-	[31mbin/l2_grpc_config.txt_ori[m
-	[31mbin/log_idx[m
-	[31mbin/rach_attach-fail.sk_set1[m
-	[31mbin/rach_attach-fail.sk_set2[m
-	[31mbin/rach_attch_issue.sk_79_forward[m
-	[31mbin/rach_attch_issue.sk_79_forward_83_84_86[m
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup_ori[m
-	[31mcfg/eNodeB_Configuration.cfg_ori[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_backup[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_bkup_match_with_norm[m
-	[31mlib/libwls.so_backup[m
-	[31mlteenodeb/set_l2_log_level.sh_ori[m
-
-nothing added to commit but untracked files present (use "git add" to track)
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git stash pop 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   cfg/Proprietary_eNodeB_Data_Model.xml[m
-	[31mmodified:   cfg/eNodeB_Configuration.cfg[m
-	[31mmodified:   cfg/eNodeB_Data_Model_TR_196_based.xml[m
-	[31mmodified:   lib/libwls.so[m
-	[31mmodified:   lteenodeb/make.inc[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/.l2_rach-issue.sk.swp[m
-	[31mbin/cohere_circular_log[m
-	[31mbin/l2_grpc_config.txt_ori[m
-	[31mbin/log_idx[m
-	[31mbin/rach_attach-fail.sk_set1[m
-	[31mbin/rach_attach-fail.sk_set2[m
-	[31mbin/rach_attch_issue.sk_79_forward[m
-	[31mbin/rach_attch_issue.sk_79_forward_83_84_86[m
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup_ori[m
-	[31mcfg/eNodeB_Configuration.cfg_ori[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_backup[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_bkup_match_with_norm[m
-	[31mlib/libwls.so_backup[m
-	[31mlteenodeb/set_l2_log_level.sh_ori[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Dropped refs/stash@{0} (83840aa92309384b6c634bccb2d4ffef7e56b3fa)
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git status 
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   cfg/Proprietary_eNodeB_Data_Model.xml[m
-	[31mmodified:   cfg/eNodeB_Configuration.cfg[m
-	[31mmodified:   cfg/eNodeB_Data_Model_TR_196_based.xml[m
-	[31mmodified:   lib/libwls.so[m
-	[31mmodified:   lteenodeb/make.inc[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbin/.l2_rach-issue.sk.swp[m
-	[31mbin/cohere_circular_log[m
-	[31mbin/l2_grpc_config.txt_ori[m
-	[31mbin/log_idx[m
-	[31mbin/rach_attach-fail.sk_set1[m
-	[31mbin/rach_attach-fail.sk_set2[m
-	[31mbin/rach_attch_issue.sk_79_forward[m
-	[31mbin/rach_attch_issue.sk_79_forward_83_84_86[m
-	[31mbin/set_l2_log_level.sh[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup[m
-	[31mcfg/Proprietary_eNodeB_Data_Model.xml_backup_ori[m
-	[31mcfg/eNodeB_Configuration.cfg_ori[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_backup[m
-	[31mcfg/eNodeB_Data_Model_TR_196_based.xml_bkup_match_with_norm[m
-	[31mlib/libwls.so_backup[m
-	[31mlteenodeb/set_l2_log_level.sh_ori[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ git log 
-[?1h=[33mcommit 159c27a74501347777f95abbf4935e474e9b4d33[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Merge: cca40dc b1a8aba[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Thu Aug 11 10:13:16 2022 -0700[m
-[m
-    Merge pull request #82 from cohere-altran/naveen/per-second-stats[m
-    [m
-    feature: per second stats[m
-[m
-[33mcommit b1a8aba712537dcd1586b980244be0371e7cff46[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Aug 9 16:59:00 2022 -0700[m
-[m
-    feature: per second stats[m
-[m
-[33mcommit cca40dc28fe49d8a3f684a750a3bc856033e88ce[m[m
-Merge: ff3f4a8 9de7be8[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Mon Aug 8 12:04:48 2022 -0700[m
-[m
-    Merge pull request #80 from cohere-altran/naveen/workspace[m
-    [m
-    misc: remove num UE check when preparing sch request at L2[m
-[m
-[33mcommit 9de7be8de248c04e5aab33854f71e2d7e92f9b15[m[33m ([m[1;31morigin/naveen/workspace[m[33m)[m[m
-Author: Naveen Rawat <naveen.rawat@cohere-technologies.com>[m
-Date:   Tue Aug 2 11:39:44 2022 -0700[m
-[m
-    misc: remove num UE check when preparing sch request at L2[m
-[m
-[33mcommit ff3f4a8ccd8dc6cbe5ee21871024aed133c5b690[m[m
-Merge: 4691b5d a9daf0e[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Fri Jul 29 15:28:59 2022 -0700[m
-[m
-    Merge pull request #79 from cohere-altran/naveen/workspace[m
-    [m
-    bugfix: increase log length for circular log and other enhancements[m
-[m
-[33mcommit a9daf0efcc579c7c48aa808922fdf0a39424fcbb[m[m
-Author: Venu Vennapusa <vennave@ran303.cohere-technologies.com>[m
-Date:   Fri Jul 29 14:41:19 2022 -0700[m
-[m
-    bugfix: increase log length for circular log and other enhancements[m
-[m
-[33mcommit 4691b5d5c257ddb01c92f36c24c7e52132657fbe[m[m
-Merge: bfd8516 7ed7061[m
-Author: varun-cohere <82618414+varun-cohere@users.noreply.github.com>[m
-Date:   Thu Jul 28 11:36:41 2022 -0700[m
-[m
-    Merge pull request #78 from cohere-altran/varun/L2StatsBytesEncoded[m
-    [m
-    Varun/l2 stats bytes encoded[m
-[m
-[33mcommit 7ed70614f3392616e922131277f9effe67410aee[m[33m ([m[1;31morigin/varun/L2StatsBytesEncoded[m[33m)[m[m
-Author: varun-cohere <varun.yeturu@cohere-technologies.com>[m
-Date:   Thu Jul 21 10:33:42 2022 -0700[m
-[m
-    L2: Add stats for the scheduled rlc data[m
-[m
-[33mcommit bfd85168a717ac315636364c1dae589da74b0e97[m[m
-Merge: 65471f3 cb505ec[m
-Author: naveen-rawat-cohere <72522487+naveen-rawat-cohere@users.noreply.github.com>[m
-Date:   Tue Jul 26 10:42:21 2022 -0700[m
-[m
-    Merge pull request #77 from cohere-altran/norm/ran304-workspace[m
-    [m
-    feature: freq band 71 support[m
-[m
-:[K[K[?1l>]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ 
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ sync
-]0;kakarsu@ran13:~/repo4g/LTE_IPR[kakarsu@ran13 LTE_IPR]$ stop [K[K[K[K[Kexit
-exit
-
-Script done on Tue 16 Aug 2022 11:10:37 PM PDT
