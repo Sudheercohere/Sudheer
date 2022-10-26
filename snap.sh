@@ -59,6 +59,7 @@ git log > git_l2_l3_rrm_log.log
 cp -p *.log $Home_Path/Logs/"$date_d"_"$Name"/L2_L3_RRM_Logs_Core;
 cp -p core* $Home_Path/Logs/"$date_d"_"$Name"/L2_L3_RRM_Logs_Core;
 cp -p lteLayer2 $Home_Path/Logs/"$date_d"_"$Name"/L2_L3_RRM_Logs_Core;
+cp -p l2_grpc_config.txt $Home_Path/Logs/"$date_d"_"$Name"/L2_L3_RRM_Logs_Core;
 cp -p cohere_circular_log $Home_Path/Logs/"$date_d"_"$Name"/L2_L3_RRM_Logs_Core;
 cp -p cohere_read_logs $Home_Path/Logs/"$date_d"_"$Name"/L2_L3_RRM_Logs_Core;
 cp -p cohere_tail_logs $Home_Path/Logs/"$date_d"_"$Name"/L2_L3_RRM_Logs_Core;
@@ -75,6 +76,11 @@ git log > git_l1.log
 cp -p core* $Home_Path/Logs/"$date_d"_"$Name"/L1_Logs_Core;
 cp -p *.log $Home_Path/Logs/"$date_d"_"$Name"/L1_Logs_Core;
 cp -p l1app $Home_Path/Logs/"$date_d"_"$Name"/L1_Logs_Core;
+cp -p phycfg.xml $Home_Path/Logs/"$date_d"_"$Name"/L1_Logs_Core;
+cp -p phycfg_timer.xml $Home_Path/Logs/"$date_d"_"$Name"/L1_Logs_Core;
+cp -p phycfg_xran.xml $Home_Path/Logs/"$date_d"_"$Name"/L1_Logs_Core;
+cp -p xrancfg_lte.xml $Home_Path/Logs/"$date_d"_"$Name"/L1_Logs_Core;
+
 mkdir -p $l1/old_core_files_l1
 cd $l1
 mv -u core.* old_core_files_l1

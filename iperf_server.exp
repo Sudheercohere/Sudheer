@@ -2,7 +2,9 @@
 
 set timeout 10
 
-spawn ssh lab-user@192.168.40.200
+spawn ssh it@192.168.40.201 
+#spawn ssh lab-user@192.168.40.200
 expect "password:"
-send  "c0here1!\r";
+send  "Suite95051\r";
+#send  "c0here1!\r";
 interact
