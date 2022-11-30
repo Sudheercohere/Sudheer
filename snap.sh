@@ -43,6 +43,7 @@ cp -p cpcc_tail_logs $Home_Path/Logs/"$date_d"_"$Name"/CPCC_Logs;
 cp -p log_idx $Home_Path/Logs/"$date_d"_"$Name"/CPCC_Logs;
 cp -p /tmp/cpcc_stats.txt $Home_Path/Logs/"$date_d"_"$Name"/CPCC_Logs;
 cp -p cpccstats_all.log $Home_Path/Logs/"$date_d"_"$Name"/CPCC_Logs;
+cp -p cpcclog_*.txt $Home_Path/Logs/"$date_d"_"$Name"/CPCC_Logs;
 
 cd debugFiles;
 cp -p * $Home_Path/Logs/"$date_d"_"$Name"/CPCC_Logs/debugFiles;

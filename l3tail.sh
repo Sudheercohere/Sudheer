@@ -1,0 +1,3 @@
+cd /home/kakarsu/repo4g/LTE_IPR/bin;
+##tail -f l3.log | egrep -i "fail|radioNetwork|radio link|releaseCause|RADIO_LINK_FAILURE|rrcConnectionReconfigurationComplete|RRCConnectionSetup|UECC_EV_RRC_CONNECTION_SETUP_COMPLETE|RNTI|uecc_fsm_rm_rrc_connection_reconfiguration_complete_handler|radio resources|error"
+tail -f l3.log | egrep -i "fail|radioNetwork|radio link|releaseCause|RADIO_LINK_FAILURE|rrcConnectionReconfigurationComplete|RRCConnectionSetup|UECC_EV_RRC_CONNECTION_SETUP_COMPLETE|RNTI|uecc_fsm_rm_rrc_connection_reconfiguration_complete_handler|radio resources|error|rrcConnectionRequest|RRC_MAC_CCCH_MSG_IND|RRC_MAC_OUT_OF_SYNC_MAX_RETRIES|uecc_s1ap_process_ue_context_release_command"

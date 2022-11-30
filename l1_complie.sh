@@ -7,6 +7,6 @@ sleep 2
 sleep 2
 ./flexran_build.sh -e -r lte -b -n -m xran
 sleep 3
-./flexran_build.sh -e -r lte -b -n -m all -C -S
+./flexran_build.sh -e -r lte -b -n -m all -C -S -T
 sleep 4
 echo "Done"

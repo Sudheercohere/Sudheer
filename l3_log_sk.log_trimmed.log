@@ -1,0 +1,382 @@
+02:51:29.940420    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 65535 ue_index = 43
+02:51:29.940421    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 65535 lc_id = 2
+02:51:29.940423    Info        eNodeB RRC LLIM    rrc_uemh.c                     4012    rrc_uemh_pdcp_srb_data_ind_process_msg 0 65535 API:PDCP->RRC:RRC_PDCP_SRB_DATA_IND:[UE:43]
+02:51:29.940425    Brief       eNodeB RRC LLIM    rrc_uemh.c                     4019    rrc_uemh_pdcp_srb_data_ind_process_msg 0 43 [UE_INDEX:43]
+02:51:29.940427    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.940477    Brief       eNodeB RRC         uecc_llim.c                    23265   rrc_asn1PrtToStr_UL_DCCH_Message 0 65535 UL_DCCH_Message {
+   message {
+      c1 {
+         ulInformationTransfer {
+            criticalExtensions {
+               c1 {
+                  ulInformationTransfer-r8 {
+                     dedicatedInfoType {
+                        dedicatedInfoNAS = 0x271c82b82d890745030bf602f84980010120b64d19
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+02:51:29.940483    Info        (null)             uecc_llim.c                    1947    uecc_llim_process_srb_data_ind_ulInformationTransfer 0 65535 RRC_MSG: ULInformationTransfer
+02:51:29.940486    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 72
+02:51:29.940495    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTED Event: UECC_EV_S1AP_UL_NAS_TRANSPORT_REQ ###
+02:51:29.940563    Brief       eNodeB RRC         uecc_s1ap.c                    25236   rrc_asn1PrtToStr_S1AP_PDU      0 65535 S1AP_PDU {
+   initiatingMessage {
+      procedureCode = 13
+      criticality = ignore
+      value {
+         uplinkNASTransport {
+            protocolIEs[0] {
+               id = 0
+               criticality = reject
+               value {
+                  MME-UE-S1AP-ID = 17533
+               }
+            }
+            protocolIEs[1] {
+               id = 8
+               criticality = reject
+               value {
+                  ENB-UE-S1AP-ID = 40
+               }
+            }
+            protocolIEs[2] {
+               id = 26
+               criticality = reject
+               value {
+                  NAS-PDU = 0x271c82b82d890745030bf602f84980010120b64d19
+               }
+            }
+            protocolIEs[3] {
+               id = 100
+               criticality = ignore
+               value {
+                  EUTRAN-CGI {
+                     pLMNidentity = 0x02f849
+                     cell_ID = { 28, 0x00 0x12 0xd0 0001xxxx }
+                  }
+               }
+            }
+            protocolIEs[4] {
+               id = 67
+               criticality = ignore
+               value {
+                  TAI {
+                     pLMNidentity = 0x02f849
+                     tAC = 0x0001
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+02:51:29.940566    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 116
+02:51:29.940573    Info        (null)             uecc_s1ap.c                    7802    uecc_s1ap_build_and_send_ul_nas_transport_req 0 65535 S1AP_MSG: UplinkNASTransport
+02:51:29.940576    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 Unused variable in fsm :
+02:51:29.940579    Debug       eNodeB RRC S1AP    s1ap_uecc.c                    781     s1ap_uecc_process_ue_assoc_sig_msg_req 255 65535 Unused variable p_uecc_gb_context=0x7fd056e6b038
+02:51:29.940579    Debug       (null)             uecc_ed.c                      1191    uecc_process_queue             0 65535 Unused variable p_uecc_gb_context=0x7fd056e6b038
+02:51:29.940581    Info        eNodeB RRC S1AP    s1ap_uecc.c                    817     s1ap_uecc_process_ue_assoc_sig_msg_req 255 65535 [s1ap_uecc_process_ue_assoc_sig_msg_req]:enbUeS1apId 40 CELL id is 0 UE id 40 
+ 
+02:51:29.940583    Info        eNodeB RRC S1AP    s1ap_uecc.c                    1769    send_asn_msg_to_mme            0 40 [send_asn_msg_to_mme]: ASN message is forwarded to MME 0 
+ 
+02:51:29.940829    Brief       eNodeB RRC         sctp_wrappers.c                2899    l3_sctp_receive                255 65535 SD is set for sctp_sd 8 
+02:51:29.940838    Brief       eNodeB RRC         sctp_wrappers.c                3021    l3_sctp_receive                255 65535 Assoc. ID 1757 returned 33 successfully, flags 0x80 !!
+02:51:29.940840    Info        eNodeB RRC         sctp_wrappers.c                3582    l3_sctp_receive                255 65535 Message is sent to S1AP module
+02:51:29.940849    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          255 65535 [RECV] [MODULE:RRC_MME_MODULE_ID(9)] [API:(0)] [SIZE:55] [VER:1]
+02:51:29.940852    Info        eNodeB RRC S1AP    s1ap_mme.c                     840     s1ap_process_mme_messages      255 65535 MMEId[0] found sctp sd [8] stream_id[1]
+02:51:29.940867    Info        eNodeB RRC S1AP    s1ap_mme.c                     506     s1ap_mme_handle_mme_msg_type   0 40 [s1ap_mme_handle_mme_msg_type]:[Cell id:0] [UE:43] [enb_ue_s1ap_id:40] [mme_ue_s1ap_id:17533]
+02:51:29.940872    Info        eNodeB RRC S1AP    s1ap_mme.c                     519     s1ap_mme_handle_mme_msg_type   0 40 S1AP_MSG: DownlinkNASTransport [MME-S1AP-Id:17533 eNB-S1AP-Id:40]
+02:51:29.940875    Info        eNodeB RRC S1AP    s1ap_uecc.c                    3229    s1ap_process_dl_nas_msg        0 40 [s1ap_process_dl_nas_msg]: Forwarding message to UECC
+02:51:29.940883    Brief       eNodeB RRC         sctp_wrappers.c                2899    l3_sctp_receive                255 65535 SD is set for sctp_sd 8 
+02:51:29.940886    Brief       eNodeB RRC         sctp_wrappers.c                3021    l3_sctp_receive                255 65535 Assoc. ID 1757 returned 21 successfully, flags 0x80 !!
+02:51:29.940888    Info        eNodeB RRC         sctp_wrappers.c                3582    l3_sctp_receive                255 65535 Message is sent to S1AP module
+02:51:29.940896    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          255 65535 [RECV] [MODULE:RRC_MME_MODULE_ID(9)] [API:(0)] [SIZE:43] [VER:1]
+02:51:29.940897    Info        eNodeB RRC S1AP    s1ap_mme.c                     840     s1ap_process_mme_messages      255 65535 MMEId[0] found sctp sd [8] stream_id[1]
+02:51:29.940904    Info        eNodeB RRC S1AP    s1ap_mme.c                     506     s1ap_mme_handle_mme_msg_type   0 40 [s1ap_mme_handle_mme_msg_type]:[Cell id:0] [UE:43] [enb_ue_s1ap_id:40] [mme_ue_s1ap_id:17533]
+02:51:29.940905    Info        eNodeB RRC S1AP    s1ap_mme.c                     519     s1ap_mme_handle_mme_msg_type   0 40 S1AP_MSG: DownlinkNASTransport [MME-S1AP-Id:17533 eNB-S1AP-Id:40]
+02:51:29.940907    Info        eNodeB RRC S1AP    s1ap_uecc.c                    3229    s1ap_process_dl_nas_msg        0 40 [s1ap_process_dl_nas_msg]: Forwarding message to UECC
+02:51:29.940912    Brief       eNodeB RRC         uecc_s1ap.c                    25236   rrc_asn1PrtToStr_S1AP_PDU      0 65535 S1AP_PDU {
+   initiatingMessage {
+      procedureCode = 11
+      criticality = ignore
+      value {
+         downlinkNASTransport {
+            protocolIEs[0] {
+               id = 0
+               criticality = reject
+               value {
+                  MME-UE-S1AP-ID = 17533
+               }
+            }
+            protocolIEs[1] {
+               id = 8
+               criticality = reject
+               value {
+                  ENB-UE-S1AP-ID = 40
+               }
+            }
+            protocolIEs[2] {
+               id = 26
+               criticality = reject
+               value {
+                  NAS-PDU = 0x27278a3eb87c0746
+               }
+            }
+         }
+      }
+   }
+}
+
+
+02:51:29.940914    Info        (null)             uecc_s1ap.c                    1299    uecc_s1ap_process_ue_assoc_sig_msg_ind_initiatingMessage 0 65535 S1AP_MSG: DownlinkNASTransport
+02:51:29.940918    Brief       (null)             rrc_uecc_error_indication.c    1962    uecc_parse_message_map         0 65535 uecc_parse_message_map:[EI] S1AP Initiating Message
+02:51:29.940920    Brief       (null)             rrc_uecc_error_indication.c    1979    uecc_parse_message_map         0 65535 [EI] Parsing Initiating Message
+02:51:29.940922    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 81
+02:51:29.940924    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTED Event: UECC_EV_S1AP_DL_NAS_TRANSPORT_IND ###
+02:51:29.940966    Brief       eNodeB RRC         uecc_llim.c                    23208   rrc_asn1PrtToStr_DL_DCCH_Message 0 65535 DL_DCCH_Message {
+   message {
+      c1 {
+         dlInformationTransfer {
+            rrc_TransactionIdentifier = 1
+            criticalExtensions {
+               c1 {
+                  dlInformationTransfer-r8 {
+                     dedicatedInfoType {
+                        dedicatedInfoNAS = 0x27278a3eb87c0746
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+02:51:29.940977    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 59
+02:51:29.940980    Info        (null)             uecc_llim.c                    14361   uecc_llim_build_and_send_rrc_dl_information_transfer 0 65535 RRC_MSG: DLInformationTransfer
+02:51:29.940982    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 ### UECC_FSM Exiting ###
+02:51:29.940984    Debug       (null)             uecc_ed.c                      1191    uecc_process_queue             0 65535 Unused variable p_uecc_gb_context=0x7fd056e6b038
+02:51:29.940988    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 43 Value of cell index = 0
+02:51:29.940990    Debug       eNodeB RRC         rrc_cp_common.c                145     rrc_cp_pack_U32                0 43 transaction_id = 32768
+02:51:29.940992    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 43 ue_index = 43
+02:51:29.940993    Debug       eNodeB RRC         rrc_cp_common.c                45      rrc_cp_pack_U8                 0 43 lc_id = 2
+02:51:29.940995    Debug       eNodeB RRC         rrc_cp_common.c                45      rrc_cp_pack_U8                 0 43 service_requested = 1
+02:51:29.940997    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 43 Unused variable :2746b80
+02:51:29.941000    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 43 Sending message on addres 142.40.168.192:10124. Sender: 0x13 -> reciver: 0x27.
+02:51:29.941018    Brief       eNodeB RRC         uecc_s1ap.c                    25236   rrc_asn1PrtToStr_S1AP_PDU      0 65535 S1AP_PDU {
+   initiatingMessage {
+      procedureCode = 23
+      criticality = reject
+      value {
+         uEContextRelease {
+            protocolIEs[0] {
+               id = 99
+               criticality = reject
+               value {
+                  UE-S1AP-IDs {
+                     uE-S1AP-ID-pair {
+                        mME_UE_S1AP_ID = 17533
+                        eNB_UE_S1AP_ID = 40
+                     }
+                  }
+               }
+            }
+            protocolIEs[1] {
+               id = 2
+               criticality = ignore
+               value {
+                  Cause {
+                     nas = detach
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+02:51:29.941021    Info        (null)             uecc_s1ap.c                    1282    uecc_s1ap_process_ue_assoc_sig_msg_ind_initiatingMessage 0 65535 S1AP_MSG: UEContextReleaseCommand
+02:51:29.941022    Info        (null)             uecc_s1ap.c                    2264    uecc_s1ap_process_ue_context_release_command 0 65535 Received UE CONTEXT RELEASE CMD for ue_index[43]
+02:51:29.941026    Brief       (null)             rrc_uecc_error_indication.c    1962    uecc_parse_message_map         0 65535 uecc_parse_message_map:[EI] S1AP Initiating Message
+02:51:29.941027    Brief       (null)             rrc_uecc_error_indication.c    1979    uecc_parse_message_map         0 65535 [EI] Parsing Initiating Message
+02:51:29.941029    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 77
+02:51:29.941032    Detailed    (null)             uecc_s1ap.c                    2178    generate_protocol_event_LOCAL_UE_CTXT_RELEASE_ATTEMPT_ENB 0 65535 generate_protocol_event_LOCAL_UE_CTXT_RELEASE_ATTEMPT_ENB: Counter: g_rrc_stats.p_rrc_stats-> rrc_uecc_stats.rrc_uecc_instance_stats[p_ue_context-> p_gb_context->offset_uecc_mod_id]. rrc_uecc_cell_stats[p_ue_context->cell_index].rrc_erab_related_stats. erab_release_stats. erab_relAttNbr_qci[RRC_UPDATED_QCI_INDEX(qci_value)] = 37
+02:51:29.941038    Detailed    (null)             uecc_s1ap.c                    2186    generate_protocol_event_LOCAL_UE_CTXT_RELEASE_ATTEMPT_ENB 0 65535 generate_protocol_event_LOCAL_UE_CTXT_RELEASE_ATTEMPT_ENB: Counter: g_rrc_stats.p_rrc_stats-> rrc_uecc_stats.rrc_uecc_instance_stats[p_ue_context-> p_gb_context->offset_uecc_mod_id]. rrc_uecc_cell_stats[p_ue_context->cell_index].rrc_erab_related_stats. erab_release_stats.erab_relAttNbr_sum = 37
+02:51:29.941040    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 240
+02:51:29.941041    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTED Event: UECC_EV_UE_RELEASE_REQ ###
+02:51:29.941044    Detailed    eNodeB RRC UECC    uecc_rcrfsm.c                  572     uecc_fsm_ue_connection_release_procedure_constructor 0 65535 [UE:43] [UE_CR_P] Unused variable in FSM:(nil)
+02:51:29.941046    Brief       (null)             uecc_ue_timer_utils.c          364     uecc_ue_timer_start_with_duration 0 65535 [UECC_UE_RCR_TIMER] Start timer for 65535 ms.
+02:51:29.941049    Brief       eNodeB RRC         rrc_common_utils.c             2123    rrc_start_timer                0 65535 rrc_start_timer: Timer Id [0x7fd044009598]: Duration: [65535]msec
+02:51:29.941051    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 ### UECC_FSM Exiting ###
+02:51:29.941052    Debug       (null)             uecc_ed.c                      1191    uecc_process_queue             0 65535 Unused variable p_uecc_gb_context=0x7fd056e6b038
+02:51:29.941054    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTION_RELEASE_ONGOING Event: UECC_EV_STATE_INIT ###
+02:51:29.941056    Detailed    eNodeB RRC UECC    uecc_rcrfsm.c                  816     uecc_fsm_rcr_ue_release_notification_ongoing_init_handler 0 65535 [UE:43] [UE_CR_P] Unused variable in FSM:(nil)
+02:51:29.941072    Brief       eNodeB RRC         uecc_llim.c                    23208   rrc_asn1PrtToStr_DL_DCCH_Message 0 65535 DL_DCCH_Message {
+   message {
+      c1 {
+         rrcConnectionRelease {
+            rrc_TransactionIdentifier = 1
+            criticalExtensions {
+               c1 {
+                  rrcConnectionRelease-r8 {
+                     releaseCause = other
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+02:51:29.941074    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 50
+02:51:29.941078    Info        (null)             uecc_llim.c                    14088   uecc_llim_build_and_send_rrc_connection_release 0 65535 RRC_MSG: RRCConnectionRelease
+02:51:29.941080    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 ### UECC_FSM Exiting ###
+02:51:29.941082    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 43 Value of cell index = 0
+02:51:29.941084    Debug       eNodeB RRC         rrc_cp_common.c                145     rrc_cp_pack_U32                0 43 transaction_id = 1
+02:51:29.941086    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 43 ue_index = 43
+02:51:29.941087    Debug       eNodeB RRC         rrc_cp_common.c                45      rrc_cp_pack_U8                 0 43 lc_id = 1
+02:51:29.941088    Debug       eNodeB RRC         rrc_cp_common.c                45      rrc_cp_pack_U8                 0 43 service_requested = 1
+02:51:29.941090    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 43 Unused v02:51:29.944408 Brief    255 65535 oam_logger_process_timer_msg(16278): Timer Started: Timer [0xd8000978]
+ariable :2746b80
+02:51:29.941095    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 43 Sending message on addres 142.40.168.192:10124. Sender: 0x13 -> reciver: 0x27.
+02:51:29.960221    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          0 43 [RECV] [MODULE:RRC_PDCP_MODULE_ID(5)] [API:RRC_PDCP_SRB_DATA_STATUS_IND(4)] [SIZE:41] [VER:1]
+02:51:29.960225    Debug       eNodeB RRC         rrc_cp_common.c                357     rrc_cp_unpack_U32              0 43 transaction_id = 1
+02:51:29.960226    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 ue_index = 43
+02:51:29.960228    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 lc_id = 1
+02:51:29.960229    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 response_code = 1
+02:51:29.960231    Info        eNodeB RRC LLIM    rrc_uemh.c                     4129    rrc_uemh_pdcp_srb_data_status_ind_process_msg 0 43 API:PDCP->RRC:RRC_PDCP_SRB_DATA_STATUS_IND:[UE:43]
+02:51:29.960233    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.960243    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTION_RELEASE_ONGOING Event: UECC_EV_LLIM_SRB_DATA_STATUS_IND ###
+02:51:29.960246    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 ### UECC_FSM Exiting ###
+02:51:29.960248    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          0 43 [RECV] [MODULE:RRC_PDCP_MODULE_ID(5)] [API:RRC_PDCP_SRB_DATA_STATUS_IND(4)] [SIZE:41] [VER:1]
+02:51:29.960252    Debug       eNodeB RRC         rrc_cp_common.c                357     rrc_cp_unpack_U32              0 43 transaction_id = 32768
+02:51:29.960253    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 ue_index = 43
+02:51:29.960255    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 lc_id = 2
+02:51:29.960257    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 response_code = 1
+02:51:29.960259    Info        eNodeB RRC LLIM    rrc_uemh.c                     4129    rrc_uemh_pdcp_srb_data_status_ind_process_msg 0 43 API:PDCP->RRC:RRC_PDCP_SRB_DATA_STATUS_IND:[UE:43]
+02:51:29.960261    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.960265    Debug       (null)             uecc_ed.c                      1191    uecc_process_queue             0 65535 Unused variable p_uecc_gb_context=0x7fd056e6b038
+02:51:29.960268    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTION_RELEASE_ONGOING Event: UECC_EV_STATE_INIT ###
+02:51:29.960269    Detailed    eNodeB RRC UECC    uecc_rcrfsm.c                  1085    uecc_fsm_rcr_rrm_release_notification_ongoing_init_handler 0 65535 [UE:43] [UE_CR_P] Unused variable in FSM:(nil)
+02:51:29.960272    Info        eNodeB RRC         rrc_rrm_il_composer.c          11158   rrc_rrm_il_send_rrc_rrm_ue_release_req 0 65535 Src(17)->Dst(2):RRC_RRM_UE_RELEASE_REQ
+02:51:29.960274    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 65535 Value of cell index = 0
+02:51:29.960276    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 65535 bitmask = 0
+02:51:29.960277    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 65535 ue_index = 43
+02:51:29.960280    Info        eNodeB RRC         rrc_common_utils.c             2301    rrc_send_message_ex            0 65535 [SEND] [MODULE:RRC_RRM_MODULE_ID(2)] [UE_ID:11008] [API:RRC_RRM_UE_RELEASE_REQ(1)]
+02:51:29.960286    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 ### UECC_FSM Exiting ###
+02:51:29.960288    Warning     (null)             uecc_fsm_engine.c              876     uecc_fsm_process_event         0 65535 uecc_fsm_process_event:[UE:43] : [EVENT:UECC_EV_S1AP_NAS_NON_DELIEVERY_IND] received in invalid [Main FSM STATE:UECC_UE_CONNECTION_RELEASE_ONGOING] and [Procedural FSM STATE:UECC_RCR_RRM_RELEASE_NOTIFICATION_ONGOING]
+02:51:29.960290    Warning     (null)             uecc_fsm_engine.c              1110    rrc_generate_unexpected_rrc_msg_event 0 65535 UNEXPECTED MSG RECEIVED
+02:51:29.960292    Detailed    eNodeB RRC         rrc_common_utils.c             2535    rrc_generate_protocol_events   0 65535 Protocol Event with event_id = 0 has been generated, Total Message Length = 48
+02:51:29.960293    Debug       (null)             uecc_ed.c                      1191    uecc_process_queue             0 65535 Unused variable p_uecc_gb_context=0x7fd056e6b038
+02:51:29.960295    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 65535 Unused variable :2746e10
+02:51:29.960299    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 65535 Sending message on addres 142.40.168.192:3222. Sender: 0x17 -> reciver: 0x2.
+02:51:29.960737    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              255 65535 ue_index = 43
+02:51:29.960746    Info        eNodeB RRC         rrc_common_utils.c             2419    rrc_check_cspl_header          0 65535 [RECV] [MODULE:RRC_RRM_MODULE_ID(2)] [UE_ID:11008] [API:RRC_RRM_UE_RELEASE_RESP(2)] [SIZE:35] [VER:1]
+02:51:29.960748    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 65535 ue_index = 43
+02:51:29.960750    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 65535 response = 1
+02:51:29.960751    Brief       (null)             uecc_rrm.c                     2267    uecc_rrm_process_ue_release_resp 0 65535 [UE_INDEX:43]
+02:51:29.960753    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 65535 cell_index = 0
+02:51:29.960755    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTION_RELEASE_ONGOING Event: UECC_EV_RRM_UE_RELEASE_RESP ###
+02:51:29.960757    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 ### UECC_FSM Exiting ###
+02:51:29.960758    Debug       (null)             uecc_ed.c                      1191    uecc_process_queue             0 65535 Unused variable p_uecc_gb_context=0x7fd056e6b038
+02:51:29.960759    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTION_RELEASE_ONGOING Event: UECC_EV_STATE_INIT ###
+02:51:29.960761    Detailed    eNodeB RRC UECC    uecc_rcrfsm.c                  1233    uecc_fsm_rcr_llim_delete_ue_ongoing_init_handler 0 65535 [UE:43] [UE_CR_P] Unused variable in FSM:(nil)
+02:51:29.960765    Info        (null)             uecc_fsm_engine.c              942     uecc_fsm_call_handler          0 65535 ### UECC_FSM Exiting ###
+02:51:29.960770    Detailed    eNodeB RRC LLIM    rrc_uemh_fsm.c                 9348    uemh_fsm_ue_in_service_state_delete_ue_req 0 43 [UE:43] Unused variable in fsm:0x7fd04804e710
+02:51:29.960772    Brief       eNodeB RRC LLIM    rrc_uemh_fsm.c                 4607    uemh_fsm_init_del_ue_op_and_del_ue 0 43 [UE:43] Start timer [LLIM_DELETE_UE_ENTITY_TIMER] 65535 ms.
+02:51:29.960775    Brief       eNodeB RRC         rrc_common_utils.c             2123    rrc_start_timer                0 43 rrc_start_timer: Timer Id [0x7fd048020db8]: Duration: [65535]msec
+02:51:29.960781    Info        eNodeB RRC         rrc_s1u_il_composer.c          520     rrc_s1u_il_send_rrc_s1u_delete_ue_entity_req 0 43 Src(19)->Dst(31):RRC_S1U_DELETE_UE_ENTITY_REQ
+02:51:29.960783    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 43 Value of cell index = 0
+02:51:29.960785    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 43 ue_index = 43
+02:51:29.960787    Info        eNodeB RRC         rrc_pdcp_il_composer.c         3567    rrc_pdcp_il_send_rrc_pdcp_del_ue_entity_req 0 43 Src(19)->Dst(39):RRC_PDCP_DELETE_UE_ENTITY_REQ
+02:51:29.960789    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 43 Value of cell index = 0
+02:51:29.960790    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 43 ue_index = 43
+02:51:29.960792    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 43 Unused variable :2746b80
+02:51:29.960795    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 43 Sending message on addres 142.40.168.192:5656. Sender: 0x13 -> reciver: 0x1F.
+02:51:29.960814    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 43 Unused variable :2746b80
+02:51:29.960817    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 43 Sending message on addres 142.40.168.192:10124. Sender: 0x13 -> reciver: 0x27.
+02:51:29.960846    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          0 43 [RECV] [MODULE:RRC_S1U_MODULE_ID(4)] [API:RRC_S1U_DELETE_UE_ENTITY_CNF(4)] [SIZE:35] [VER:1]
+02:51:29.960849    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 ue_index = 43
+02:51:29.960850    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 response_code = 0
+02:51:29.960852    Info        eNodeB RRC LLIM    rrc_uemh.c                     4354    rrc_uemh_s1u_delete_ue_entity_cnf_process_msg 0 43 API:S1U->RRC:RRC_S1U_DELETE_UE_ENTITY_CNF:[UE:43] with Response:0
+02:51:29.960853    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.960855    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.961224    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          0 43 [RECV] [MODULE:RRC_PDCP_MODULE_ID(5)] [API:RRC_PDCP_DELETE_UE_ENTITY_CNF(2)] [SIZE:36] [VER:1]
+02:51:29.961226    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 ue_index = 43
+02:51:29.961227    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 response = 1
+02:51:29.961229    Info        eNodeB RRC LLIM    rrc_uemh.c                     3845    rrc_uemh_pdcp_delete_ue_entity_cnf_process_msg 0 43 API:PDCP->RRC:RRC_PDCP_DELETE_UE_ENTITY_CNF:[UE:43] with Response:1
+02:51:29.961230    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.961231    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.961233    Info        eNodeB RRC         rrc_rlc_il_composer.c          4153    rrc_rlc_il_send_rrc_rlc_delete_ue_entity_req 0 43 Src(19)->Dst(47):RRC_RLC_DELETE_UE_ENTITY_REQ
+02:51:29.961235    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 43 Value of cell index = 0
+02:51:29.961236    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 43 ue_index = 43
+02:51:29.961242    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 43 Unused variable :2746b80
+02:51:29.961244    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 43 Sending message on addres 142.40.168.192:10140. Sender: 0x13 -> reciver: 0x2F.
+02:51:29.962718    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          0 43 [RECV] [MODULE:RRC_RLC_MODULE_ID(6)] [API:RRC_RLC_DELETE_UE_ENTITY_CNF(6)] [SIZE:36] [VER:1]
+02:51:29.962720    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 ue_index = 43
+02:51:29.962722    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 response = 1
+02:51:29.962723    Info        eNodeB RRC LLIM    rrc_uemh.c                     3670    rrc_uemh_rlc_delete_ue_entity_cnf_process_msg 0 43 API:RLC->RRC:RRC_RLC_DELETE_UE_ENTITY_CNF:[UE:43] with Response:1
+02:51:29.962725    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.962726    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.962728    Info        eNodeB RRC         rrc_mac_il_composer.c          26268   rrc_mac_il_send_rrc_mac_delete_ue_entity_req 0 43 Src(19)->Dst(55):RRC_MAC_DELETE_UE_ENTITY_REQ
+02:51:29.962730    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 43 Value of cell index = 0
+02:51:29.962731    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 43 ue_index = 43
+02:51:29.962733    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 43 Unused variable :2746b80
+02:51:29.962735    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 43 Sending message on addres 142.40.168.192:10145. Sender: 0x13 -> reciver: 0x37.
+02:51:29.965107    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          0 43 [RECV] [MODULE:RRC_MAC_MODULE_ID(7)] [API:RRC_MAC_DELETE_UE_ENTITY_CNF(105)] [SIZE:36] [VER:1]
+02:51:29.965109    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 ue_index = 43
+02:51:29.965111    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 response = 1
+02:51:29.965112    Info        eNodeB RRC LLIM    rrc_uemh.c                     3176    rrc_uemh_mac_delete_ue_entity_cnf_process_msg 0 43 API:MAC->RRC:RRC_MAC_DELETE_UE_ENTITY_CNF:[UE:43] with Response:1
+02:51:29.965114    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.965115    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.965117    Info        eNodeB RRC         rrc_phy_il_composer.c          10155   rrc_phy_il_send_rrc_phy_delete_ue_entity_req 0 43 Src(19)->Dst(63):RRC_PHY_DELETE_UE_ENTITY_REQ
+02:51:29.965119    Detailed    eNodeB RRC         rrc_msg_mgmt.c                 300     rrc_construct_interface_api_header 0 43 Value of cell index = 0
+02:51:29.965120    Debug       eNodeB RRC         rrc_cp_common.c                75      rrc_cp_pack_U16                0 43 ue_index = 43
+02:51:29.965122    Debug       eNodeB RRC         rrc_entity.c                   161     Pack                           0 43 Unused variable :2746b80
+02:51:29.965124    Detailed    CMES UDP Driver    shell.c                        801     s_send                         0 43 Sending message on addres 142.40.168.192:10145. Sender: 0x13 -> reciver: 0x3F.
+02:51:29.965149    Brief       eNodeB RRC         rrc_common_utils.c             2428    rrc_check_cspl_header          0 43 [RECV] [MODULE:RRC_PHY_MODULE_ID(8)] [API:RRC_PHY_DELETE_UE_ENTITY_CNF(8)] [SIZE:35] [VER:1]
+02:51:29.965151    Debug       eNodeB RRC         rrc_cp_common.c                283     rrc_cp_unpack_U16              0 43 ue_index = 43
+02:51:29.965152    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 response = 1
+02:51:29.965154    Info        eNodeB RRC LLIM    rrc_uemh.c                     2912    rrc_uemh_phy_delete_ue_entity_cnf_process_msg 0 43 API:PHY->RRC:RRC_PHY_DELETE_UE_ENTITY_CNF:[UE:43] with Response:1
+02:51:29.965156    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.965157    Debug       eNodeB RRC         rrc_cp_common.c                253     rrc_cp_unpack_U8               0 43 cell_index = 0
+02:51:29.965159    Brief       eNodeB RRC LLIM    rrc_uemh_fsm.c                 16597   uemh_fsm_check_del_ue_op_status_and_report 0 43 [UE:43] Stop timer [LLIM_DELETE_UE_ENTITY_TIMER]
+02:51:29.965161    Detailed    eNodeB RRC         rrc_common_utils.c             2204    rrc_stop_timer                 0 43 rrc_stop_timer: Timer Id [0x7fd048020db8]
+02:51:29.965168    Info        (null)             uecc_fsm_engine.c              935     uecc_fsm_call_handler          0 65535 ### UECC_FSM Processing State UECC_UE_CONNECTION_RELEASE_ONGOING Event: UECC_EV_LLIM_DELETE_UE_ENTITY_RESP ###
+02:51:29.965171    Detailed    eNodeB RRC UECC    uecc_rcrfsm.c                  622     uecc_fsm_ue_connection_release_procedure_finish_success 0 65535 [UE:43] [UE_CR_P] Unused variable in FSM:(nil)
+02:51:29.965173    Brief       (null)             uecc_ue_timer_utils.c          476     uecc_ue_timer_stop             0 65535 [UECC_UE_RCR_TIMER] Stop timer
+02:51:29.965174    Detailed    eNodeB RRC         rrc_common_utils.c             2204    rrc_stop_timer                 0 65535 rrc_stop_timer: Timer Id [0x7fd044009598]
+02:51:29.965206    Brief       eNodeB RRC         uecc_s1ap.c                    25236   rrc_asn1PrtToStr_S1AP_PDU      0 65535 S1AP_PDU {
+   successfulOutcome {
+      procedureCode = 23
+      criticality = reject
+      value {
+         uEContextRelease {
+            protocolIEs[0] {
+               id = 0
+               criticality = ignore
+               value {
+                  MME-UE-S1AP-ID = 17533
+               }
+            }
+            protocolIEs[1] {
+               id = 8
+               criticality = ignore
+               value {
+                  ENB-UE-S1AP-ID = 40
+               }
+            }
+         }
+      }
+   }

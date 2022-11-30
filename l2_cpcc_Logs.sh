@@ -7,4 +7,4 @@ echo -e "sleeping $1 \n"
 echo -e "************ \n"
 
 sleep $1
-./logs.sh 3 3
+./logs.sh 0 0
