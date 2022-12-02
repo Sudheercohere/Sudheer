@@ -1,10 +1,4 @@
 echo "*** setting La Parms ***"
-#cd /home/kakarsu/repo4g/CPCC/test_code/scripts/;pwd;
-#./cpcc_init.sh ;
-#cd /home/kakarsu/scripts_lte_21.07/;
-#./logs.sh 0 0 ;
-/home/kakarsu/repo4g/LTE_IPR/lteenodeb/set_dl_ch_info_period.sh 20
-sleep 5 
 
 cd /home/kakarsu/Automation/automation/startup_scripts/4G_scripts/;
 /home/kakarsu/Automation/automation/startup_scripts/4G_scripts/set_cpcc_params.sh
@@ -16,7 +10,7 @@ echo "setting srs pusch bias values "
 /home/kakarsu/repo4g/flexran/source/lte/Cohere/scripts/set_trigger_pusch_bias.sh 1 300 
 sleep 5
 
-cd /home/kakarsu/;pwd;
+cd /home/kakarsu/Sudheer/;pwd;
 
 ###Before running autocal disable mu mimo and reset autocal flags
 ./disable_mu_mimo.sh
@@ -29,7 +23,6 @@ cd /home/kakarsu/;pwd;
 /home/kakarsu/repo4g/CPCC/test_code/scripts/set_log_level.sh 8
 cd /home/kakarsu/repo4g/CPCC/bin/
 
-rm -f /home/kakarsu/Logs/AutoCal_CPCC_Logs_sk
 ##datep=$(date)
 datep=`date +%y%m%d%H%M%S`
 ./cpcc_tail_logs > /home/kakarsu/Logs/AutoCalLogs/AutoCal_CPCC_Logs_sk_"$datep".log &
@@ -39,6 +32,7 @@ echo ""
 echo "+++++++++++++++++++++++++++++++++++++++++++++Log PID:--->" $l_pid
 
 cd /home/kakarsu/Logs
+cd /home/kakarsu/Sudheer
 
 ##Autocal can be run only with cohere scheduler, enable it
 ./enable_cohere.sh
