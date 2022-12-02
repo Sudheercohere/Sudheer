@@ -31,7 +31,7 @@ l_pid=$!
 echo ""
 echo "+++++++++++++++++++++++++++++++++++++++++++++Log PID:--->" $l_pid
 
-cd /home/kakarsu/Logs
+#cd /home/kakarsu/Logs
 cd /home/kakarsu/Sudheer
 
 ##Autocal can be run only with cohere scheduler, enable it
