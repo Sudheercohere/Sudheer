@@ -1,0 +1,14 @@
+cd /home/kakarsu/repo4g/automation/startup_scripts/4G_framework/;pwd;
+. cohere_common.sh
+#sudo . cohere_common.sh
+./cohere_runall.sh stop
+#cd /home/kakarsu/scripts_lte_21.07/;
+#sleep 5
+#./kill_stack.sh
+pwd;
+echo -e "**********  PTP *********** \n"
+ps -aef | grep -i ptp
+echo -e "************* phy ************ \n" 
+ps -aef | grep -i phc
+echo -e "**************************** \n"
+echo "Done "

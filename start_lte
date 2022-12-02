@@ -1,0 +1,3 @@
+cd /home/kakarsu/repo4g/automation/startup_scripts/4G_framework/
+. cohere_common.sh
+./cohere_mon.sh
